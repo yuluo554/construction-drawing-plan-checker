@@ -1,0 +1,17 @@
+# 密钥与本地配置
+.env
+*.key
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# 解析输出
+out_*.json
+*/参数卡_*.json
+
+# 大文件与临时
+*.log
+_tmp_*

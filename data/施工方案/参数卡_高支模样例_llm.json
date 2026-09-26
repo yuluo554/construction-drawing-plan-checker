@@ -1,0 +1,4540 @@
+{
+  "doc_type": "plan",
+  "file": "D:\\ProgramData\\zcode\\智建赛题\\data\\施工方案\\高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+  "meta": {
+    "标题(首段)": "西安市雁塔区沙滹沱片区（沙滹沱村）",
+    "章节树深度": 3
+  },
+  "parameters": [
+    {
+      "entity": "工程概况",
+      "category": "overview",
+      "attr": "结构形式",
+      "value": "钢筋混凝土剪力墙结构",
+      "unit": "",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 28,
+        "section": "一",
+        "bbox": null,
+        "raw": "本项目为一类住宅建筑，结构设计使用年限：50年，结构安全等级：二级，建筑耐火等级：一级，抗震设防烈度：8度，人防等级核：核五级常五。工程建筑结构类型：钢筋混凝土剪力墙结构，现浇混凝土楼板，基础形式为素混凝土桩＋筏板，车库结构形式为全现浇框架结构，基础形式为独立基础+防水板。"
+      }
+    },
+    {
+      "entity": "工程概况",
+      "category": "overview",
+      "attr": "基础形式",
+      "value": "素混凝土桩",
+      "unit": "",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 28,
+        "section": "一",
+        "bbox": null,
+        "raw": "本项目为一类住宅建筑，结构设计使用年限：50年，结构安全等级：二级，建筑耐火等级：一级，抗震设防烈度：8度，人防等级核：核五级常五。工程建筑结构类型：钢筋混凝土剪力墙结构，现浇混凝土楼板，基础形式为素混凝土桩＋筏板，车库结构形式为全现浇框架结构，基础形式为独立基础+防水板。"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 235,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "7）对标准步距为1.5m的支撑架，应根据支撑架搭设高度、支撑架型号及立杆轴向力设计值进行竖向斜杆布置，竖向斜杆布置形式选用应符合下表的要求。"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "支撑搭设高度",
+      "value": "4.6",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "梁侧楼板计算厚度(mm) | 350 | 模板支架高度H(m) | 4.6"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "立杆间距",
+      "value": "0.45",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "梁跨度方向立杆间距la1(mm) | 450 | 450 | 450"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "立杆间距",
+      "value": "0.45",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "梁跨度方向立杆间距la2(mm) | 450 | 450 | 450"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "最大步距h(mm) | 1500 | 1500 | 1500"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "顶层步距h'(mm) | 1500 | 1500 | 1500"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "支撑搭设高度",
+      "value": "4.6",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "梁侧楼板计算厚度(mm) | 350 | 模板支架高度H(m) | 4.6"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "支撑搭设高度",
+      "value": "1",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "支架外侧模板高度Hm（mm） | 1000 | 1000 | 1000"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "立杆间距",
+      "value": "0.9",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "梁跨度方向立杆间距la(mm) | 900 | 900 | 900"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "最大步距h(mm) | 1500 | 1500 | 1500"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "顶层步距h'(mm) | 1500 | 1500 | 1500"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "支撑搭设高度",
+      "value": "4.6",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "模板支架高度H(m) | 4.6 | 模板支架纵向长度L(m) | 31.4"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "立杆横向间距lb(mm) | 900 | 步距h(mm) | 1500"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "顶层步距hˊ(mm) | 1500 | 支架可调托座支撑点至顶层水平杆中心线的距离a(mm) | 650"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "支撑搭设高度",
+      "value": "4.6",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "一",
+        "bbox": null,
+        "raw": "梁侧楼板计算厚度(mm) | 350 | 模板支架高度H(m) | 4.6"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "立杆间距",
+      "value": "0.9",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "三",
+        "bbox": null,
+        "raw": "梁跨度方向立杆间距la(mm) | 900"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "三",
+        "bbox": null,
+        "raw": "最大步距h(mm) | 1500"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "三",
+        "bbox": null,
+        "raw": "顶层步距h'(mm) | 1500"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "八",
+        "bbox": null,
+        "raw": "步距h(mm) | 1500 | 顶层步距h'(mm) | 1500"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "八",
+        "bbox": null,
+        "raw": "步距h(mm) | 1500 | 顶层步距h'(mm) | 1500"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "支撑搭设高度",
+      "value": "4.6",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "十",
+        "bbox": null,
+        "raw": "模板支架高度H(m) | 4.6 | 模板支架纵向长度L(m) | 60"
+      }
+    },
+    {
+      "entity": "混凝土(板)",
+      "category": "material",
+      "attr": "强度等级",
+      "value": "C30",
+      "unit": "",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "十一",
+        "bbox": null,
+        "raw": "支撑层楼板厚度h(mm) | 150 | 混凝土强度等级 | C30"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "支撑搭设高度",
+      "value": "4.6",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "一",
+        "bbox": null,
+        "raw": "梁侧楼板计算厚度(mm) | 350 | 模板支架高度H(m) | 4.6"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "立杆间距",
+      "value": "0.45",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "三",
+        "bbox": null,
+        "raw": "梁跨度方向立杆间距la1(mm) | 450"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "立杆间距",
+      "value": "0.45",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "三",
+        "bbox": null,
+        "raw": "梁跨度方向立杆间距la2(mm) | 450"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "三",
+        "bbox": null,
+        "raw": "最大步距h(mm) | 1500"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "三",
+        "bbox": null,
+        "raw": "顶层步距h'(mm) | 1500"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "八",
+        "bbox": null,
+        "raw": "步距h(mm) | 1500 | 顶层步距h'(mm) | 1500"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "八",
+        "bbox": null,
+        "raw": "步距h(mm) | 1500 | 顶层步距h'(mm) | 1500"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "支撑搭设高度",
+      "value": "4.6",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "十",
+        "bbox": null,
+        "raw": "模板支架高度H(m) | 4.6 | 模板支架纵向长度L(m) | 60"
+      }
+    },
+    {
+      "entity": "混凝土(板)",
+      "category": "material",
+      "attr": "强度等级",
+      "value": "C30",
+      "unit": "",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "十一",
+        "bbox": null,
+        "raw": "支撑层楼板厚度h(mm) | 150 | 混凝土强度等级 | C30"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "支撑搭设高度",
+      "value": "4.6",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "一",
+        "bbox": null,
+        "raw": "模板支架高度H(m) | 4.6 | 模板支架纵向长度L(m) | 31.4"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "三",
+        "bbox": null,
+        "raw": "立杆横向间距lb(mm) | 900 | 步距h(mm) | 1500"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "三",
+        "bbox": null,
+        "raw": "顶层步距hˊ(mm) | 1500 | 支架可调托座支撑点至顶层水平杆中心线的距离a(mm) | 650"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "八",
+        "bbox": null,
+        "raw": "架体顶层步距修正系数γ | 0.9 | 步距h(mm) | 1500"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "八",
+        "bbox": null,
+        "raw": "顶部步距h'(mm) | 1500"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "支撑搭设高度",
+      "value": "4.6",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "十",
+        "bbox": null,
+        "raw": "模板支架高度H(m) | 4.6 | 模板支架纵向长度L(m) | 31.4"
+      }
+    },
+    {
+      "entity": "混凝土(板)",
+      "category": "material",
+      "attr": "强度等级",
+      "value": "C30",
+      "unit": "",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "十一",
+        "bbox": null,
+        "raw": "支撑层楼板厚度h(mm) | 120 | 混凝土强度等级 | C30"
+      }
+    },
+    {
+      "entity": "工程概况",
+      "category": "overview",
+      "attr": "总建筑面积",
+      "value": "12.95万",
+      "unit": "平米",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 27,
+        "section": "一",
+        "bbox": null,
+        "raw": "本工程由4栋高层住宅楼，1栋高层公寓，3栋商业配套及地下车库组成，总建筑面积12.95万平米，地上9.1万平米，地下3.85万平米。"
+      }
+    },
+    {
+      "entity": "工程概况",
+      "category": "overview",
+      "attr": "基础形式",
+      "value": "素混凝土桩＋筏板",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 28,
+        "section": "一",
+        "bbox": null,
+        "raw": "工程建筑结构类型：钢筋混凝土剪力墙结构，现浇混凝土楼板，基础形式为素混凝土桩＋筏板，车库结构形式为全现浇框架结构，基础形式为独立基础+防水板。"
+      }
+    },
+    {
+      "entity": "工程概况",
+      "category": "overview",
+      "attr": "车库结构形式",
+      "value": "全现浇框架结构",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 28,
+        "section": "一",
+        "bbox": null,
+        "raw": "工程建筑结构类型：钢筋混凝土剪力墙结构，现浇混凝土楼板，基础形式为素混凝土桩＋筏板，车库结构形式为全现浇框架结构，基础形式为独立基础+防水板。"
+      }
+    },
+    {
+      "entity": "工程概况",
+      "category": "overview",
+      "attr": "车库基础形式",
+      "value": "独立基础+防水板",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 28,
+        "section": "一",
+        "bbox": null,
+        "raw": "工程建筑结构类型：钢筋混凝土剪力墙结构，现浇混凝土楼板，基础形式为素混凝土桩＋筏板，车库结构形式为全现浇框架结构，基础形式为独立基础+防水板。"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "面板厚度",
+      "value": "12mm",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 123,
+        "section": "1.1",
+        "bbox": null,
+        "raw": "（1）梁模：采用12mm厚高强镜面板，主龙骨使用Φ48*2.7mm圆钢管，次龙骨使用50×70㎜（计算按45*65mm）方木，采用侧模包底模、楼板模压梁侧模的施工方法。"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "立杆间距/步距",
+      "value": "Φ48*2.7mm",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 123,
+        "section": "1.1",
+        "bbox": null,
+        "raw": "（1）梁模：采用12mm厚高强镜面板，主龙骨使用Φ48*2.7mm圆钢管，次龙骨使用50×70㎜（计算按45*65mm）方木，采用侧模包底模、楼板模压梁侧模的施工方法。"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "支架高度",
+      "value": "3.7m",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 31,
+        "section": "一",
+        "bbox": null,
+        "raw": "本工程地下车库为地下二层，地下二层分为人防区和非人防区，非人防区层高3.7m，人防区层高4.6m；地下一层层高3.87m。"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "支架高度",
+      "value": "4.6m",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 31,
+        "section": "一",
+        "bbox": null,
+        "raw": "本工程地下车库为地下二层，地下二层分为人防区和非人防区，非人防区层高3.7m，人防区层高4.6m；地下一层层高3.87m。"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "支架高度",
+      "value": "3.87m",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 31,
+        "section": "一",
+        "bbox": null,
+        "raw": "本工程地下车库为地下二层，地下二层分为人防区和非人防区，非人防区层高3.7m，人防区层高4.6m；地下一层层高3.87m。"
+      }
+    },
+    {
+      "entity": "危大工程",
+      "category": "measure",
+      "attr": "施工总荷载",
+      "value": "大于 15kN/m2",
+      "unit": "kN/m2",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 36,
+        "section": "一",
+        "bbox": null,
+        "raw": "施工总荷载大于 15kN/m2的荷载板区域"
+      }
+    },
+    {
+      "entity": "危大工程",
+      "category": "measure",
+      "attr": "集中线荷载",
+      "value": "大于20KN/m",
+      "unit": "KN/m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 37,
+        "section": "一",
+        "bbox": null,
+        "raw": "集中线荷载大于20KN/m的荷载梁区域"
+      }
+    },
+    {
+      "entity": "构件截面",
+      "category": "measure",
+      "attr": "板厚",
+      "value": "350mm",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 47,
+        "section": "一",
+        "bbox": null,
+        "raw": "区域一（施工总荷载超限）：位于地下车库负二层人防区顶板（含20#、21#主楼）（350mm）"
+      }
+    },
+    {
+      "entity": "梁",
+      "category": "measure",
+      "attr": "截面尺寸",
+      "value": "650*900",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 211,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "650*900梁底和梁侧采用50*70方木作为次背楞，梁底共计8根，梁底设置1根立杆，立杆间距900mm，位于梁中心，距梁梁侧尺寸为60mm。梁两侧立杆间距1200mm。梁侧布置方木4根，主背楞采用Φ48钢管间距500mm，主背楞采用Φ14对拉螺杆加固，在距梁底以上300mm位置设置1道，在梁底设置1道。"
+      }
+    },
+    {
+      "entity": "次背楞",
+      "category": "material",
+      "attr": "规格",
+      "value": "50*70",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 211,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "650*900梁底和梁侧采用50*70方木作为次背楞，梁底共计8根，梁底设置1根立杆，立杆间距900mm，位于梁中心，距梁梁侧尺寸为60mm。梁两侧立杆间距1200mm。梁侧布置方木4根，主背楞采用Φ48钢管间距500mm，主背楞采用Φ14对拉螺杆加固，在距梁底以上300mm位置设置1道，在梁底设置1道。"
+      }
+    },
+    {
+      "entity": "梁底立杆",
+      "category": "measure",
+      "attr": "间距",
+      "value": "900",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 211,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "650*900梁底和梁侧采用50*70方木作为次背楞，梁底共计8根，梁底设置1根立杆，立杆间距900mm，位于梁中心，距梁梁侧尺寸为60mm。梁两侧立杆间距1200mm。梁侧布置方木4根，主背楞采用Φ48钢管间距500mm，主背楞采用Φ14对拉螺杆加固，在距梁底以上300mm位置设置1道，在梁底设置1道。"
+      }
+    },
+    {
+      "entity": "梁两侧立杆",
+      "category": "measure",
+      "attr": "间距",
+      "value": "1200",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 211,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "650*900梁底和梁侧采用50*70方木作为次背楞，梁底共计8根，梁底设置1根立杆，立杆间距900mm，位于梁中心，距梁梁侧尺寸为60mm。梁两侧立杆间距1200mm。梁侧布置方木4根，主背楞采用Φ48钢管间距500mm，主背楞采用Φ14对拉螺杆加固，在距梁底以上300mm位置设置1道，在梁底设置1道。"
+      }
+    },
+    {
+      "entity": "主背楞",
+      "category": "material",
+      "attr": "规格",
+      "value": "Φ48",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 211,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "650*900梁底和梁侧采用50*70方木作为次背楞，梁底共计8根，梁底设置1根立杆，立杆间距900mm，位于梁中心，距梁梁侧尺寸为60mm。梁两侧立杆间距1200mm。梁侧布置方木4根，主背楞采用Φ48钢管间距500mm，主背楞采用Φ14对拉螺杆加固，在距梁底以上300mm位置设置1道，在梁底设置1道。"
+      }
+    },
+    {
+      "entity": "主背楞",
+      "category": "measure",
+      "attr": "间距",
+      "value": "500",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 211,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "650*900梁底和梁侧采用50*70方木作为次背楞，梁底共计8根，梁底设置1根立杆，立杆间距900mm，位于梁中心，距梁梁侧尺寸为60mm。梁两侧立杆间距1200mm。梁侧布置方木4根，主背楞采用Φ48钢管间距500mm，主背楞采用Φ14对拉螺杆加固，在距梁底以上300mm位置设置1道，在梁底设置1道。"
+      }
+    },
+    {
+      "entity": "对拉螺杆",
+      "category": "material",
+      "attr": "规格",
+      "value": "Φ14",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 211,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "650*900梁底和梁侧采用50*70方木作为次背楞，梁底共计8根，梁底设置1根立杆，立杆间距900mm，位于梁中心，距梁梁侧尺寸为60mm。梁两侧立杆间距1200mm。梁侧布置方木4根，主背楞采用Φ48钢管间距500mm，主背楞采用Φ14对拉螺杆加固，在距梁底以上300mm位置设置1道，在梁底设置1道。"
+      }
+    },
+    {
+      "entity": "梁",
+      "category": "measure",
+      "attr": "截面尺寸",
+      "value": "550*1300",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 214,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "550*1300梁底和梁侧采用50*70方木作为次背楞，梁底共计5根方木，梁底设置1根立杆，立杆纵向间距450mm，与梁两侧间距为600mm，梁两侧立杆间距1200mm。梁侧方木布置5根。主背楞采用Φ48钢管间距500mm，主背楞采用Φ14对拉螺杆加固，共设置2道，对拉螺杆距离梁底分别为350mm、800mm。"
+      }
+    },
+    {
+      "entity": "梁底立杆",
+      "category": "measure",
+      "attr": "纵向间距",
+      "value": "450",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 214,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "550*1300梁底和梁侧采用50*70方木作为次背楞，梁底共计5根方木，梁底设置1根立杆，立杆纵向间距450mm，与梁两侧间距为600mm，梁两侧立杆间距1200mm。梁侧方木布置5根。主背楞采用Φ48钢管间距500mm，主背楞采用Φ14对拉螺杆加固，共设置2道，对拉螺杆距离梁底分别为350mm、800mm。"
+      }
+    },
+    {
+      "entity": "板模板面板",
+      "category": "material",
+      "attr": "厚度",
+      "value": "12",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 217,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "（2）板模板采用12mm高强镜面板，下部次楞采用50*70方木，间距200mm。主楞采用Φ48钢管，两根并用。支撑架体采用承插式盘扣满堂脚手架，纵横向间距900*900mm，步距1500mm，顶层步距1500mm。"
+      }
+    },
+    {
+      "entity": "板模板次楞",
+      "category": "material",
+      "attr": "规格",
+      "value": "50*70",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 217,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "（2）板模板采用12mm高强镜面板，下部次楞采用50*70方木，间距200mm。主楞采用Φ48钢管，两根并用。支撑架体采用承插式盘扣满堂脚手架，纵横向间距900*900mm，步距1500mm，顶层步距1500mm。"
+      }
+    },
+    {
+      "entity": "板模板次楞",
+      "category": "measure",
+      "attr": "间距",
+      "value": "200",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 217,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "（2）板模板采用12mm高强镜面板，下部次楞采用50*70方木，间距200mm。主楞采用Φ48钢管，两根并用。支撑架体采用承插式盘扣满堂脚手架，纵横向间距900*900mm，步距1500mm，顶层步距1500mm。"
+      }
+    },
+    {
+      "entity": "板模板主楞",
+      "category": "material",
+      "attr": "规格",
+      "value": "Φ48",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 217,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "（2）板模板采用12mm高强镜面板，下部次楞采用50*70方木，间距200mm。主楞采用Φ48钢管，两根并用。支撑架体采用承插式盘扣满堂脚手架，纵横向间距900*900mm，步距1500mm，顶层步距1500mm。"
+      }
+    },
+    {
+      "entity": "支撑架体",
+      "category": "measure",
+      "attr": "类型",
+      "value": "承插式盘扣满堂脚手架",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 217,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "（2）板模板采用12mm高强镜面板，下部次楞采用50*70方木，间距200mm。主楞采用Φ48钢管，两根并用。支撑架体采用承插式盘扣满堂脚手架，纵横向间距900*900mm，步距1500mm，顶层步距1500mm。"
+      }
+    },
+    {
+      "entity": "支撑架体",
+      "category": "measure",
+      "attr": "立杆间距",
+      "value": "900*900",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 217,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "（2）板模板采用12mm高强镜面板，下部次楞采用50*70方木，间距200mm。主楞采用Φ48钢管，两根并用。支撑架体采用承插式盘扣满堂脚手架，纵横向间距900*900mm，步距1500mm，顶层步距1500mm。"
+      }
+    },
+    {
+      "entity": "支撑架体",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1500",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 217,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "（2）板模板采用12mm高强镜面板，下部次楞采用50*70方木，间距200mm。主楞采用Φ48钢管，两根并用。支撑架体采用承插式盘扣满堂脚手架，纵横向间距900*900mm，步距1500mm，顶层步距1500mm。"
+      }
+    },
+    {
+      "entity": "支撑架体",
+      "category": "measure",
+      "attr": "顶层步距",
+      "value": "1500",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 217,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "（2）板模板采用12mm高强镜面板，下部次楞采用50*70方木，间距200mm。主楞采用Φ48钢管，两根并用。支撑架体采用承插式盘扣满堂脚手架，纵横向间距900*900mm，步距1500mm，顶层步距1500mm。"
+      }
+    },
+    {
+      "entity": "梁板模板",
+      "category": "measure",
+      "attr": "起拱条件跨度",
+      "value": "4.0",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 221,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "梁板模板要求拼缝严密，模板间需用胶带密封，防止漏浆，所有木枋施工前均双面压刨平整以保证梁板及柱墙的平整度，要求所有木枋找平后方可铺设胶合板，以确保顶板模板平整。根据规范要求：梁、板跨度等于或大于4.0m时，模板应起拱，起拱高度2L/1000。"
+      }
+    },
+    {
+      "entity": "梁板模板",
+      "category": "measure",
+      "attr": "起拱高度",
+      "value": "2L/1000",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 221,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "梁板模板要求拼缝严密，模板间需用胶带密封，防止漏浆，所有木枋施工前均双面压刨平整以保证梁板及柱墙的平整度，要求所有木枋找平后方可铺设胶合板，以确保顶板模板平整。根据规范要求：梁、板跨度等于或大于4.0m时，模板应起拱，起拱高度2L/1000。"
+      }
+    },
+    {
+      "entity": "地下车库负二层人防区和负一层350mm板下满堂架",
+      "category": "measure",
+      "attr": "立杆纵横间距",
+      "value": "900*900",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 227,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "地下车库负二层人防区和负一层350mm板下满堂架立杆纵横间距900*900mm，横杆步距1500mm。最上部横杆距离板模板不大于650mm。"
+      }
+    },
+    {
+      "entity": "地下车库负二层人防区和负一层350mm板下满堂架",
+      "category": "measure",
+      "attr": "横杆步距",
+      "value": "1500",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 227,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "地下车库负二层人防区和负一层350mm板下满堂架立杆纵横间距900*900mm，横杆步距1500mm。最上部横杆距离板模板不大于650mm。"
+      }
+    },
+    {
+      "entity": "地下车库负二层人防区和负一层350mm板下满堂架",
+      "category": "measure",
+      "attr": "最上部横杆距离板模板",
+      "value": "650",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 227,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "地下车库负二层人防区和负一层350mm板下满堂架立杆纵横间距900*900mm，横杆步距1500mm。最上部横杆距离板模板不大于650mm。"
+      }
+    },
+    {
+      "entity": "脚手架",
+      "category": "measure",
+      "attr": "搭设步距限制",
+      "value": "2",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 231,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "3）脚手架搭设步距不应超过2m。"
+      }
+    },
+    {
+      "entity": "标准型(B型)立杆",
+      "category": "measure",
+      "attr": "荷载设计值阈值",
+      "value": "40",
+      "unit": "kN",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 233,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "5）当标准型(B型)立杆荷载设计值大于40kN，或重型(Z型)立杆荷载设计值大于65kN时，脚手架顶层步距应比标准步距缩小0.5m。"
+      }
+    },
+    {
+      "entity": "重型(Z型)立杆",
+      "category": "measure",
+      "attr": "荷载设计值阈值",
+      "value": "65",
+      "unit": "kN",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 233,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "5）当标准型(B型)立杆荷载设计值大于40kN，或重型(Z型)立杆荷载设计值大于65kN时，脚手架顶层步距应比标准步距缩小0.5m。"
+      }
+    },
+    {
+      "entity": "脚手架顶层步距",
+      "category": "measure",
+      "attr": "缩小量",
+      "value": "0.5",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 233,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "5）当标准型(B型)立杆荷载设计值大于40kN，或重型(Z型)立杆荷载设计值大于65kN时，脚手架顶层步距应比标准步距缩小0.5m。"
+      }
+    },
+    {
+      "entity": "支撑架",
+      "category": "measure",
+      "attr": "高宽比控制",
+      "value": "3",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 234,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "6）支撑架的高宽比宜控制在3以内，高宽比大于3的支撑架应采取与既有结构进行刚性连接等抗倾覆措施。"
+      }
+    },
+    {
+      "entity": "支撑架",
+      "category": "measure",
+      "attr": "标准步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 235,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "7）对标准步距为1.5m的支撑架，应根据支撑架搭设高度、支撑架型号及立杆轴向力设计值进行竖向斜杆布置，竖向斜杆布置形式选用应符合下表的要求。"
+      }
+    },
+    {
+      "entity": "支撑架可调托撑",
+      "category": "measure",
+      "attr": "悬臂长度限制",
+      "value": "650",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 241,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "9）支撑架可调托撑伸出顶层水平杆或双槽托梁中心线的悬臂长度不应超过650mm，且丝杆外露长度不应超过400mm，可调托撑插入立杆或双槽托梁长度不得小于150mm。"
+      }
+    },
+    {
+      "entity": "支撑架可调托撑",
+      "category": "measure",
+      "attr": "丝杆外露长度限制",
+      "value": "400",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 241,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "9）支撑架可调托撑伸出顶层水平杆或双槽托梁中心线的悬臂长度不应超过650mm，且丝杆外露长度不应超过400mm，可调托撑插入立杆或双槽托梁长度不得小于150mm。"
+      }
+    },
+    {
+      "entity": "支撑架可调托撑",
+      "category": "measure",
+      "attr": "插入立杆或双槽托梁长度最小值",
+      "value": "150",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 241,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "9）支撑架可调托撑伸出顶层水平杆或双槽托梁中心线的悬臂长度不应超过650mm，且丝杆外露长度不应超过400mm，可调托撑插入立杆或双槽托梁长度不得小于150mm。"
+      }
+    },
+    {
+      "entity": "支撑架可调底座",
+      "category": "measure",
+      "attr": "丝杆插入立杆长度最小值",
+      "value": "150",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 245,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "10）支撑架可调底座丝杆插入立杆长度不得小于150mm，丝杆外露长度不宜大于300mm，作为扫地杆的最底层水平杆中心线距离可调底座的底板不应大于550mm。"
+      }
+    },
+    {
+      "entity": "梁",
+      "category": "measure",
+      "attr": "截面尺寸",
+      "value": "650x900",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 786,
+        "section": "九",
+        "bbox": null,
+        "raw": "650x900梁模板（盘扣式，梁板立柱共用）计算书"
+      }
+    },
+    {
+      "entity": "模板面板",
+      "category": "material",
+      "attr": "厚度",
+      "value": "12",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 806,
+        "section": "四",
+        "bbox": null,
+        "raw": "W＝bh2/6=1000×12×12/6＝24000mm3，I＝bh3/12=1000×12×12×12/12＝144000mm4"
+      }
+    },
+    {
+      "entity": "模板支撑",
+      "category": "measure",
+      "attr": "支架高度",
+      "value": "4.6",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 940,
+        "section": "九",
+        "bbox": null,
+        "raw": "H/B=4.6/26.8=0.172≤3"
+      }
+    },
+    {
+      "entity": "模板支撑",
+      "category": "measure",
+      "attr": "立杆间距",
+      "value": "0.9",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 945,
+        "section": "十",
+        "bbox": null,
+        "raw": "MR=γG[G1k+0.15×H/(la'×lb')]LB2/2=0.9×[0.5+0.15×4.6/(0.9×0.9)]×60×26.82/2=26215.76kN·m"
+      }
+    },
+    {
+      "entity": "构件截面",
+      "category": "measure",
+      "attr": "梁宽",
+      "value": "650",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 969,
+        "section": "十一",
+        "bbox": null,
+        "raw": "650 900梁侧模板计算书"
+      }
+    },
+    {
+      "entity": "构件截面",
+      "category": "measure",
+      "attr": "梁高",
+      "value": "900",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 969,
+        "section": "十一",
+        "bbox": null,
+        "raw": "650 900梁侧模板计算书"
+      }
+    },
+    {
+      "entity": "模板支撑",
+      "category": "measure",
+      "attr": "面板厚度",
+      "value": "12",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 993,
+        "section": "四",
+        "bbox": null,
+        "raw": "W＝bh2/6=1000×122/6＝24000mm3，I＝bh3/12=1000×123/12＝144000mm4。"
+      }
+    },
+    {
+      "entity": "构件截面",
+      "category": "measure",
+      "attr": "梁宽",
+      "value": "550",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 1066,
+        "section": "七",
+        "bbox": null,
+        "raw": "550x1300梁模板（盘扣式，梁板立柱共用）计算书"
+      }
+    },
+    {
+      "entity": "构件截面",
+      "category": "measure",
+      "attr": "梁高",
+      "value": "1300",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 1066,
+        "section": "七",
+        "bbox": null,
+        "raw": "550x1300梁模板（盘扣式，梁板立柱共用）计算书"
+      }
+    },
+    {
+      "entity": "模板支撑",
+      "category": "measure",
+      "attr": "混凝土浇筑厚度",
+      "value": "1.3",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 1088,
+        "section": "四",
+        "bbox": null,
+        "raw": "q1＝γ0×[1.3×(G1k+(G2k+G3k)×h)+1.5×Q1k]×b=1.1×[1.3×(0.1+(24+1.5)×1.3)+1.5×2.5]×1＝51.673kN/m"
+      }
+    },
+    {
+      "entity": "模板支撑",
+      "category": "measure",
+      "attr": "楼板厚度",
+      "value": "0.35",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 1118,
+        "section": "五",
+        "bbox": null,
+        "raw": "梁左侧模板传递给左边小梁荷载q3左=γ0×1.3×G1k×(梁高-板厚)=1.1×1.3×0.5×(1.3-0.35)=0.679kN/m"
+      }
+    },
+    {
+      "entity": "地下车库顶板",
+      "category": "measure",
+      "attr": "支模高度",
+      "value": "4.60",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 38,
+        "section": "一",
+        "bbox": null,
+        "raw": "地下车库 | 顶板 | 地下二层 | 4.60m | 350mm | 基础独立基础+防水板"
+      }
+    },
+    {
+      "entity": "地下车库顶板",
+      "category": "measure",
+      "attr": "板厚",
+      "value": "350",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 38,
+        "section": "一",
+        "bbox": null,
+        "raw": "地下车库 | 顶板 | 地下二层 | 4.60m | 350mm | 基础独立基础+防水板"
+      }
+    },
+    {
+      "entity": "地下车库顶板",
+      "category": "overview",
+      "attr": "支撑体系基础",
+      "value": "基础独立基础+防水板",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 38,
+        "section": "一",
+        "bbox": null,
+        "raw": "地下车库 | 顶板 | 地下二层 | 4.60m | 350mm | 基础独立基础+防水板"
+      }
+    },
+    {
+      "entity": "地下车库顶板",
+      "category": "measure",
+      "attr": "支模高度",
+      "value": "3.87",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 38,
+        "section": "一",
+        "bbox": null,
+        "raw": "地下车库 | 顶板 | 地下一层 | 3.87m | 350mm | 楼板"
+      }
+    },
+    {
+      "entity": "地下车库顶板",
+      "category": "overview",
+      "attr": "支撑体系基础",
+      "value": "楼板",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 38,
+        "section": "一",
+        "bbox": null,
+        "raw": "地下车库 | 顶板 | 地下一层 | 3.87m | 350mm | 楼板"
+      }
+    },
+    {
+      "entity": "地下车库顶板梁",
+      "category": "measure",
+      "attr": "支模高度",
+      "value": "4.60",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 40,
+        "section": "一",
+        "bbox": null,
+        "raw": "地下车库 | 顶板 | 地下二层 | 4.60m | 650*900mm | 基础独立基础+防水板"
+      }
+    },
+    {
+      "entity": "地下车库顶板梁",
+      "category": "measure",
+      "attr": "梁尺寸",
+      "value": "650*900",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 40,
+        "section": "一",
+        "bbox": null,
+        "raw": "地下车库 | 顶板 | 地下二层 | 4.60m | 650*900mm | 基础独立基础+防水板"
+      }
+    },
+    {
+      "entity": "地下车库顶板梁",
+      "category": "overview",
+      "attr": "支撑体系基础",
+      "value": "基础独立基础+防水板",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 40,
+        "section": "一",
+        "bbox": null,
+        "raw": "地下车库 | 顶板 | 地下二层 | 4.60m | 650*900mm | 基础独立基础+防水板"
+      }
+    },
+    {
+      "entity": "地下车库顶板梁",
+      "category": "measure",
+      "attr": "梁尺寸",
+      "value": "550*1300",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 40,
+        "section": "一",
+        "bbox": null,
+        "raw": "地下车库 | 顶板 | 地下二层 | 4.60m | 550*1300mm | 基础独立基础+防水板"
+      }
+    },
+    {
+      "entity": "工程概况",
+      "category": "overview",
+      "attr": "建筑高度",
+      "value": "13.15m-79.75m",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "建筑高度（高层） | 13.15m-79.75m | 结构形式 | 剪力墙/框架"
+      }
+    },
+    {
+      "entity": "工程概况",
+      "category": "overview",
+      "attr": "结构形式",
+      "value": "剪力墙/框架",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "建筑高度（高层） | 13.15m-79.75m | 结构形式 | 剪力墙/框架"
+      }
+    },
+    {
+      "entity": "工程概况",
+      "category": "overview",
+      "attr": "层数",
+      "value": "3-26层不等",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "层数 | 3-26层不等 | 屋面结构 | 平屋面"
+      }
+    },
+    {
+      "entity": "19#楼",
+      "category": "overview",
+      "attr": "建筑高度",
+      "value": "79.75",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "19#楼 | 79.75m | 26F | 11499.07㎡"
+      }
+    },
+    {
+      "entity": "19#楼",
+      "category": "overview",
+      "attr": "层数",
+      "value": "26",
+      "unit": "F",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "19#楼 | 79.75m | 26F | 11499.07㎡"
+      }
+    },
+    {
+      "entity": "19#楼",
+      "category": "overview",
+      "attr": "建筑面积",
+      "value": "11499.07",
+      "unit": "㎡",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "19#楼 | 79.75m | 26F | 11499.07㎡"
+      }
+    },
+    {
+      "entity": "20#楼",
+      "category": "overview",
+      "attr": "建筑高度",
+      "value": "79.75",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "20#楼 | 79.75m | 26F | 16810.59㎡"
+      }
+    },
+    {
+      "entity": "20#楼",
+      "category": "overview",
+      "attr": "层数",
+      "value": "26",
+      "unit": "F",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "20#楼 | 79.75m | 26F | 16810.59㎡"
+      }
+    },
+    {
+      "entity": "20#楼",
+      "category": "overview",
+      "attr": "建筑面积",
+      "value": "16810.59",
+      "unit": "㎡",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "20#楼 | 79.75m | 26F | 16810.59㎡"
+      }
+    },
+    {
+      "entity": "21#楼",
+      "category": "overview",
+      "attr": "建筑高度",
+      "value": "79.75",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "21#楼 | 79.75m | 26F | 10474.42㎡"
+      }
+    },
+    {
+      "entity": "21#楼",
+      "category": "overview",
+      "attr": "层数",
+      "value": "26",
+      "unit": "F",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "21#楼 | 79.75m | 26F | 10474.42㎡"
+      }
+    },
+    {
+      "entity": "21#楼",
+      "category": "overview",
+      "attr": "建筑面积",
+      "value": "10474.42",
+      "unit": "㎡",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "21#楼 | 79.75m | 26F | 10474.42㎡"
+      }
+    },
+    {
+      "entity": "22#楼",
+      "category": "overview",
+      "attr": "建筑高度",
+      "value": "79.75",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "22#楼 | 79.75m | 26F | 20948.84㎡"
+      }
+    },
+    {
+      "entity": "22#楼",
+      "category": "overview",
+      "attr": "层数",
+      "value": "26",
+      "unit": "F",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "22#楼 | 79.75m | 26F | 20948.84㎡"
+      }
+    },
+    {
+      "entity": "22#楼",
+      "category": "overview",
+      "attr": "建筑面积",
+      "value": "20948.84",
+      "unit": "㎡",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "22#楼 | 79.75m | 26F | 20948.84㎡"
+      }
+    },
+    {
+      "entity": "23#楼",
+      "category": "overview",
+      "attr": "建筑高度",
+      "value": "65.95",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "23#楼 | 65.95m | 21F | 25347.38㎡"
+      }
+    },
+    {
+      "entity": "23#楼",
+      "category": "overview",
+      "attr": "层数",
+      "value": "21",
+      "unit": "F",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "23#楼 | 65.95m | 21F | 25347.38㎡"
+      }
+    },
+    {
+      "entity": "23#楼",
+      "category": "overview",
+      "attr": "建筑面积",
+      "value": "25347.38",
+      "unit": "㎡",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "23#楼 | 65.95m | 21F | 25347.38㎡"
+      }
+    },
+    {
+      "entity": "24#楼",
+      "category": "overview",
+      "attr": "建筑高度",
+      "value": "13.15",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "24#楼 | 13.15m | 3F | 2808.84㎡"
+      }
+    },
+    {
+      "entity": "24#楼",
+      "category": "overview",
+      "attr": "层数",
+      "value": "3",
+      "unit": "F",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "24#楼 | 13.15m | 3F | 2808.84㎡"
+      }
+    },
+    {
+      "entity": "24#楼",
+      "category": "overview",
+      "attr": "建筑面积",
+      "value": "2808.84",
+      "unit": "㎡",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "24#楼 | 13.15m | 3F | 2808.84㎡"
+      }
+    },
+    {
+      "entity": "25#楼",
+      "category": "overview",
+      "attr": "建筑高度",
+      "value": "13.15",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "25#楼 | 13.15m | 3F | 1560㎡"
+      }
+    },
+    {
+      "entity": "25#楼",
+      "category": "overview",
+      "attr": "层数",
+      "value": "3",
+      "unit": "F",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "25#楼 | 13.15m | 3F | 1560㎡"
+      }
+    },
+    {
+      "entity": "25#楼",
+      "category": "overview",
+      "attr": "建筑面积",
+      "value": "1560",
+      "unit": "㎡",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "25#楼 | 13.15m | 3F | 1560㎡"
+      }
+    },
+    {
+      "entity": "26#楼",
+      "category": "overview",
+      "attr": "建筑高度",
+      "value": "13.15",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "26#楼 | 13.15m | 3F | 1560㎡"
+      }
+    },
+    {
+      "entity": "26#楼",
+      "category": "overview",
+      "attr": "层数",
+      "value": "3",
+      "unit": "F",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "26#楼 | 13.15m | 3F | 1560㎡"
+      }
+    },
+    {
+      "entity": "26#楼",
+      "category": "overview",
+      "attr": "建筑面积",
+      "value": "1560",
+      "unit": "㎡",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "26#楼 | 13.15m | 3F | 1560㎡"
+      }
+    },
+    {
+      "entity": "地下车库",
+      "category": "overview",
+      "attr": "建筑高度",
+      "value": "-9.40",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "地下车库 | -9.40m | -2F | 38559.47㎡"
+      }
+    },
+    {
+      "entity": "地下车库",
+      "category": "overview",
+      "attr": "层数",
+      "value": "-2",
+      "unit": "F",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "地下车库 | -9.40m | -2F | 38559.47㎡"
+      }
+    },
+    {
+      "entity": "地下车库",
+      "category": "overview",
+      "attr": "建筑面积",
+      "value": "38559.47",
+      "unit": "㎡",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 30,
+        "section": "一",
+        "bbox": null,
+        "raw": "地下车库 | -9.40m | -2F | 38559.47㎡"
+      }
+    },
+    {
+      "entity": "模板",
+      "category": "material",
+      "attr": "规格尺寸",
+      "value": "916*1835*12mm",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 114,
+        "section": "三",
+        "bbox": null,
+        "raw": "1 | 模板 | 916*1835*12mm | 张 | 以实际数量为准 | 2024-6-20"
+      }
+    },
+    {
+      "entity": "木方",
+      "category": "material",
+      "attr": "规格尺寸",
+      "value": "50mm*70mm*3m",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 114,
+        "section": "三",
+        "bbox": null,
+        "raw": "2 | 木方 | 50mm*70mm*3m | 方 | 以实际数量为准 | 2024-6-20"
+      }
+    },
+    {
+      "entity": "盘扣式立杆",
+      "category": "material",
+      "attr": "长度规格",
+      "value": "1000、1500、2000、2500mm",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 114,
+        "section": "三",
+        "bbox": null,
+        "raw": "3 | 盘扣式立杆 | 1000、1500、2000、2500mm | m | 以实际数量为准 | 2024-6-20"
+      }
+    },
+    {
+      "entity": "盘扣式横杆",
+      "category": "material",
+      "attr": "长度规格",
+      "value": "600、900、1200mm",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 114,
+        "section": "三",
+        "bbox": null,
+        "raw": "4 | 盘扣式横杆 | 600、900、1200mm | m | 以实际数量为准 | 2024-6-20"
+      }
+    },
+    {
+      "entity": "斜拉杆",
+      "category": "material",
+      "attr": "规格尺寸",
+      "value": "1500*900、1500*600mm",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 114,
+        "section": "三",
+        "bbox": null,
+        "raw": "5 | 斜拉杆 | 1500*900、1500*600mm | 个 | 以实际数量为准 | 2024-6-20"
+      }
+    },
+    {
+      "entity": "可调托撑",
+      "category": "material",
+      "attr": "直径",
+      "value": "Φ36",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 114,
+        "section": "三",
+        "bbox": null,
+        "raw": "6 | 可调托撑 | Φ36 | 根 | 以实际数量为准 | 2024-6-20"
+      }
+    },
+    {
+      "entity": "对拉螺杆",
+      "category": "material",
+      "attr": "规格",
+      "value": "M14",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 114,
+        "section": "三",
+        "bbox": null,
+        "raw": "7 | 对拉螺杆 | M14 | 根 | 以实际数量为准 | 2024-6-20"
+      }
+    },
+    {
+      "entity": "-2层KL35混凝土梁",
+      "category": "measure",
+      "attr": "截面尺寸",
+      "value": "550×1300",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 141,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "新浇混凝土梁名称 | -2层KL35 | 混凝土梁计算截面尺寸(mm×mm) | 550×1300"
+      }
+    },
+    {
+      "entity": "-2层KL35混凝土梁",
+      "category": "measure",
+      "attr": "楼板厚度",
+      "value": "350",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 141,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "梁侧楼板计算厚度(mm) | 350 | 模板支架高度H(m) | 4.6"
+      }
+    },
+    {
+      "entity": "-2层KL35混凝土梁",
+      "category": "measure",
+      "attr": "模板支架高度",
+      "value": "4.6",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 141,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "梁侧楼板计算厚度(mm) | 350 | 模板支架高度H(m) | 4.6"
+      }
+    },
+    {
+      "entity": "-2层KL35混凝土梁",
+      "category": "measure",
+      "attr": "模板支架横向长度",
+      "value": "26.8",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 141,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "模板支架横向长度B(m) | 26.8 | 模板支架纵向长度L(m) | 60"
+      }
+    },
+    {
+      "entity": "-2层KL35混凝土梁",
+      "category": "measure",
+      "attr": "模板支架纵向长度",
+      "value": "60",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 141,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "模板支架横向长度B(m) | 26.8 | 模板支架纵向长度L(m) | 60"
+      }
+    },
+    {
+      "entity": "-2层KL35混凝土梁",
+      "category": "measure",
+      "attr": "梁跨度方向立杆间距la1",
+      "value": "450",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 141,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "梁跨度方向立杆间距la1(mm) | 450 | 450 | 450"
+      }
+    },
+    {
+      "entity": "-2层KL35混凝土梁",
+      "category": "measure",
+      "attr": "梁跨度方向立杆间距la2",
+      "value": "450",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 141,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "梁跨度方向立杆间距la2(mm) | 450 | 450 | 450"
+      }
+    },
+    {
+      "entity": "-2层KL35混凝土梁",
+      "category": "measure",
+      "attr": "梁两侧立杆横向间距lb",
+      "value": "1200",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 141,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "梁两侧立杆横向间距lb(mm) | 1200 | 1200 | 1200"
+      }
+    },
+    {
+      "entity": "-2层KL35混凝土梁",
+      "category": "measure",
+      "attr": "最大步距h",
+      "value": "1500",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 141,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "最大步距h(mm) | 1500 | 1500 | 1500"
+      }
+    },
+    {
+      "entity": "-2层KL35混凝土梁",
+      "category": "measure",
+      "attr": "顶层步距h'",
+      "value": "1500",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 141,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "顶层步距h'(mm) | 1500 | 1500 | 1500"
+      }
+    },
+    {
+      "entity": "-2层KL35混凝土梁",
+      "category": "measure",
+      "attr": "悬臂长度a",
+      "value": "650",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 141,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "可调托座伸出顶层水平杆的悬臂长度a(mm) | 650 | 650 | 650"
+      }
+    },
+    {
+      "entity": "-2层KL35混凝土梁",
+      "category": "measure",
+      "attr": "新浇混凝土楼板立杆纵横向间距",
+      "value": "900、900",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 141,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "新浇混凝土楼板立杆纵横向间距l'a(mm)、l'b(mm) | 900、900 | 900、900 | 900、900"
+      }
+    },
+    {
+      "entity": "-2层KL35混凝土梁",
+      "category": "measure",
+      "attr": "梁底支撑小梁最大悬挑长度",
+      "value": "200",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 141,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "梁底支撑小梁最大悬挑长度(mm) | 200 | 200 | 200"
+      }
+    },
+    {
+      "entity": "-2层KL35混凝土梁",
+      "category": "measure",
+      "attr": "梁底支撑小梁间距",
+      "value": "138",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 141,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "梁底支撑小梁间距(mm) | 138 | 138 | 138"
+      }
+    },
+    {
+      "entity": "-2层KL35混凝土梁",
+      "category": "measure",
+      "attr": "计算跨度",
+      "value": "7.35",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 145,
+        "section": "1.3",
+        "bbox": null,
+        "raw": "新浇混凝土梁计算跨度(m) | 7.35 | 7.35 | 7.35 | 7.35"
+      }
+    },
+    {
+      "entity": "-2层KL35混凝土梁",
+      "category": "measure",
+      "attr": "主梁间距",
+      "value": "500",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 145,
+        "section": "1.3",
+        "bbox": null,
+        "raw": "小梁布置方式 | 水平向布置 | 主梁间距(mm) | 主梁间距(mm) | 500"
+      }
+    },
+    {
+      "entity": "-2层KL35混凝土梁",
+      "category": "measure",
+      "attr": "对拉螺栓水平向间距",
+      "value": "500",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 145,
+        "section": "1.3",
+        "bbox": null,
+        "raw": "主梁合并根数 | 2 | 对拉螺栓水平向间距(mm) | 对拉螺栓水平向间距(mm) | 500"
+      }
+    },
+    {
+      "entity": "-2层KL35混凝土梁",
+      "category": "measure",
+      "attr": "梁下挂侧模高度",
+      "value": "950",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 145,
+        "section": "1.3",
+        "bbox": null,
+        "raw": "梁下挂侧模高度(mm) | 950 | 950 | 950 | 950"
+      }
+    },
+    {
+      "entity": "-2层KL38混凝土梁",
+      "category": "measure",
+      "attr": "截面尺寸",
+      "value": "650×900",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 149,
+        "section": "1.3.1",
+        "bbox": null,
+        "raw": "新浇混凝土梁名称 | -2层KL38 | 混凝土梁计算截面尺寸(mm×mm) | 650×900"
+      }
+    },
+    {
+      "entity": "-2层KL38混凝土梁",
+      "category": "measure",
+      "attr": "支架外侧模板高度Hm",
+      "value": "1000",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 149,
+        "section": "1.3.1",
+        "bbox": null,
+        "raw": "支架外侧模板高度Hm（mm） | 1000 | 1000 | 1000"
+      }
+    },
+    {
+      "entity": "-2层KL38混凝土梁",
+      "category": "measure",
+      "attr": "梁跨度方向立杆间距la",
+      "value": "900",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 149,
+        "section": "1.3.1",
+        "bbox": null,
+        "raw": "梁跨度方向立杆间距la(mm) | 900 | 900 | 900"
+      }
+    },
+    {
+      "entity": "-2层KL38混凝土梁",
+      "category": "measure",
+      "attr": "梁底支撑小梁间距",
+      "value": "93",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 149,
+        "section": "1.3.1",
+        "bbox": null,
+        "raw": "梁底支撑小梁间距(mm) | 93 | 93 | 93"
+      }
+    },
+    {
+      "entity": "-2层KL38混凝土梁",
+      "category": "measure",
+      "attr": "计算跨度",
+      "value": "7.3",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 153,
+        "section": "1.3.1",
+        "bbox": null,
+        "raw": "新浇混凝土梁计算跨度(m) | 7.3 | 7.3 | 7.3 | 7.3"
+      }
+    },
+    {
+      "entity": "-2层KL38混凝土梁",
+      "category": "measure",
+      "attr": "梁下挂侧模高度",
+      "value": "550",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 153,
+        "section": "1.3.1",
+        "bbox": null,
+        "raw": "梁下挂侧模高度(mm) | 550 | 550 | 550 | 550"
+      }
+    },
+    {
+      "entity": "-2层人防板",
+      "category": "measure",
+      "attr": "计算厚度",
+      "value": "350",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 158,
+        "section": "1.3.1",
+        "bbox": null,
+        "raw": "新浇混凝土楼板名称 | -2层人防板（17-18/AG-AJ轴） | 新浇混凝土楼板计算厚度(mm) | 350"
+      }
+    },
+    {
+      "entity": "-2层人防板",
+      "category": "measure",
+      "attr": "模板支架高度H",
+      "value": "4.6",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 158,
+        "section": "1.3.1",
+        "bbox": null,
+        "raw": "模板支架高度H(m) | 4.6 | 模板支架纵向长度L(m) | 31.4"
+      }
+    },
+    {
+      "entity": "-2层人防板",
+      "category": "measure",
+      "attr": "模板支架纵向长度L",
+      "value": "31.4",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 158,
+        "section": "1.3.1",
+        "bbox": null,
+        "raw": "模板支架高度H(m) | 4.6 | 模板支架纵向长度L(m) | 31.4"
+      }
+    },
+    {
+      "entity": "-2层人防板",
+      "category": "measure",
+      "attr": "模板支架横向长度B",
+      "value": "24.75",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 158,
+        "section": "1.3.1",
+        "bbox": null,
+        "raw": "模板支架横向长度B(m) | 24.75 | 立杆纵向间距la(mm) | 900"
+      }
+    },
+    {
+      "entity": "-2层人防板",
+      "category": "measure",
+      "attr": "立杆纵向间距la",
+      "value": "900",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 158,
+        "section": "1.3.1",
+        "bbox": null,
+        "raw": "模板支架横向长度B(m) | 24.75 | 立杆纵向间距la(mm) | 900"
+      }
+    },
+    {
+      "entity": "-2层人防板",
+      "category": "measure",
+      "attr": "立杆横向间距lb",
+      "value": "900",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 158,
+        "section": "1.3.1",
+        "bbox": null,
+        "raw": "立杆横向间距lb(mm) | 900 | 步距h(mm) | 1500"
+      }
+    },
+    {
+      "entity": "-2层人防板",
+      "category": "measure",
+      "attr": "步距h",
+      "value": "1500",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 158,
+        "section": "1.3.1",
+        "bbox": null,
+        "raw": "立杆横向间距lb(mm) | 900 | 步距h(mm) | 1500"
+      }
+    },
+    {
+      "entity": "-2层人防板",
+      "category": "measure",
+      "attr": "顶层步距hˊ",
+      "value": "1500",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 158,
+        "section": "1.3.1",
+        "bbox": null,
+        "raw": "顶层步距hˊ(mm) | 1500 | 支架可调托座支撑点至顶层水平杆中心线的距离a(mm) | 650"
+      }
+    },
+    {
+      "entity": "-2层人防板",
+      "category": "measure",
+      "attr": "支架可调托座支撑点至顶层水平杆中心线的距离a",
+      "value": "650",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 158,
+        "section": "1.3.1",
+        "bbox": null,
+        "raw": "顶层步距hˊ(mm) | 1500 | 支架可调托座支撑点至顶层水平杆中心线的距离a(mm) | 650"
+      }
+    },
+    {
+      "entity": "-2层人防板",
+      "category": "measure",
+      "attr": "小梁间距s",
+      "value": "200",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 158,
+        "section": "1.3.1",
+        "bbox": null,
+        "raw": "小梁间距s(mm) | 200 | 小梁最大悬挑长度l1(mm) | 150"
+      }
+    },
+    {
+      "entity": "-2层人防板",
+      "category": "measure",
+      "attr": "小梁最大悬挑长度l1",
+      "value": "150",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 158,
+        "section": "1.3.1",
+        "bbox": null,
+        "raw": "小梁间距s(mm) | 200 | 小梁最大悬挑长度l1(mm) | 150"
+      }
+    },
+    {
+      "entity": "-2层人防板",
+      "category": "measure",
+      "attr": "主梁最大悬挑长度l2",
+      "value": "100",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 158,
+        "section": "1.3.1",
+        "bbox": null,
+        "raw": "主梁最大悬挑长度l2(mm) | 100 | 结构表面的要求 | 结构表面外露"
+      }
+    },
+    {
+      "entity": "立杆",
+      "category": "material",
+      "attr": "外径",
+      "value": "48.3",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 181,
+        "section": "1.3.1",
+        "bbox": null,
+        "raw": "1 | 立杆 | B | 48.3 | 3.2 | ±0.3 | ±0.15"
+      }
+    },
+    {
+      "entity": "立杆",
+      "category": "material",
+      "attr": "壁厚",
+      "value": "3.2",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 181,
+        "section": "1.3.1",
+        "bbox": null,
+        "raw": "1 | 立杆 | B | 48.3 | 3.2 | ±0.3 | ±0.15"
+      }
+    },
+    {
+      "entity": "水平杆、水平斜杆",
+      "category": "material",
+      "attr": "外径",
+      "value": "48.3",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 181,
+        "section": "1.3.1",
+        "bbox": null,
+        "raw": "2 | 水平杆、水平斜杆 | B | 48.3 | 2.5 | ±0.5 | ±0.2"
+      }
+    },
+    {
+      "entity": "水平杆、水平斜杆",
+      "category": "material",
+      "attr": "壁厚",
+      "value": "2.5",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 181,
+        "section": "1.3.1",
+        "bbox": null,
+        "raw": "2 | 水平杆、水平斜杆 | B | 48.3 | 2.5 | ±0.5 | ±0.2"
+      }
+    },
+    {
+      "entity": "竖向斜杆",
+      "category": "material",
+      "attr": "外径",
+      "value": "48.3",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 181,
+        "section": "1.3.1",
+        "bbox": null,
+        "raw": "3 | 竖向斜杆 | B | 48.3 | 2.5 | ±0.5 | ±0.2"
+      }
+    },
+    {
+      "entity": "竖向斜杆",
+      "category": "material",
+      "attr": "壁厚",
+      "value": "2.5",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 181,
+        "section": "1.3.1",
+        "bbox": null,
+        "raw": "3 | 竖向斜杆 | B | 48.3 | 2.5 | ±0.5 | ±0.2"
+      }
+    },
+    {
+      "entity": "新浇混凝土梁",
+      "category": "measure",
+      "attr": "构件截面",
+      "value": "650×900",
+      "unit": "mm×mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 821,
+        "section": "四",
+        "bbox": null,
+        "raw": "新浇混凝土梁名称 | -2FKL38 | 混凝土梁计算截面尺寸(mm×mm) | 650×900"
+      }
+    },
+    {
+      "entity": "模板支架",
+      "category": "measure",
+      "attr": "立杆间距",
+      "value": "900",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 825,
+        "section": "四",
+        "bbox": null,
+        "raw": "梁跨度方向立杆间距la(mm) | 900"
+      }
+    },
+    {
+      "entity": "模板支架",
+      "category": "measure",
+      "attr": "立杆横向间距",
+      "value": "1200",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 825,
+        "section": "四",
+        "bbox": null,
+        "raw": "梁两侧立杆横向间距lb(mm) | 1200"
+      }
+    },
+    {
+      "entity": "模板支架",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1500",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 825,
+        "section": "四",
+        "bbox": null,
+        "raw": "最大步距h(mm) | 1500"
+      }
+    },
+    {
+      "entity": "模板支架",
+      "category": "measure",
+      "attr": "顶层步距",
+      "value": "1500",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 825,
+        "section": "四",
+        "bbox": null,
+        "raw": "顶层步距h'(mm) | 1500"
+      }
+    },
+    {
+      "entity": "可调托座",
+      "category": "measure",
+      "attr": "悬臂长度",
+      "value": "650",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 825,
+        "section": "四",
+        "bbox": null,
+        "raw": "可调托座伸出顶层水平杆的悬臂长度a(mm) | 650"
+      }
+    },
+    {
+      "entity": "楼板支撑架",
+      "category": "measure",
+      "attr": "立杆纵横向间距",
+      "value": "900、900",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 825,
+        "section": "四",
+        "bbox": null,
+        "raw": "新浇混凝土楼板立杆纵横向间距l'a(mm)、l'b(mm) | 900、900"
+      }
+    },
+    {
+      "entity": "梁底支撑小梁",
+      "category": "measure",
+      "attr": "最大悬挑长度",
+      "value": "200",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 825,
+        "section": "四",
+        "bbox": null,
+        "raw": "梁底支撑小梁最大悬挑长度(mm) | 200"
+      }
+    },
+    {
+      "entity": "梁底支撑小梁",
+      "category": "measure",
+      "attr": "根数",
+      "value": "8",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 825,
+        "section": "四",
+        "bbox": null,
+        "raw": "梁底支撑小梁根数 | 8"
+      }
+    },
+    {
+      "entity": "梁底支撑小梁",
+      "category": "measure",
+      "attr": "间距",
+      "value": "93",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 825,
+        "section": "四",
+        "bbox": null,
+        "raw": "梁底支撑小梁间距(mm) | 93"
+      }
+    },
+    {
+      "entity": "面板",
+      "category": "material",
+      "attr": "类型",
+      "value": "覆面木胶合板",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 832,
+        "section": "五",
+        "bbox": null,
+        "raw": "面板类型 | 覆面木胶合板 | 面板厚度t(mm) | 12"
+      }
+    },
+    {
+      "entity": "面板",
+      "category": "measure",
+      "attr": "厚度",
+      "value": "12",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 832,
+        "section": "五",
+        "bbox": null,
+        "raw": "面板类型 | 覆面木胶合板 | 面板厚度t(mm) | 12"
+      }
+    },
+    {
+      "entity": "小梁",
+      "category": "material",
+      "attr": "类型",
+      "value": "方木",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 860,
+        "section": "五",
+        "bbox": null,
+        "raw": "小梁类型 | 方木 | 小梁截面类型(mm) | 45×65"
+      }
+    },
+    {
+      "entity": "小梁",
+      "category": "measure",
+      "attr": "截面",
+      "value": "45×65",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 860,
+        "section": "五",
+        "bbox": null,
+        "raw": "小梁类型 | 方木 | 小梁截面类型(mm) | 45×65"
+      }
+    },
+    {
+      "entity": "主梁",
+      "category": "material",
+      "attr": "类型",
+      "value": "钢管",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 911,
+        "section": "六",
+        "bbox": null,
+        "raw": "主梁类型 | 钢管 | 主梁截面类型(mm) | Φ48×2.7"
+      }
+    },
+    {
+      "entity": "主梁",
+      "category": "measure",
+      "attr": "截面",
+      "value": "Φ48×2.7",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 911,
+        "section": "六",
+        "bbox": null,
+        "raw": "主梁类型 | 钢管 | 主梁截面类型(mm) | Φ48×2.7"
+      }
+    },
+    {
+      "entity": "主梁",
+      "category": "measure",
+      "attr": "计算截面",
+      "value": "Φ48×2.6",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 911,
+        "section": "六",
+        "bbox": null,
+        "raw": "主梁计算截面类型(mm) | Φ48×2.6 | 主梁抗弯强度设计值[f](N/mm2) | 205"
+      }
+    },
+    {
+      "entity": "立杆",
+      "category": "measure",
+      "attr": "截面类型",
+      "value": "Ф48×3.2",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 951,
+        "section": "十",
+        "bbox": null,
+        "raw": "立杆钢管截面类型(mm) | Ф48×3.2 | 立杆钢管计算截面类型(mm) | Ф48×3.2"
+      }
+    },
+    {
+      "entity": "钢材",
+      "category": "material",
+      "attr": "等级",
+      "value": "Q355",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 951,
+        "section": "十",
+        "bbox": null,
+        "raw": "钢材等级 | Q355 | 立杆截面面积A(mm2) | 450"
+      }
+    },
+    {
+      "entity": "模板支架",
+      "category": "measure",
+      "attr": "高度",
+      "value": "4.6",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 975,
+        "section": "十一",
+        "bbox": null,
+        "raw": "模板支架高度H(m) | 4.6 | 模板支架纵向长度L(m) | 60"
+      }
+    },
+    {
+      "entity": "模板支架",
+      "category": "measure",
+      "attr": "纵向长度",
+      "value": "60",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 975,
+        "section": "十一",
+        "bbox": null,
+        "raw": "模板支架高度H(m) | 4.6 | 模板支架纵向长度L(m) | 60"
+      }
+    },
+    {
+      "entity": "模板支架",
+      "category": "measure",
+      "attr": "横向长度",
+      "value": "26.8",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 975,
+        "section": "十一",
+        "bbox": null,
+        "raw": "模板支架横向长度B(m) | 26.8 | 26.8 | 26.8"
+      }
+    },
+    {
+      "entity": "支撑层楼板",
+      "category": "measure",
+      "attr": "厚度",
+      "value": "150",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 987,
+        "section": "三",
+        "bbox": null,
+        "raw": "支撑层楼板厚度h(mm) | 150 | 混凝土强度等级 | C30"
+      }
+    },
+    {
+      "entity": "混凝土",
+      "category": "material",
+      "attr": "强度等级",
+      "value": "C30",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 987,
+        "section": "三",
+        "bbox": null,
+        "raw": "支撑层楼板厚度h(mm) | 150 | 混凝土强度等级 | C30"
+      }
+    },
+    {
+      "entity": "-2层KL38",
+      "category": "measure",
+      "attr": "混凝土梁截面尺寸",
+      "value": "650×900",
+      "unit": "mmxmm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 1016,
+        "section": "五",
+        "bbox": null,
+        "raw": "新浇混凝梁名称 | -2层KL38 | 混凝土梁截面尺寸(mmxmm) | 650×900"
+      }
+    },
+    {
+      "entity": "-2层KL38",
+      "category": "measure",
+      "attr": "新浇混凝土梁计算跨度",
+      "value": "7.3",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 1016,
+        "section": "五",
+        "bbox": null,
+        "raw": "新浇混凝土梁计算跨度(m) | 7.3 | 7.3 | 7.3"
+      }
+    },
+    {
+      "entity": "模板",
+      "category": "material",
+      "attr": "类型",
+      "value": "覆面木胶合板",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 1034,
+        "section": "五",
+        "bbox": null,
+        "raw": "模板类型 | 覆面木胶合板 | 模板厚度(mm) | 12"
+      }
+    },
+    {
+      "entity": "模板",
+      "category": "measure",
+      "attr": "厚度",
+      "value": "12",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 1034,
+        "section": "五",
+        "bbox": null,
+        "raw": "模板类型 | 覆面木胶合板 | 模板厚度(mm) | 12"
+      }
+    },
+    {
+      "entity": "主梁",
+      "category": "measure",
+      "attr": "计算截面类型",
+      "value": "Φ48×2.7",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 1082,
+        "section": "三",
+        "bbox": null,
+        "raw": "主梁计算截面类型(mm) | Φ48×2.7 | 主梁合并根数 | 2"
+      }
+    },
+    {
+      "entity": "对拉螺栓",
+      "category": "material",
+      "attr": "类型",
+      "value": "M14",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 1109,
+        "section": "四",
+        "bbox": null,
+        "raw": "对拉螺栓类型 | M14 | 轴向拉力设计值Ntb(kN) | 17.8"
+      }
+    },
+    {
+      "entity": "梁跨度方向立杆",
+      "category": "measure",
+      "attr": "间距la1",
+      "value": "450",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 1127,
+        "section": "五",
+        "bbox": null,
+        "raw": "梁跨度方向立杆间距la1(mm) | 450"
+      }
+    },
+    {
+      "entity": "梁跨度方向立杆",
+      "category": "measure",
+      "attr": "间距la2",
+      "value": "450",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 1127,
+        "section": "五",
+        "bbox": null,
+        "raw": "梁跨度方向立杆间距la2(mm) | 450"
+      }
+    },
+    {
+      "entity": "梁底支撑小梁",
+      "category": "measure",
+      "attr": "间距",
+      "value": "110",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 1127,
+        "section": "五",
+        "bbox": null,
+        "raw": "梁底支撑小梁间距(mm) | 110"
+      }
+    },
+    {
+      "entity": "-2层KL35",
+      "category": "measure",
+      "attr": "混凝土梁截面尺寸",
+      "value": "550×1300",
+      "unit": "mmxmm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 1318,
+        "section": "六",
+        "bbox": null,
+        "raw": "新浇混凝梁名称 | -2层KL35 | 混凝土梁截面尺寸(mmxmm) | 550×1300"
+      }
+    },
+    {
+      "entity": "-2层KL35",
+      "category": "measure",
+      "attr": "新浇混凝土梁计算跨度",
+      "value": "7.35",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 1318,
+        "section": "六",
+        "bbox": null,
+        "raw": "新浇混凝土梁计算跨度(m) | 7.35 | 7.35 | 7.35"
+      }
+    },
+    {
+      "entity": "模板支架",
+      "category": "measure",
+      "attr": "横向长度B",
+      "value": "24.75",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 1426,
+        "section": "六",
+        "bbox": null,
+        "raw": "模板支架横向长度B(m) | 24.75"
+      }
+    },
+    {
+      "entity": "模板支架顶部",
+      "category": "measure",
+      "attr": "距地面高度",
+      "value": "4.6",
+      "unit": "m",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 1428,
+        "section": "六",
+        "bbox": null,
+        "raw": "风荷载标准值ωk(kN/m2) | 模板支架顶部距地面高度(m) | 4.6 | 0.098"
+      }
+    },
+    {
+      "entity": "脚手架",
+      "category": "overview",
+      "attr": "安全等级",
+      "value": "I级",
+      "unit": "",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 1430,
+        "section": "六",
+        "bbox": null,
+        "raw": "结构重要性系数γ0 | 1.1 | 脚手架安全等级 | I级"
+      }
+    },
+    {
+      "entity": "立杆",
+      "category": "measure",
+      "attr": "纵向间距la",
+      "value": "900",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 1430,
+        "section": "六",
+        "bbox": null,
+        "raw": "主梁布置方向 | 平行立杆纵向方向 | 立杆纵向间距la(mm) | 900"
+      }
+    },
+    {
+      "entity": "小梁",
+      "category": "measure",
+      "attr": "间距s",
+      "value": "200",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 1456,
+        "section": "六",
+        "bbox": null,
+        "raw": "小梁间距s(mm) | 200"
+      }
+    },
+    {
+      "entity": "支架可调托座支撑点至顶层水平杆中心线",
+      "category": "measure",
+      "attr": "距离a",
+      "value": "650",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 1537,
+        "section": "十一",
+        "bbox": null,
+        "raw": "支架可调托座支撑点至顶层水平杆中心线的距离a(mm) | 650 | 立杆钢管截面类型(mm) | Ф48×3.2"
+      }
+    },
+    {
+      "entity": "立杆钢管",
+      "category": "measure",
+      "attr": "截面类型",
+      "value": "Ф48×3.2",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 1537,
+        "section": "十一",
+        "bbox": null,
+        "raw": "支架可调托座支撑点至顶层水平杆中心线的距离a(mm) | 650 | 立杆钢管截面类型(mm) | Ф48×3.2"
+      }
+    },
+    {
+      "entity": "步距h",
+      "category": "measure",
+      "attr": "数值",
+      "value": "1500",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 1537,
+        "section": "十一",
+        "bbox": null,
+        "raw": "架体顶层步距修正系数γ | 0.9 | 步距h(mm) | 1500"
+      }
+    },
+    {
+      "entity": "顶部步距h'",
+      "category": "measure",
+      "attr": "数值",
+      "value": "1500",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 1537,
+        "section": "十一",
+        "bbox": null,
+        "raw": "顶部步距h'(mm) | 1500"
+      }
+    },
+    {
+      "entity": "支撑层楼板",
+      "category": "measure",
+      "attr": "厚度h",
+      "value": "120",
+      "unit": "mm",
+      "conf": 0.85,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 1591,
+        "section": "十一",
+        "bbox": null,
+        "raw": "支撑层楼板厚度h(mm) | 120 | 混凝土强度等级 | C30"
+      }
+    }
+  ],
+  "extras": {
+    "outline": [
+      {
+        "level": 1,
+        "num": "一",
+        "title": "一、工程概况"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "1.模板支撑体系工程概况和特点"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、基本概况"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、设计概况"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "3、高大支模部位模板支撑体系工程概况和特点"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "4、高大支撑体系的地基基础"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "2.施工平面及立面布置"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、施工总平面布置图"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "3.施工要求"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "4.风险辨识与分级"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "5.施工地的气候特征和季节性天气"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "6.参建各方责任主体单位"
+      },
+      {
+        "level": 1,
+        "num": "二",
+        "title": "二、编制依据"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "1.法律依据"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "2.项目文件"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "3.施工组织设计"
+      },
+      {
+        "level": 1,
+        "num": "三",
+        "title": "三、施工计划"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "1.施工进度计划"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "2.材料与设备计划"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、材料计划"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、设备计划"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "3.劳动力计划"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、管理制度"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、班组管理人员要求表"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "3、现场作业人员计划"
+      },
+      {
+        "level": 1,
+        "num": "四",
+        "title": "四、施工工艺技术"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "1.技术参数"
+      },
+      {
+        "level": 3,
+        "num": "1.1",
+        "title": "1.1、模板设计"
+      },
+      {
+        "level": 3,
+        "num": "1.2",
+        "title": "1.2、计算参数"
+      },
+      {
+        "level": 3,
+        "num": "1.3",
+        "title": "1.3、材料参数"
+      },
+      {
+        "level": 3,
+        "num": "1.3.1",
+        "title": "盘扣式钢管脚手架"
+      },
+      {
+        "level": 3,
+        "num": "1.3.2",
+        "title": "模板木方"
+      },
+      {
+        "level": 3,
+        "num": "1.3.3",
+        "title": "可调顶托"
+      },
+      {
+        "level": 3,
+        "num": "1.3.4",
+        "title": "M14 对拉螺栓"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "2.工艺流程"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "3.施工方法及操作要求"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "4.支撑架使用要求"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、混凝土浇筑方式、顺序"
+      },
+      {
+        "level": 2,
+        "num": "1.1",
+        "title": "现场主要运输机具安排"
+      },
+      {
+        "level": 2,
+        "num": "1.2",
+        "title": "混凝土结构施工安排"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、模架使用安全要求"
+      },
+      {
+        "level": 2,
+        "num": "2.3",
+        "title": "垫板应准确地放置在定位线上，并保持水平。"
+      },
+      {
+        "level": 2,
+        "num": "2.4",
+        "title": "连墙件、斜撑必须与架体同步搭设。采用扣件式钢管构配件做加固件、斜撑"
+      },
+      {
+        "level": 2,
+        "num": "2.5",
+        "title": "模板支撑架和满堂支撑架搭设要求："
+      },
+      {
+        "level": 2,
+        "num": "2.6",
+        "title": "高大支模板搭设还应满足以下搭设要求："
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "5.检查要求"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、模板支撑体系主要材料进场质量检查"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、模板支撑体系应在下列阶段进行检查："
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "3、模板支架体系使用中，应定期检查下列项目："
+      },
+      {
+        "level": 1,
+        "num": "五",
+        "title": "五、施工保证措施"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "1.组织保障措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、安全管理组织机构"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、安全保证体系"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "3、相应人员安全职责"
+      },
+      {
+        "level": 2,
+        "num": "3.1",
+        "title": "项目经理职责："
+      },
+      {
+        "level": 2,
+        "num": "3.2",
+        "title": "项目副经理职责："
+      },
+      {
+        "level": 2,
+        "num": "3.3",
+        "title": "项目总工职责："
+      },
+      {
+        "level": 2,
+        "num": "3.4",
+        "title": "安全总监职责："
+      },
+      {
+        "level": 2,
+        "num": "3.5",
+        "title": "施工员职责："
+      },
+      {
+        "level": 2,
+        "num": "3.6",
+        "title": "质检员职责："
+      },
+      {
+        "level": 2,
+        "num": "3.7",
+        "title": "安全员职责："
+      },
+      {
+        "level": 2,
+        "num": "3.8",
+        "title": "材料员职责："
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "2.技术措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、安全生产保证体系"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、防高坠安全措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "3、高大模板施工技术措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "4、施工工期保证措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "5、高大支模安装、拆除过程中的安全措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "6、临边防护安全措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "7、有限空间作业安全措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "8、消防安全技术措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "9、施工现场防火措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "10、安全用电管理措施"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "3.监测监控措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、保证材料质量的控制措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、预防轴线偏位、标高不正确的控制措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "3、施工质量保证措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "4、预防漏浆的控制措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "5、成品保护措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "6、砼浇筑施工注意事项"
+      },
+      {
+        "level": 1,
+        "num": "六",
+        "title": "六、施工管理及作业人员配备和分工"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "1.施工管理人员"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1.施工管理人员"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、管理人员岗位职责"
+      },
+      {
+        "level": 2,
+        "num": "2.1",
+        "title": "项目经理"
+      },
+      {
+        "level": 2,
+        "num": "2.2",
+        "title": "项目技术负责人"
+      },
+      {
+        "level": 2,
+        "num": "2.3",
+        "title": "质检员"
+      },
+      {
+        "level": 2,
+        "num": "2.4",
+        "title": "施工员"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "2.专职安全人员"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、专职安全员人员信息"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、专职安全员岗位职责"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "3.特种作业人员"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、特种作业人员信息"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、特种作业人员岗位职责"
+      },
+      {
+        "level": 2,
+        "num": "2.1",
+        "title": "架子工"
+      },
+      {
+        "level": 2,
+        "num": "2.2",
+        "title": "电工"
+      },
+      {
+        "level": 2,
+        "num": "2.3",
+        "title": "电焊工"
+      },
+      {
+        "level": 2,
+        "num": "2.4",
+        "title": "司索人员职责"
+      },
+      {
+        "level": 2,
+        "num": "2.5",
+        "title": "重型机械司机岗位职责"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "4.其他作业人员"
+      },
+      {
+        "level": 1,
+        "num": "七",
+        "title": "七、验收要求"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "1.验收标准"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "2.验收程序及人员"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "3.验收内容"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、施工验收内容"
+      },
+      {
+        "level": 2,
+        "num": "1.1",
+        "title": "脚手架构配件的检查与验收"
+      },
+      {
+        "level": 2,
+        "num": "1.2",
+        "title": "支模架的检查与验收"
+      },
+      {
+        "level": 2,
+        "num": "1.3",
+        "title": "支模架应进行检查与验收的情况："
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、模板施工验收内容"
+      },
+      {
+        "level": 2,
+        "num": "2.1",
+        "title": "主控项目"
+      },
+      {
+        "level": 2,
+        "num": "2.2",
+        "title": "一般项目"
+      },
+      {
+        "level": 2,
+        "num": "2.3",
+        "title": "现浇结构模板安装的偏差应符合表 4 的规定："
+      },
+      {
+        "level": 2,
+        "num": "2.4",
+        "title": "模板垂直度控制"
+      },
+      {
+        "level": 2,
+        "num": "2.5",
+        "title": "顶板模板标高控制"
+      },
+      {
+        "level": 2,
+        "num": "2.6",
+        "title": "模板的变形控制"
+      },
+      {
+        "level": 1,
+        "num": "八",
+        "title": "八、应急处置措施"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "1.应急处置领导小组组成与职责"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、职责分工"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、应急流程"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "3、应急救援小组联系方式"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "4、检查和教育"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "2.应急事件（重大隐患和事故）及其应急措施"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "3.救援医院信息(名称、电话、救援线路)"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "4.应急物资准备"
+      },
+      {
+        "level": 1,
+        "num": "九",
+        "title": "九、计算书及相关图纸"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "1.计算书"
+      },
+      {
+        "level": 1,
+        "num": "一",
+        "title": "工程属性"
+      },
+      {
+        "level": 1,
+        "num": "二",
+        "title": "荷载设计"
+      },
+      {
+        "level": 1,
+        "num": "三",
+        "title": "模板体系设计"
+      },
+      {
+        "level": 1,
+        "num": "四",
+        "title": "面板验算"
+      },
+      {
+        "level": 1,
+        "num": "五",
+        "title": "小梁验算"
+      },
+      {
+        "level": 1,
+        "num": "六",
+        "title": "主梁验算"
+      },
+      {
+        "level": 1,
+        "num": "七",
+        "title": "可调托座验算"
+      },
+      {
+        "level": 1,
+        "num": "八",
+        "title": "立杆验算"
+      },
+      {
+        "level": 1,
+        "num": "九",
+        "title": "高宽比验算"
+      },
+      {
+        "level": 1,
+        "num": "十",
+        "title": "架体抗倾覆验算"
+      },
+      {
+        "level": 1,
+        "num": "十一",
+        "title": "立杆支承面承载力验算"
+      },
+      {
+        "level": 1,
+        "num": "一",
+        "title": "工程属性"
+      },
+      {
+        "level": 1,
+        "num": "二",
+        "title": "荷载组合"
+      },
+      {
+        "level": 1,
+        "num": "三",
+        "title": "支撑体系设计"
+      },
+      {
+        "level": 1,
+        "num": "四",
+        "title": "面板验算"
+      },
+      {
+        "level": 1,
+        "num": "五",
+        "title": "小梁验算"
+      },
+      {
+        "level": 1,
+        "num": "六",
+        "title": "主梁验算"
+      },
+      {
+        "level": 1,
+        "num": "七",
+        "title": "对拉螺栓验算"
+      },
+      {
+        "level": 1,
+        "num": "一",
+        "title": "工程属性"
+      },
+      {
+        "level": 1,
+        "num": "二",
+        "title": "荷载设计"
+      },
+      {
+        "level": 1,
+        "num": "三",
+        "title": "模板体系设计"
+      },
+      {
+        "level": 1,
+        "num": "四",
+        "title": "面板验算"
+      },
+      {
+        "level": 1,
+        "num": "五",
+        "title": "小梁验算"
+      },
+      {
+        "level": 1,
+        "num": "六",
+        "title": "主梁验算"
+      },
+      {
+        "level": 1,
+        "num": "七",
+        "title": "可调托座验算"
+      },
+      {
+        "level": 1,
+        "num": "八",
+        "title": "立杆验算"
+      },
+      {
+        "level": 1,
+        "num": "九",
+        "title": "高宽比验算"
+      },
+      {
+        "level": 1,
+        "num": "十",
+        "title": "架体抗倾覆验算"
+      },
+      {
+        "level": 1,
+        "num": "十一",
+        "title": "立杆支承面承载力验算"
+      },
+      {
+        "level": 1,
+        "num": "一",
+        "title": "工程属性"
+      },
+      {
+        "level": 1,
+        "num": "二",
+        "title": "荷载组合"
+      },
+      {
+        "level": 1,
+        "num": "三",
+        "title": "支撑体系设计"
+      },
+      {
+        "level": 1,
+        "num": "四",
+        "title": "面板验算"
+      },
+      {
+        "level": 1,
+        "num": "五",
+        "title": "小梁验算"
+      },
+      {
+        "level": 1,
+        "num": "六",
+        "title": "主梁验算"
+      },
+      {
+        "level": 1,
+        "num": "七",
+        "title": "对拉螺栓验算"
+      },
+      {
+        "level": 1,
+        "num": "一",
+        "title": "工程属性"
+      },
+      {
+        "level": 1,
+        "num": "二",
+        "title": "荷载设计"
+      },
+      {
+        "level": 1,
+        "num": "三",
+        "title": "模板体系设计"
+      },
+      {
+        "level": 1,
+        "num": "四",
+        "title": "面板验算"
+      },
+      {
+        "level": 1,
+        "num": "五",
+        "title": "小梁验算"
+      },
+      {
+        "level": 1,
+        "num": "六",
+        "title": "主梁验算"
+      },
+      {
+        "level": 1,
+        "num": "七",
+        "title": "可调托座验算"
+      },
+      {
+        "level": 1,
+        "num": "八",
+        "title": "立杆验算"
+      },
+      {
+        "level": 1,
+        "num": "九",
+        "title": "高宽比验算"
+      },
+      {
+        "level": 1,
+        "num": "十",
+        "title": "抗倾覆验算"
+      },
+      {
+        "level": 1,
+        "num": "十一",
+        "title": "立杆支承面承载力验算"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "2.相关图纸"
+      }
+    ],
+    "table_count": 80,
+    "para_count": 1531,
+    "llm_stats": {
+      "候选行": 1341,
+      "LLM抽取": 202,
+      "幻觉拦截": 5
+    }
+  },
+  "warnings": []
+}

@@ -1,0 +1,1527 @@
+{
+  "doc_type": "plan",
+  "file": "D:\\ProgramData\\zcode\\智建赛题\\data\\施工方案\\高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+  "meta": {
+    "标题(首段)": "西安市雁塔区沙滹沱片区（沙滹沱村）",
+    "章节树深度": 3
+  },
+  "parameters": [
+    {
+      "entity": "工程概况",
+      "category": "overview",
+      "attr": "结构形式",
+      "value": "钢筋混凝土剪力墙结构",
+      "unit": "",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 28,
+        "section": "一",
+        "bbox": null,
+        "raw": "本项目为一类住宅建筑，结构设计使用年限：50年，结构安全等级：二级，建筑耐火等级：一级，抗震设防烈度：8度，人防等级核：核五级常五。工程建筑结构类型：钢筋混凝土剪力墙结构，现浇混凝土楼板，基础形式为素混凝土桩＋筏板，车库结构形式为全现浇框架结构，基础形式为独立基础+防水板。"
+      }
+    },
+    {
+      "entity": "工程概况",
+      "category": "overview",
+      "attr": "基础形式",
+      "value": "素混凝土桩",
+      "unit": "",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 28,
+        "section": "一",
+        "bbox": null,
+        "raw": "本项目为一类住宅建筑，结构设计使用年限：50年，结构安全等级：二级，建筑耐火等级：一级，抗震设防烈度：8度，人防等级核：核五级常五。工程建筑结构类型：钢筋混凝土剪力墙结构，现浇混凝土楼板，基础形式为素混凝土桩＋筏板，车库结构形式为全现浇框架结构，基础形式为独立基础+防水板。"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": 235,
+        "section": "1.3.4",
+        "bbox": null,
+        "raw": "7）对标准步距为1.5m的支撑架，应根据支撑架搭设高度、支撑架型号及立杆轴向力设计值进行竖向斜杆布置，竖向斜杆布置形式选用应符合下表的要求。"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "支撑搭设高度",
+      "value": "4.6",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "梁侧楼板计算厚度(mm) | 350 | 模板支架高度H(m) | 4.6"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "立杆间距",
+      "value": "0.45",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "梁跨度方向立杆间距la1(mm) | 450 | 450 | 450"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "立杆间距",
+      "value": "0.45",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "梁跨度方向立杆间距la2(mm) | 450 | 450 | 450"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "最大步距h(mm) | 1500 | 1500 | 1500"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "顶层步距h'(mm) | 1500 | 1500 | 1500"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "支撑搭设高度",
+      "value": "4.6",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "梁侧楼板计算厚度(mm) | 350 | 模板支架高度H(m) | 4.6"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "支撑搭设高度",
+      "value": "1",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "支架外侧模板高度Hm（mm） | 1000 | 1000 | 1000"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "立杆间距",
+      "value": "0.9",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "梁跨度方向立杆间距la(mm) | 900 | 900 | 900"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "最大步距h(mm) | 1500 | 1500 | 1500"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "顶层步距h'(mm) | 1500 | 1500 | 1500"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "支撑搭设高度",
+      "value": "4.6",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "模板支架高度H(m) | 4.6 | 模板支架纵向长度L(m) | 31.4"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "立杆横向间距lb(mm) | 900 | 步距h(mm) | 1500"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "1.2",
+        "bbox": null,
+        "raw": "顶层步距hˊ(mm) | 1500 | 支架可调托座支撑点至顶层水平杆中心线的距离a(mm) | 650"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "支撑搭设高度",
+      "value": "4.6",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "一",
+        "bbox": null,
+        "raw": "梁侧楼板计算厚度(mm) | 350 | 模板支架高度H(m) | 4.6"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "立杆间距",
+      "value": "0.9",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "三",
+        "bbox": null,
+        "raw": "梁跨度方向立杆间距la(mm) | 900"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "三",
+        "bbox": null,
+        "raw": "最大步距h(mm) | 1500"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "三",
+        "bbox": null,
+        "raw": "顶层步距h'(mm) | 1500"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "八",
+        "bbox": null,
+        "raw": "步距h(mm) | 1500 | 顶层步距h'(mm) | 1500"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "八",
+        "bbox": null,
+        "raw": "步距h(mm) | 1500 | 顶层步距h'(mm) | 1500"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "支撑搭设高度",
+      "value": "4.6",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "十",
+        "bbox": null,
+        "raw": "模板支架高度H(m) | 4.6 | 模板支架纵向长度L(m) | 60"
+      }
+    },
+    {
+      "entity": "混凝土(板)",
+      "category": "material",
+      "attr": "强度等级",
+      "value": "C30",
+      "unit": "",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "十一",
+        "bbox": null,
+        "raw": "支撑层楼板厚度h(mm) | 150 | 混凝土强度等级 | C30"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "支撑搭设高度",
+      "value": "4.6",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "一",
+        "bbox": null,
+        "raw": "梁侧楼板计算厚度(mm) | 350 | 模板支架高度H(m) | 4.6"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "立杆间距",
+      "value": "0.45",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "三",
+        "bbox": null,
+        "raw": "梁跨度方向立杆间距la1(mm) | 450"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "立杆间距",
+      "value": "0.45",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "三",
+        "bbox": null,
+        "raw": "梁跨度方向立杆间距la2(mm) | 450"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "三",
+        "bbox": null,
+        "raw": "最大步距h(mm) | 1500"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "三",
+        "bbox": null,
+        "raw": "顶层步距h'(mm) | 1500"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "八",
+        "bbox": null,
+        "raw": "步距h(mm) | 1500 | 顶层步距h'(mm) | 1500"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "八",
+        "bbox": null,
+        "raw": "步距h(mm) | 1500 | 顶层步距h'(mm) | 1500"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "支撑搭设高度",
+      "value": "4.6",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "十",
+        "bbox": null,
+        "raw": "模板支架高度H(m) | 4.6 | 模板支架纵向长度L(m) | 60"
+      }
+    },
+    {
+      "entity": "混凝土(板)",
+      "category": "material",
+      "attr": "强度等级",
+      "value": "C30",
+      "unit": "",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "十一",
+        "bbox": null,
+        "raw": "支撑层楼板厚度h(mm) | 150 | 混凝土强度等级 | C30"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "支撑搭设高度",
+      "value": "4.6",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "一",
+        "bbox": null,
+        "raw": "模板支架高度H(m) | 4.6 | 模板支架纵向长度L(m) | 31.4"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "三",
+        "bbox": null,
+        "raw": "立杆横向间距lb(mm) | 900 | 步距h(mm) | 1500"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "三",
+        "bbox": null,
+        "raw": "顶层步距hˊ(mm) | 1500 | 支架可调托座支撑点至顶层水平杆中心线的距离a(mm) | 650"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "八",
+        "bbox": null,
+        "raw": "架体顶层步距修正系数γ | 0.9 | 步距h(mm) | 1500"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.5",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "八",
+        "bbox": null,
+        "raw": "顶部步距h'(mm) | 1500"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "支撑搭设高度",
+      "value": "4.6",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "十",
+        "bbox": null,
+        "raw": "模板支架高度H(m) | 4.6 | 模板支架纵向长度L(m) | 31.4"
+      }
+    },
+    {
+      "entity": "混凝土(板)",
+      "category": "material",
+      "attr": "强度等级",
+      "value": "C30",
+      "unit": "",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "高支模专项施工方案样例(CallStorm-SmartReview仓库).docx",
+        "page": -1,
+        "section": "十一",
+        "bbox": null,
+        "raw": "支撑层楼板厚度h(mm) | 120 | 混凝土强度等级 | C30"
+      }
+    }
+  ],
+  "extras": {
+    "outline": [
+      {
+        "level": 1,
+        "num": "一",
+        "title": "一、工程概况"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "1.模板支撑体系工程概况和特点"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、基本概况"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、设计概况"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "3、高大支模部位模板支撑体系工程概况和特点"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "4、高大支撑体系的地基基础"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "2.施工平面及立面布置"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、施工总平面布置图"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "3.施工要求"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "4.风险辨识与分级"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "5.施工地的气候特征和季节性天气"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "6.参建各方责任主体单位"
+      },
+      {
+        "level": 1,
+        "num": "二",
+        "title": "二、编制依据"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "1.法律依据"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "2.项目文件"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "3.施工组织设计"
+      },
+      {
+        "level": 1,
+        "num": "三",
+        "title": "三、施工计划"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "1.施工进度计划"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "2.材料与设备计划"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、材料计划"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、设备计划"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "3.劳动力计划"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、管理制度"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、班组管理人员要求表"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "3、现场作业人员计划"
+      },
+      {
+        "level": 1,
+        "num": "四",
+        "title": "四、施工工艺技术"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "1.技术参数"
+      },
+      {
+        "level": 3,
+        "num": "1.1",
+        "title": "1.1、模板设计"
+      },
+      {
+        "level": 3,
+        "num": "1.2",
+        "title": "1.2、计算参数"
+      },
+      {
+        "level": 3,
+        "num": "1.3",
+        "title": "1.3、材料参数"
+      },
+      {
+        "level": 3,
+        "num": "1.3.1",
+        "title": "盘扣式钢管脚手架"
+      },
+      {
+        "level": 3,
+        "num": "1.3.2",
+        "title": "模板木方"
+      },
+      {
+        "level": 3,
+        "num": "1.3.3",
+        "title": "可调顶托"
+      },
+      {
+        "level": 3,
+        "num": "1.3.4",
+        "title": "M14 对拉螺栓"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "2.工艺流程"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "3.施工方法及操作要求"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "4.支撑架使用要求"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、混凝土浇筑方式、顺序"
+      },
+      {
+        "level": 2,
+        "num": "1.1",
+        "title": "现场主要运输机具安排"
+      },
+      {
+        "level": 2,
+        "num": "1.2",
+        "title": "混凝土结构施工安排"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、模架使用安全要求"
+      },
+      {
+        "level": 2,
+        "num": "2.3",
+        "title": "垫板应准确地放置在定位线上，并保持水平。"
+      },
+      {
+        "level": 2,
+        "num": "2.4",
+        "title": "连墙件、斜撑必须与架体同步搭设。采用扣件式钢管构配件做加固件、斜撑"
+      },
+      {
+        "level": 2,
+        "num": "2.5",
+        "title": "模板支撑架和满堂支撑架搭设要求："
+      },
+      {
+        "level": 2,
+        "num": "2.6",
+        "title": "高大支模板搭设还应满足以下搭设要求："
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "5.检查要求"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、模板支撑体系主要材料进场质量检查"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、模板支撑体系应在下列阶段进行检查："
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "3、模板支架体系使用中，应定期检查下列项目："
+      },
+      {
+        "level": 1,
+        "num": "五",
+        "title": "五、施工保证措施"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "1.组织保障措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、安全管理组织机构"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、安全保证体系"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "3、相应人员安全职责"
+      },
+      {
+        "level": 2,
+        "num": "3.1",
+        "title": "项目经理职责："
+      },
+      {
+        "level": 2,
+        "num": "3.2",
+        "title": "项目副经理职责："
+      },
+      {
+        "level": 2,
+        "num": "3.3",
+        "title": "项目总工职责："
+      },
+      {
+        "level": 2,
+        "num": "3.4",
+        "title": "安全总监职责："
+      },
+      {
+        "level": 2,
+        "num": "3.5",
+        "title": "施工员职责："
+      },
+      {
+        "level": 2,
+        "num": "3.6",
+        "title": "质检员职责："
+      },
+      {
+        "level": 2,
+        "num": "3.7",
+        "title": "安全员职责："
+      },
+      {
+        "level": 2,
+        "num": "3.8",
+        "title": "材料员职责："
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "2.技术措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、安全生产保证体系"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、防高坠安全措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "3、高大模板施工技术措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "4、施工工期保证措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "5、高大支模安装、拆除过程中的安全措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "6、临边防护安全措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "7、有限空间作业安全措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "8、消防安全技术措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "9、施工现场防火措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "10、安全用电管理措施"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "3.监测监控措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、保证材料质量的控制措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、预防轴线偏位、标高不正确的控制措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "3、施工质量保证措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "4、预防漏浆的控制措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "5、成品保护措施"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "6、砼浇筑施工注意事项"
+      },
+      {
+        "level": 1,
+        "num": "六",
+        "title": "六、施工管理及作业人员配备和分工"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "1.施工管理人员"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1.施工管理人员"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、管理人员岗位职责"
+      },
+      {
+        "level": 2,
+        "num": "2.1",
+        "title": "项目经理"
+      },
+      {
+        "level": 2,
+        "num": "2.2",
+        "title": "项目技术负责人"
+      },
+      {
+        "level": 2,
+        "num": "2.3",
+        "title": "质检员"
+      },
+      {
+        "level": 2,
+        "num": "2.4",
+        "title": "施工员"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "2.专职安全人员"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、专职安全员人员信息"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、专职安全员岗位职责"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "3.特种作业人员"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、特种作业人员信息"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、特种作业人员岗位职责"
+      },
+      {
+        "level": 2,
+        "num": "2.1",
+        "title": "架子工"
+      },
+      {
+        "level": 2,
+        "num": "2.2",
+        "title": "电工"
+      },
+      {
+        "level": 2,
+        "num": "2.3",
+        "title": "电焊工"
+      },
+      {
+        "level": 2,
+        "num": "2.4",
+        "title": "司索人员职责"
+      },
+      {
+        "level": 2,
+        "num": "2.5",
+        "title": "重型机械司机岗位职责"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "4.其他作业人员"
+      },
+      {
+        "level": 1,
+        "num": "七",
+        "title": "七、验收要求"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "1.验收标准"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "2.验收程序及人员"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "3.验收内容"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、施工验收内容"
+      },
+      {
+        "level": 2,
+        "num": "1.1",
+        "title": "脚手架构配件的检查与验收"
+      },
+      {
+        "level": 2,
+        "num": "1.2",
+        "title": "支模架的检查与验收"
+      },
+      {
+        "level": 2,
+        "num": "1.3",
+        "title": "支模架应进行检查与验收的情况："
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、模板施工验收内容"
+      },
+      {
+        "level": 2,
+        "num": "2.1",
+        "title": "主控项目"
+      },
+      {
+        "level": 2,
+        "num": "2.2",
+        "title": "一般项目"
+      },
+      {
+        "level": 2,
+        "num": "2.3",
+        "title": "现浇结构模板安装的偏差应符合表 4 的规定："
+      },
+      {
+        "level": 2,
+        "num": "2.4",
+        "title": "模板垂直度控制"
+      },
+      {
+        "level": 2,
+        "num": "2.5",
+        "title": "顶板模板标高控制"
+      },
+      {
+        "level": 2,
+        "num": "2.6",
+        "title": "模板的变形控制"
+      },
+      {
+        "level": 1,
+        "num": "八",
+        "title": "八、应急处置措施"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "1.应急处置领导小组组成与职责"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "1、职责分工"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "2、应急流程"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "3、应急救援小组联系方式"
+      },
+      {
+        "level": 3,
+        "num": "",
+        "title": "4、检查和教育"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "2.应急事件（重大隐患和事故）及其应急措施"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "3.救援医院信息(名称、电话、救援线路)"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "4.应急物资准备"
+      },
+      {
+        "level": 1,
+        "num": "九",
+        "title": "九、计算书及相关图纸"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "1.计算书"
+      },
+      {
+        "level": 1,
+        "num": "一",
+        "title": "工程属性"
+      },
+      {
+        "level": 1,
+        "num": "二",
+        "title": "荷载设计"
+      },
+      {
+        "level": 1,
+        "num": "三",
+        "title": "模板体系设计"
+      },
+      {
+        "level": 1,
+        "num": "四",
+        "title": "面板验算"
+      },
+      {
+        "level": 1,
+        "num": "五",
+        "title": "小梁验算"
+      },
+      {
+        "level": 1,
+        "num": "六",
+        "title": "主梁验算"
+      },
+      {
+        "level": 1,
+        "num": "七",
+        "title": "可调托座验算"
+      },
+      {
+        "level": 1,
+        "num": "八",
+        "title": "立杆验算"
+      },
+      {
+        "level": 1,
+        "num": "九",
+        "title": "高宽比验算"
+      },
+      {
+        "level": 1,
+        "num": "十",
+        "title": "架体抗倾覆验算"
+      },
+      {
+        "level": 1,
+        "num": "十一",
+        "title": "立杆支承面承载力验算"
+      },
+      {
+        "level": 1,
+        "num": "一",
+        "title": "工程属性"
+      },
+      {
+        "level": 1,
+        "num": "二",
+        "title": "荷载组合"
+      },
+      {
+        "level": 1,
+        "num": "三",
+        "title": "支撑体系设计"
+      },
+      {
+        "level": 1,
+        "num": "四",
+        "title": "面板验算"
+      },
+      {
+        "level": 1,
+        "num": "五",
+        "title": "小梁验算"
+      },
+      {
+        "level": 1,
+        "num": "六",
+        "title": "主梁验算"
+      },
+      {
+        "level": 1,
+        "num": "七",
+        "title": "对拉螺栓验算"
+      },
+      {
+        "level": 1,
+        "num": "一",
+        "title": "工程属性"
+      },
+      {
+        "level": 1,
+        "num": "二",
+        "title": "荷载设计"
+      },
+      {
+        "level": 1,
+        "num": "三",
+        "title": "模板体系设计"
+      },
+      {
+        "level": 1,
+        "num": "四",
+        "title": "面板验算"
+      },
+      {
+        "level": 1,
+        "num": "五",
+        "title": "小梁验算"
+      },
+      {
+        "level": 1,
+        "num": "六",
+        "title": "主梁验算"
+      },
+      {
+        "level": 1,
+        "num": "七",
+        "title": "可调托座验算"
+      },
+      {
+        "level": 1,
+        "num": "八",
+        "title": "立杆验算"
+      },
+      {
+        "level": 1,
+        "num": "九",
+        "title": "高宽比验算"
+      },
+      {
+        "level": 1,
+        "num": "十",
+        "title": "架体抗倾覆验算"
+      },
+      {
+        "level": 1,
+        "num": "十一",
+        "title": "立杆支承面承载力验算"
+      },
+      {
+        "level": 1,
+        "num": "一",
+        "title": "工程属性"
+      },
+      {
+        "level": 1,
+        "num": "二",
+        "title": "荷载组合"
+      },
+      {
+        "level": 1,
+        "num": "三",
+        "title": "支撑体系设计"
+      },
+      {
+        "level": 1,
+        "num": "四",
+        "title": "面板验算"
+      },
+      {
+        "level": 1,
+        "num": "五",
+        "title": "小梁验算"
+      },
+      {
+        "level": 1,
+        "num": "六",
+        "title": "主梁验算"
+      },
+      {
+        "level": 1,
+        "num": "七",
+        "title": "对拉螺栓验算"
+      },
+      {
+        "level": 1,
+        "num": "一",
+        "title": "工程属性"
+      },
+      {
+        "level": 1,
+        "num": "二",
+        "title": "荷载设计"
+      },
+      {
+        "level": 1,
+        "num": "三",
+        "title": "模板体系设计"
+      },
+      {
+        "level": 1,
+        "num": "四",
+        "title": "面板验算"
+      },
+      {
+        "level": 1,
+        "num": "五",
+        "title": "小梁验算"
+      },
+      {
+        "level": 1,
+        "num": "六",
+        "title": "主梁验算"
+      },
+      {
+        "level": 1,
+        "num": "七",
+        "title": "可调托座验算"
+      },
+      {
+        "level": 1,
+        "num": "八",
+        "title": "立杆验算"
+      },
+      {
+        "level": 1,
+        "num": "九",
+        "title": "高宽比验算"
+      },
+      {
+        "level": 1,
+        "num": "十",
+        "title": "抗倾覆验算"
+      },
+      {
+        "level": 1,
+        "num": "十一",
+        "title": "立杆支承面承载力验算"
+      },
+      {
+        "level": 2,
+        "num": "",
+        "title": "2.相关图纸"
+      }
+    ],
+    "table_count": 80,
+    "para_count": 1531
+  },
+  "warnings": []
+}

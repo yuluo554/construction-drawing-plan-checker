@@ -1,0 +1,206 @@
+{
+  "doc_type": "plan",
+  "file": "D:\\ProgramData\\zcode\\智建赛题\\data\\施工方案\\自制样例\\sample_formwork_plan_13.docx",
+  "meta": {
+    "标题(首段)": "模板工程专项施工方案（程序化样例13）",
+    "章节树深度": 1
+  },
+  "parameters": [
+    {
+      "entity": "工程概况",
+      "category": "overview",
+      "attr": "建筑面积",
+      "value": "14085",
+      "unit": "",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "sample_formwork_plan_13.docx",
+        "page": 12,
+        "section": "九",
+        "bbox": null,
+        "raw": "本工程建筑面积约14085㎡，地下1层，地上18层；结构形式为钢筋混凝土框架剪力墙结构，基础形式为筏板基础。"
+      }
+    },
+    {
+      "entity": "工程概况",
+      "category": "overview",
+      "attr": "结构形式",
+      "value": "钢筋混凝土框架剪力墙结构",
+      "unit": "",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "sample_formwork_plan_13.docx",
+        "page": 12,
+        "section": "九",
+        "bbox": null,
+        "raw": "本工程建筑面积约14085㎡，地下1层，地上18层；结构形式为钢筋混凝土框架剪力墙结构，基础形式为筏板基础。"
+      }
+    },
+    {
+      "entity": "工程概况",
+      "category": "overview",
+      "attr": "基础形式",
+      "value": "筏板基础",
+      "unit": "",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "sample_formwork_plan_13.docx",
+        "page": 12,
+        "section": "九",
+        "bbox": null,
+        "raw": "本工程建筑面积约14085㎡，地下1层，地上18层；结构形式为钢筋混凝土框架剪力墙结构，基础形式为筏板基础。"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "搭设高度",
+      "value": "6.2",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "sample_formwork_plan_13.docx",
+        "page": 14,
+        "section": "九",
+        "bbox": null,
+        "raw": "模板支架搭设高度为6.2m，支撑体系采用扣件式钢管满堂支撑架。"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "支撑搭设高度",
+      "value": "6.2",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "sample_formwork_plan_13.docx",
+        "page": 14,
+        "section": "九",
+        "bbox": null,
+        "raw": "模板支架搭设高度为6.2m，支撑体系采用扣件式钢管满堂支撑架。"
+      }
+    },
+    {
+      "entity": "混凝土(板)",
+      "category": "material",
+      "attr": "强度等级",
+      "value": "C30",
+      "unit": "",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "sample_formwork_plan_13.docx",
+        "page": 17,
+        "section": "九",
+        "bbox": null,
+        "raw": "模板木方采用落叶松，钢管采用Q235焊接钢管，混凝土强度等级为C30。"
+      }
+    },
+    {
+      "entity": "脚手架工程",
+      "category": "measure",
+      "attr": "步距",
+      "value": "1.8",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "sample_formwork_plan_13.docx",
+        "page": -1,
+        "section": "九",
+        "bbox": null,
+        "raw": "水平杆步距h(m) | 1.8"
+      }
+    },
+    {
+      "entity": "模板支撑体系",
+      "category": "measure",
+      "attr": "支撑搭设高度",
+      "value": "6.2",
+      "unit": "m",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "sample_formwork_plan_13.docx",
+        "page": -1,
+        "section": "九",
+        "bbox": null,
+        "raw": "模板支架高度H(m) | 6.2"
+      }
+    },
+    {
+      "entity": "混凝土",
+      "category": "material",
+      "attr": "强度等级",
+      "value": "C30",
+      "unit": "",
+      "conf": 0.9,
+      "source": "plan",
+      "evidence": {
+        "doc": "sample_formwork_plan_13.docx",
+        "page": -1,
+        "section": "九",
+        "bbox": null,
+        "raw": "混凝土强度等级 | C30"
+      }
+    }
+  ],
+  "extras": {
+    "outline": [
+      {
+        "level": 1,
+        "num": "一",
+        "title": "一、编制依据"
+      },
+      {
+        "level": 1,
+        "num": "二",
+        "title": "二、工程概况"
+      },
+      {
+        "level": 1,
+        "num": "三",
+        "title": "三、施工计划"
+      },
+      {
+        "level": 1,
+        "num": "四",
+        "title": "四、施工工艺技术"
+      },
+      {
+        "level": 1,
+        "num": "五",
+        "title": "五、施工安全保证措施"
+      },
+      {
+        "level": 1,
+        "num": "六",
+        "title": "六、施工管理及作业人员配备和分工"
+      },
+      {
+        "level": 1,
+        "num": "七",
+        "title": "七、验收要求"
+      },
+      {
+        "level": 1,
+        "num": "八",
+        "title": "八、应急处置措施"
+      },
+      {
+        "level": 1,
+        "num": "九",
+        "title": "九、计算书及相关图纸"
+      }
+    ],
+    "table_count": 1,
+    "para_count": 20
+  },
+  "warnings": []
+}

@@ -1,0 +1,739 @@
+{
+  "doc_type": "drawing",
+  "file": "D:\\ProgramData\\zcode\\智建赛题\\data\\施工图纸\\自制样例\\sample_beam_plan.dxf",
+  "meta": {
+    "project_name": "示例教学楼结构施工图 图号：结施-05 比例1:100",
+    "sheet_no": "结施-05 比例1:100",
+    "scale": "1:100"
+  },
+  "parameters": [
+    {
+      "entity": "混凝土",
+      "category": "material",
+      "attr": "强度等级",
+      "value": "C40",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          2.0,
+          2500.0,
+          2.0,
+          2500.0
+        ],
+        "raw": "混凝土强度等级为C40，保护层厚度15mm"
+      }
+    },
+    {
+      "entity": "钢筋混凝土",
+      "category": "material",
+      "attr": "保护层厚度",
+      "value": "15",
+      "unit": "mm",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          2.0,
+          2500.0,
+          2.0,
+          2500.0
+        ],
+        "raw": "混凝土强度等级为C40，保护层厚度15mm"
+      }
+    },
+    {
+      "entity": "框架梁(KL4)",
+      "category": "component",
+      "attr": "编号",
+      "value": "KL4",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          680.9,
+          2101.2,
+          680.9,
+          2101.2
+        ],
+        "raw": "KL4(3) 250×400"
+      }
+    },
+    {
+      "entity": "框架梁(KL4)",
+      "category": "component",
+      "attr": "跨数",
+      "value": "3",
+      "unit": "跨",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          680.9,
+          2101.2,
+          680.9,
+          2101.2
+        ],
+        "raw": "KL4(3) 250×400"
+      }
+    },
+    {
+      "entity": "框架梁(KL4)",
+      "category": "component",
+      "attr": "截面",
+      "value": "250x400",
+      "unit": "mm",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          680.9,
+          2101.2,
+          680.9,
+          2101.2
+        ],
+        "raw": "KL4(3) 250×400"
+      }
+    },
+    {
+      "entity": "框架梁(KL4)",
+      "category": "component",
+      "attr": "箍筋",
+      "value": "Φ8@150/200(2肢)",
+      "unit": "mm",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          680.9,
+          2101.2,
+          680.9,
+          2101.2
+        ],
+        "raw": "KL4(3) 250×400"
+      }
+    },
+    {
+      "entity": "框架梁(KL4)",
+      "category": "component",
+      "attr": "上部通长筋",
+      "value": "4Φ22",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          680.9,
+          2101.2,
+          680.9,
+          2101.2
+        ],
+        "raw": "KL4(3) 250×400"
+      }
+    },
+    {
+      "entity": "框架梁(KL4)",
+      "category": "component",
+      "attr": "下部纵筋",
+      "value": "2Φ20",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          680.9,
+          2101.2,
+          680.9,
+          2101.2
+        ],
+        "raw": "KL4(3) 250×400"
+      }
+    },
+    {
+      "entity": "框架梁(KL3)",
+      "category": "component",
+      "attr": "编号",
+      "value": "KL3",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          893.2,
+          1501.2,
+          893.2,
+          1501.2
+        ],
+        "raw": "KL3(1) 350×400"
+      }
+    },
+    {
+      "entity": "框架梁(KL3)",
+      "category": "component",
+      "attr": "跨数",
+      "value": "1",
+      "unit": "跨",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          893.2,
+          1501.2,
+          893.2,
+          1501.2
+        ],
+        "raw": "KL3(1) 350×400"
+      }
+    },
+    {
+      "entity": "框架梁(KL3)",
+      "category": "component",
+      "attr": "截面",
+      "value": "350x400",
+      "unit": "mm",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          893.2,
+          1501.2,
+          893.2,
+          1501.2
+        ],
+        "raw": "KL3(1) 350×400"
+      }
+    },
+    {
+      "entity": "框架梁(KL3)",
+      "category": "component",
+      "attr": "箍筋",
+      "value": "Φ8@100/200(2肢)",
+      "unit": "mm",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          893.2,
+          1501.2,
+          893.2,
+          1501.2
+        ],
+        "raw": "KL3(1) 350×400"
+      }
+    },
+    {
+      "entity": "框架梁(KL3)",
+      "category": "component",
+      "attr": "上部通长筋",
+      "value": "3Φ18",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          893.2,
+          1501.2,
+          893.2,
+          1501.2
+        ],
+        "raw": "KL3(1) 350×400"
+      }
+    },
+    {
+      "entity": "框架梁(KL3)",
+      "category": "component",
+      "attr": "下部纵筋",
+      "value": "2Φ20",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          893.2,
+          1501.2,
+          893.2,
+          1501.2
+        ],
+        "raw": "KL3(1) 350×400"
+      }
+    },
+    {
+      "entity": "框架柱(KZ2)",
+      "category": "component",
+      "attr": "编号",
+      "value": "KZ2",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          950.0,
+          951.0,
+          950.0,
+          951.0
+        ],
+        "raw": "KZ2 500×700 19Φ16 Φ8@100/150(4)"
+      }
+    },
+    {
+      "entity": "框架柱(KZ2)",
+      "category": "component",
+      "attr": "截面",
+      "value": "500x700",
+      "unit": "mm",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          950.0,
+          951.0,
+          950.0,
+          951.0
+        ],
+        "raw": "KZ2 500×700 19Φ16 Φ8@100/150(4)"
+      }
+    },
+    {
+      "entity": "框架柱(KZ2)",
+      "category": "component",
+      "attr": "全部纵筋",
+      "value": "19Φ16",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          950.0,
+          951.0,
+          950.0,
+          951.0
+        ],
+        "raw": "KZ2 500×700 19Φ16 Φ8@100/150(4)"
+      }
+    },
+    {
+      "entity": "框架柱(KZ2)",
+      "category": "component",
+      "attr": "箍筋",
+      "value": "Φ8@100/150(4肢)",
+      "unit": "mm",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          950.0,
+          951.0,
+          950.0,
+          951.0
+        ],
+        "raw": "KZ2 500×700 19Φ16 Φ8@100/150(4)"
+      }
+    },
+    {
+      "entity": "非框架梁(L2)",
+      "category": "component",
+      "attr": "编号",
+      "value": "L2",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          620.3,
+          901.2,
+          620.3,
+          901.2
+        ],
+        "raw": "L2(4) 200×500"
+      }
+    },
+    {
+      "entity": "非框架梁(L2)",
+      "category": "component",
+      "attr": "跨数",
+      "value": "4",
+      "unit": "跨",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          620.3,
+          901.2,
+          620.3,
+          901.2
+        ],
+        "raw": "L2(4) 200×500"
+      }
+    },
+    {
+      "entity": "非框架梁(L2)",
+      "category": "component",
+      "attr": "截面",
+      "value": "200x500",
+      "unit": "mm",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          620.3,
+          901.2,
+          620.3,
+          901.2
+        ],
+        "raw": "L2(4) 200×500"
+      }
+    },
+    {
+      "entity": "非框架梁(L2)",
+      "category": "component",
+      "attr": "箍筋",
+      "value": "Φ8@200/200(4肢)",
+      "unit": "mm",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          620.3,
+          901.2,
+          620.3,
+          901.2
+        ],
+        "raw": "L2(4) 200×500"
+      }
+    },
+    {
+      "entity": "非框架梁(L2)",
+      "category": "component",
+      "attr": "上部通长筋",
+      "value": "2Φ25",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          620.3,
+          901.2,
+          620.3,
+          901.2
+        ],
+        "raw": "L2(4) 200×500"
+      }
+    },
+    {
+      "entity": "非框架梁(L2)",
+      "category": "component",
+      "attr": "下部纵筋",
+      "value": "4Φ12",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          620.3,
+          901.2,
+          620.3,
+          901.2
+        ],
+        "raw": "L2(4) 200×500"
+      }
+    },
+    {
+      "entity": "框架柱(KZ1)",
+      "category": "component",
+      "attr": "编号",
+      "value": "KZ1",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          300.0,
+          851.0,
+          300.0,
+          851.0
+        ],
+        "raw": "KZ1 600×500 23Φ22 Φ10@100/200(4)"
+      }
+    },
+    {
+      "entity": "框架柱(KZ1)",
+      "category": "component",
+      "attr": "截面",
+      "value": "600x500",
+      "unit": "mm",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          300.0,
+          851.0,
+          300.0,
+          851.0
+        ],
+        "raw": "KZ1 600×500 23Φ22 Φ10@100/200(4)"
+      }
+    },
+    {
+      "entity": "框架柱(KZ1)",
+      "category": "component",
+      "attr": "全部纵筋",
+      "value": "23Φ22",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          300.0,
+          851.0,
+          300.0,
+          851.0
+        ],
+        "raw": "KZ1 600×500 23Φ22 Φ10@100/200(4)"
+      }
+    },
+    {
+      "entity": "框架柱(KZ1)",
+      "category": "component",
+      "attr": "箍筋",
+      "value": "Φ10@100/200(4肢)",
+      "unit": "mm",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          300.0,
+          851.0,
+          300.0,
+          851.0
+        ],
+        "raw": "KZ1 600×500 23Φ22 Φ10@100/200(4)"
+      }
+    },
+    {
+      "entity": "框架梁(KL1)",
+      "category": "component",
+      "attr": "编号",
+      "value": "KL1",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          314.6,
+          301.2,
+          314.6,
+          301.2
+        ],
+        "raw": "KL1(4) 200×400"
+      }
+    },
+    {
+      "entity": "框架梁(KL1)",
+      "category": "component",
+      "attr": "跨数",
+      "value": "4",
+      "unit": "跨",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          314.6,
+          301.2,
+          314.6,
+          301.2
+        ],
+        "raw": "KL1(4) 200×400"
+      }
+    },
+    {
+      "entity": "框架梁(KL1)",
+      "category": "component",
+      "attr": "截面",
+      "value": "200x400",
+      "unit": "mm",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          314.6,
+          301.2,
+          314.6,
+          301.2
+        ],
+        "raw": "KL1(4) 200×400"
+      }
+    },
+    {
+      "entity": "框架梁(KL1)",
+      "category": "component",
+      "attr": "箍筋",
+      "value": "Φ8@150/200(2肢)",
+      "unit": "mm",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          314.6,
+          301.2,
+          314.6,
+          301.2
+        ],
+        "raw": "KL1(4) 200×400"
+      }
+    },
+    {
+      "entity": "框架梁(KL1)",
+      "category": "component",
+      "attr": "上部通长筋",
+      "value": "4Φ14",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          314.6,
+          301.2,
+          314.6,
+          301.2
+        ],
+        "raw": "KL1(4) 200×400"
+      }
+    },
+    {
+      "entity": "框架梁(KL1)",
+      "category": "component",
+      "attr": "下部纵筋",
+      "value": "2Φ12",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.dxf",
+        "page": 0,
+        "section": "",
+        "bbox": [
+          314.6,
+          301.2,
+          314.6,
+          301.2
+        ],
+        "raw": "KL1(4) 200×400"
+      }
+    }
+  ],
+  "extras": {
+    "text_count": 22,
+    "layers": [
+      "BEAM-TAG",
+      "GRID",
+      "TITLE"
+    ],
+    "entity_types": {
+      "LINE": 14,
+      "LWPOLYLINE": 2,
+      "TEXT": 22
+    }
+  },
+  "warnings": []
+}

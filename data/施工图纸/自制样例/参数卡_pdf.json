@@ -1,0 +1,480 @@
+{
+  "doc_type": "drawing",
+  "file": "D:\\ProgramData\\zcode\\智建赛题\\data\\施工图纸\\自制样例\\sample_beam_plan.pdf",
+  "meta": {
+    "project_name": "示例教学楼结构施工图 图号：结施- 0 5  比例1 : 1 0 0",
+    "sheet_no": "结施- 0 5  比例1 : 1 0 0",
+    "scale": "1 : 1 0 0"
+  },
+  "parameters": [
+    {
+      "entity": "混凝土",
+      "category": "material",
+      "attr": "强度等级",
+      "value": "C35",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.pdf",
+        "page": 1,
+        "section": "",
+        "bbox": [
+          60.0,
+          89.6,
+          165.5,
+          102.7
+        ],
+        "raw": "混凝土强度等级为C 3 5"
+      }
+    },
+    {
+      "entity": "框架梁(KL1)",
+      "category": "component",
+      "attr": "编号",
+      "value": "KL1",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.pdf",
+        "page": 1,
+        "section": "",
+        "bbox": [
+          60.0,
+          114.6,
+          182.0,
+          126.4
+        ],
+        "raw": "K L 1 ( 3 )  3 0 0 × 6 0 0"
+      }
+    },
+    {
+      "entity": "框架梁(KL1)",
+      "category": "component",
+      "attr": "跨数",
+      "value": "3",
+      "unit": "跨",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.pdf",
+        "page": 1,
+        "section": "",
+        "bbox": [
+          60.0,
+          114.6,
+          182.0,
+          126.4
+        ],
+        "raw": "K L 1 ( 3 )  3 0 0 × 6 0 0"
+      }
+    },
+    {
+      "entity": "框架梁(KL1)",
+      "category": "component",
+      "attr": "截面",
+      "value": "300x600",
+      "unit": "mm",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.pdf",
+        "page": 1,
+        "section": "",
+        "bbox": [
+          60.0,
+          114.6,
+          182.0,
+          126.4
+        ],
+        "raw": "K L 1 ( 3 )  3 0 0 × 6 0 0"
+      }
+    },
+    {
+      "entity": "框架梁(KL2)",
+      "category": "component",
+      "attr": "编号",
+      "value": "KL2",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.pdf",
+        "page": 1,
+        "section": "",
+        "bbox": [
+          60.0,
+          152.6,
+          182.0,
+          164.4
+        ],
+        "raw": "K L 2 ( 4 )  3 0 0 × 6 5 0"
+      }
+    },
+    {
+      "entity": "框架梁(KL2)",
+      "category": "component",
+      "attr": "跨数",
+      "value": "4",
+      "unit": "跨",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.pdf",
+        "page": 1,
+        "section": "",
+        "bbox": [
+          60.0,
+          152.6,
+          182.0,
+          164.4
+        ],
+        "raw": "K L 2 ( 4 )  3 0 0 × 6 5 0"
+      }
+    },
+    {
+      "entity": "框架梁(KL2)",
+      "category": "component",
+      "attr": "截面",
+      "value": "300x650",
+      "unit": "mm",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.pdf",
+        "page": 1,
+        "section": "",
+        "bbox": [
+          60.0,
+          152.6,
+          182.0,
+          164.4
+        ],
+        "raw": "K L 2 ( 4 )  3 0 0 × 6 5 0"
+      }
+    },
+    {
+      "entity": "框架梁(KL3)",
+      "category": "component",
+      "attr": "编号",
+      "value": "KL3",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.pdf",
+        "page": 1,
+        "section": "",
+        "bbox": [
+          60.0,
+          190.6,
+          182.0,
+          202.4
+        ],
+        "raw": "K L 3 ( 2 )  3 5 0 × 7 0 0"
+      }
+    },
+    {
+      "entity": "框架梁(KL3)",
+      "category": "component",
+      "attr": "跨数",
+      "value": "2",
+      "unit": "跨",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.pdf",
+        "page": 1,
+        "section": "",
+        "bbox": [
+          60.0,
+          190.6,
+          182.0,
+          202.4
+        ],
+        "raw": "K L 3 ( 2 )  3 5 0 × 7 0 0"
+      }
+    },
+    {
+      "entity": "框架梁(KL3)",
+      "category": "component",
+      "attr": "截面",
+      "value": "350x700",
+      "unit": "mm",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.pdf",
+        "page": 1,
+        "section": "",
+        "bbox": [
+          60.0,
+          190.6,
+          182.0,
+          202.4
+        ],
+        "raw": "K L 3 ( 2 )  3 5 0 × 7 0 0"
+      }
+    },
+    {
+      "entity": "非框架梁(L1)",
+      "category": "component",
+      "attr": "编号",
+      "value": "L1",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.pdf",
+        "page": 1,
+        "section": "",
+        "bbox": [
+          60.0,
+          228.6,
+          173.0,
+          240.4
+        ],
+        "raw": "L 1 ( 1 )  2 5 0 × 5 0 0"
+      }
+    },
+    {
+      "entity": "非框架梁(L1)",
+      "category": "component",
+      "attr": "跨数",
+      "value": "1",
+      "unit": "跨",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.pdf",
+        "page": 1,
+        "section": "",
+        "bbox": [
+          60.0,
+          228.6,
+          173.0,
+          240.4
+        ],
+        "raw": "L 1 ( 1 )  2 5 0 × 5 0 0"
+      }
+    },
+    {
+      "entity": "非框架梁(L1)",
+      "category": "component",
+      "attr": "截面",
+      "value": "250x500",
+      "unit": "mm",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.pdf",
+        "page": 1,
+        "section": "",
+        "bbox": [
+          60.0,
+          228.6,
+          173.0,
+          240.4
+        ],
+        "raw": "L 1 ( 1 )  2 5 0 × 5 0 0"
+      }
+    },
+    {
+      "entity": "框架柱(KZ1)",
+      "category": "component",
+      "attr": "编号",
+      "value": "KZ1",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.pdf",
+        "page": 1,
+        "section": "",
+        "bbox": [
+          60.0,
+          266.6,
+          209.0,
+          278.4
+        ],
+        "raw": "K Z 1  6 0 0 × 6 0 0  2 4 Φ 2 2"
+      }
+    },
+    {
+      "entity": "框架柱(KZ1)",
+      "category": "component",
+      "attr": "截面",
+      "value": "600x600",
+      "unit": "mm",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.pdf",
+        "page": 1,
+        "section": "",
+        "bbox": [
+          60.0,
+          266.6,
+          209.0,
+          278.4
+        ],
+        "raw": "K Z 1  6 0 0 × 6 0 0  2 4 Φ 2 2"
+      }
+    },
+    {
+      "entity": "框架柱(KZ1)",
+      "category": "component",
+      "attr": "全部纵筋",
+      "value": "24Φ22",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.pdf",
+        "page": 1,
+        "section": "",
+        "bbox": [
+          60.0,
+          266.6,
+          209.0,
+          278.4
+        ],
+        "raw": "K Z 1  6 0 0 × 6 0 0  2 4 Φ 2 2"
+      }
+    },
+    {
+      "entity": "框架柱(KZ2)",
+      "category": "component",
+      "attr": "编号",
+      "value": "KZ2",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.pdf",
+        "page": 1,
+        "section": "",
+        "bbox": [
+          60.0,
+          290.6,
+          209.0,
+          302.4
+        ],
+        "raw": "K Z 2  5 0 0 × 5 0 0  1 6 Φ 2 0"
+      }
+    },
+    {
+      "entity": "框架柱(KZ2)",
+      "category": "component",
+      "attr": "截面",
+      "value": "500x500",
+      "unit": "mm",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.pdf",
+        "page": 1,
+        "section": "",
+        "bbox": [
+          60.0,
+          290.6,
+          209.0,
+          302.4
+        ],
+        "raw": "K Z 2  5 0 0 × 5 0 0  1 6 Φ 2 0"
+      }
+    },
+    {
+      "entity": "框架柱(KZ2)",
+      "category": "component",
+      "attr": "全部纵筋",
+      "value": "16Φ20",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.pdf",
+        "page": 1,
+        "section": "",
+        "bbox": [
+          60.0,
+          290.6,
+          209.0,
+          302.4
+        ],
+        "raw": "K Z 2  5 0 0 × 5 0 0  1 6 Φ 2 0"
+      }
+    },
+    {
+      "entity": "框架柱(KZ3)",
+      "category": "component",
+      "attr": "编号",
+      "value": "KZ3",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.pdf",
+        "page": 1,
+        "section": "",
+        "bbox": [
+          60.0,
+          314.6,
+          209.0,
+          326.4
+        ],
+        "raw": "K Z 3  6 0 0 × 7 0 0  2 2 Φ 2 5"
+      }
+    },
+    {
+      "entity": "框架柱(KZ3)",
+      "category": "component",
+      "attr": "截面",
+      "value": "600x700",
+      "unit": "mm",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.pdf",
+        "page": 1,
+        "section": "",
+        "bbox": [
+          60.0,
+          314.6,
+          209.0,
+          326.4
+        ],
+        "raw": "K Z 3  6 0 0 × 7 0 0  2 2 Φ 2 5"
+      }
+    },
+    {
+      "entity": "框架柱(KZ3)",
+      "category": "component",
+      "attr": "全部纵筋",
+      "value": "22Φ25",
+      "unit": "",
+      "conf": 1.0,
+      "source": "drawing",
+      "evidence": {
+        "doc": "sample_beam_plan.pdf",
+        "page": 1,
+        "section": "",
+        "bbox": [
+          60.0,
+          314.6,
+          209.0,
+          326.4
+        ],
+        "raw": "K Z 3  6 0 0 × 7 0 0  2 2 Φ 2 5"
+      }
+    }
+  ],
+  "extras": {
+    "tables": [],
+    "page_count": 1,
+    "total_chars": 425,
+    "vector": true
+  },
+  "warnings": []
+}

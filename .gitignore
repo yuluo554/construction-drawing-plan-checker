@@ -1,0 +1,22 @@
+# ===== 密钥（绝不入库） =====
+.env
+**/.env
+*.key
+
+# ===== Python =====
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# ===== 运行产物 =====
+code/backend/webdata/
+data/施工方案/自制样例/演示输出/
+output/
+_tmp_*
+*.log
+
+# ===== 个人材料（不入公开仓库） =====
+你需要做的操作.md
+赛题/
+data/施工方案/高支模专项施工方案样例(CallStorm-SmartReview仓库).docx

@@ -1,0 +1,11 @@
+ezdxf>=1.1
+PyMuPDF>=1.24
+python-docx>=1.0
+requests>=2.31
+pytest>=7.4
+fastapi>=0.110
+uvicorn>=0.29
+python-multipart>=0.0.9
+# 阶段6起启用：
+# paddleocr / pp-structure（OCR 通路）
+# pyinstaller / docker（打包）

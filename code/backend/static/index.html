@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>施工图 × 施工方案 协同校核系统</title>
+<link rel="stylesheet" href="/static/style.css">
+<script src="/static/vendor/vue.global.prod.js"></script>
+<script src="/static/vendor/pdf.min.js"></script>
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="brand">
+      <span class="logo">建</span>
+      <div>
+        <h1>施工图 × 施工方案 协同智能校核</h1>
+        <p>图纸参数卡 · 方案参数卡 · 一致性/危大/合规 三通道校核 · 证据可溯源</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 左：上传与操作 -->
+    <section class="panel upload-panel">
+      <h2>1 · 上传文件</h2>
+
+      <div class="drop-card" :class="{done: drawing}">
+        <div class="drop-title">施工图纸</div>
+        <div class="drop-hint">PDF（矢量）/ DXF / DWG</div>
+        <label class="btn" :class="{loading: uploading==='drawing'}">
+          {{ uploading==='drawing' ? '解析中…' : (drawing ? '重新上传' : '选择文件') }}
+          <input type="file" accept=".pdf,.dxf,.dwg" hidden @change="e=>doUpload(e,'drawing')">
+        </label>
+        <div v-if="drawing" class="file-info">
+          ✓ {{ drawing.name }} · {{ drawing.参数数 }} 条参数
+          <span v-if="drawing.pdf" class="tag">PDF 可定位</span>
+          <div v-for="w in drawing.warnings" class="warn-line">{{ w }}</div>
+        </div>
+      </div>
+
+      <div class="drop-card" :class="{done: plan}">
+        <div class="drop-title">施工方案</div>
+        <div class="drop-hint">DOCX（支持 --llm 增强的服务端开关）</div>
+        <label class="btn" :class="{loading: uploading==='plan'}">
+          {{ uploading==='plan' ? '解析中…' : (plan ? '重新上传' : '选择文件') }}
+          <input type="file" accept=".docx" hidden @change="e=>doUpload(e,'plan')">
+        </label>
+        <div v-if="plan" class="file-info">
+          ✓ {{ plan.name }} · {{ plan.参数数 }} 条参数
+          <div v-for="w in plan.warnings" class="warn-line">{{ w }}</div>
+        </div>
+      </div>
+
+      <label class="rag-line"><input type="checkbox" v-model="rag"> 致命问题自动附规范条文依据（RAG）</label>
+      <button class="btn primary big" :disabled="!drawing || !plan || checking" @click="doCheck">
+        {{ checking ? '校核中…' : '2 · 开始协同校核' }}
+      </button>
+      <div v-if="checking" class="progress">{{ progressText }}</div>
+      <a v-if="reportId" class="btn" :href="'/api/report/'+reportId+'.docx'">⬇ 下载校核报告 docx</a>
+    </section>
+
+    <!-- 右：结果 -->
+    <section class="panel result-panel" v-if="report">
+      <h2>3 · 校核结果</h2>
+      <div class="verdict" :class="verdictClass">{{ report.结论 }}</div>
+      <div class="badges">
+        <span class="badge fatal">致命 {{ report.summary['致命'] }}</span>
+        <span class="badge warn">一般 {{ report.summary['一般'] }}</span>
+        <span class="badge info">提示 {{ report.summary['提示'] }}</span>
+      </div>
+
+      <div class="findings">
+        <div v-for="(f,i) in report.findings" :key="i" class="finding" :class="f['级别']">
+          <div class="f-head">
+            <span class="badge" :class="badgeClass(f['级别'])">{{ f['级别'] }}</span>
+            <b>{{ f['问题'] }}</b>
+            <span class="rule-id">{{ f['rule_id'] }}</span>
+            <button v-if="locatable(f)" class="btn tiny" @click="locate(f)">📍 图纸定位</button>
+          </div>
+          <div class="f-body">
+            <div v-if="f['图纸']" class="ev"><label>图纸</label>{{ f['图纸'] }}</div>
+            <div v-if="f['方案']" class="ev"><label>方案</label>{{ f['方案'] }}</div>
+            <div v-if="evRaw(f)" class="ev raw"><label>证据</label>{{ evRaw(f) }}</div>
+            <div v-if="f['依据']" class="ev"><label>依据</label>{{ f['依据'] }}</div>
+            <div v-if="f['条文']" class="ev clause"><label>条文</label>[{{ f['条文']['path'] }}] {{ f['条文']['text'] }}（相似度 {{ f['条文']['score'] }}）</div>
+            <div v-if="f['建议']" class="ev sug"><label>建议</label>{{ f['建议'] }}</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PDF 证据定位 -->
+      <div class="pdf-view" v-if="pdfShow">
+        <h3>图纸证据定位：第 {{ pdfPage }} 页 <button class="btn tiny" @click="pdfShow=false">关闭</button></h3>
+        <div class="pdf-canvas-wrap">
+          <canvas id="pdf-canvas"></canvas>
+          <div v-for="(r,i) in pdfRects" :key="'r'+i" class="hl" :style="rectStyle(r)"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel empty" v-else>
+      <h2>3 · 校核结果</h2>
+      <p class="hint">上传图纸与方案后点击「开始协同校核」。<br>
+      系统将抽取两侧工程参数卡，执行 一致性 / 危大合规 / 存在性 三通道检查，输出可溯源的问题清单。</p>
+    </section>
+  </main>
+
+  <footer>智建赛题10 · 施工图与施工方案协同智能系统 · 原型 {{ version }}</footer>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>
