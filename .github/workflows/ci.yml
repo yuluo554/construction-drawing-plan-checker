@@ -163,11 +163,14 @@ jobs:
           print('OK: compliance findings =', len(d['危大判定']))
           "
 
-      - name: Install from wheel and smoke-test the console script
+      - name: Install from wheel into the runner python and smoke-test the console script
         run: |
-          python -m pip install --force-reinstall --no-deps dist/*.whl
+          # 装完整依赖（不带 --no-deps）：selftest 的 Web 探针要 import fastapi。
+          python -m pip install --force-reinstall dist/*.whl
           python -c "import importlib.metadata as m; print('installed', m.version('construction-drawing-plan-checker'))"
           construction-check --help
+          # 在仓库外跑，确保 console script 与资产都来自"装好的包"
+          mkdir -p /tmp/outside2 && cd /tmp/outside2
           construction-check selftest
 
       - uses: actions/upload-artifact@v7
