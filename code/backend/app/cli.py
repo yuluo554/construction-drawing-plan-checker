@@ -45,6 +45,9 @@ def parse_args(argv):
     p5.add_argument("-o", "--out", default=".")
     p5.add_argument("--llm", action="store_true", help="启用 LLM 抽取/兜底（需 code/.env）")
     p5.add_argument("--rag", action="store_true", help="致命项附规范条文检索依据（需 code/.env）")
+    # 安装态自查：资产在不在、知识库能否加载、阈值清单能否读、Web 静态文件在不在。
+    # 加这个子命令是因为 v0.1.0 的装态缺陷（资产缺失）只能靠"跑一条业务命令看报错"发现。
+    sub.add_parser("selftest", help="自检运行期资产与依赖（装完先跑这个）")
     return ap.parse_args(argv)
 
 
@@ -73,20 +76,27 @@ def _empty_parse_error(card, kind):
 
 
 def _check_rag_config():
-    """--rag 需要 embedding 服务配置；缺配置时提前失败（不再等 check 节点崩）。
+    """--rag 的前置检查：embedding 配置 + 知识库资产。
 
     返回 (ok, message)。message 是可执行指引。
+    v0.1.0 只查了配置；装态下知识库缺失会让 KB() 静默变成空索引、条文一条都挂不上，
+    所以这里把"资产可加载"也纳入预检（v0.1.1）。
     """
     from .llm.client import load_env
     cfg = load_env()
     missing = [k for k in ("LLM_BASE_URL", "LLM_API_KEY") if not str(cfg.get(k) or "").strip()]
-    if not missing:
-        return True, ""
-    return False, (
-        "错误：--rag 需要 embedding 服务配置，缺少 %s。\n"
-        "  做法：复制 code/.env.example 为 code/.env，填入 LLM_BASE_URL 与 LLM_API_KEY\n"
-        "       （OpenAI 兼容接口，如阿里云百炼），或去掉 --rag 只跑规则通道。"
-        % " / ".join(missing))
+    if missing:
+        return False, (
+            "错误：--rag 需要 embedding 服务配置，缺少 %s。\n"
+            "  做法：复制 code/.env.example 为 code/.env，填入 LLM_BASE_URL 与 LLM_API_KEY\n"
+            "       （OpenAI 兼容接口，如阿里云百炼），或去掉 --rag 只跑规则通道。"
+            % " / ".join(missing))
+    from .resources import AssetMissing, asset_path
+    try:
+        asset_path("kb")
+    except AssetMissing as exc:
+        return False, "错误：--rag 需要规范知识库，但资产不可用。\n%s" % exc
+    return True, ""
 
 
 def _cmd_drawing(args):
@@ -233,6 +243,62 @@ def _cmd_run(args):
     return EXIT_OK
 
 
+def _cmd_selftest(args):
+    """自检：安装态最容易坏的是"资产没随包分发"。逐项报告并给出可执行结论。
+
+    退出码：0 = 全部可用；1 = 有关键资产缺失（依赖它的功能会失败）。
+    """
+    from .resources import describe
+    rows = describe()
+    ok = True
+    print("运行期资产：")
+    for name, path, where in rows:
+        mark = {"package": "OK(包内)", "repo": "OK(仓库)", "missing": "MISSING"}[where]
+        print("  %-11s %-10s %s" % (name, mark, path or "-"))
+        if where == "missing":
+            ok = False
+
+    print("功能探针：")
+    probes = []
+
+    try:
+        from .rules.weida import load_list
+        spec = load_list()
+        n = len(spec.get("危大工程范围_附件1", [])) + len(spec.get("超过一定规模_附件2_须专家论证", []))
+        probes.append(("危大阈值清单可读", True, "%d 条规则" % n))
+    except Exception as exc:
+        probes.append(("危大阈值清单可读", False, "%s: %s" % (type(exc).__name__, exc)))
+        ok = False
+
+    try:
+        from .knowledge.rag import KB
+        kb = KB()
+        probes.append(("知识库可加载", bool(kb.chunks),
+                       "%d chunks / %d 维" % (len(kb.chunks), len(kb.vectors[0]) if kb.vectors else 0)))
+        if not kb.chunks:
+            ok = False
+    except Exception as exc:
+        probes.append(("知识库可加载", False, "%s: %s" % (type(exc).__name__, exc)))
+        ok = False
+
+    try:
+        from . import server
+        idx = os.path.join(server.STATIC_DIR, "index.html") if server.STATIC_DIR else ""
+        good = bool(idx) and os.path.isfile(idx)
+        probes.append(("Web 静态首页存在", good, idx or "static 目录缺失"))
+        if not good:
+            ok = False
+    except Exception as exc:
+        probes.append(("Web 静态首页存在", False, "%s: %s" % (type(exc).__name__, exc)))
+        ok = False
+
+    for name, good, detail in probes:
+        print("  %-16s %-4s %s" % (name, "OK" if good else "FAIL", detail))
+
+    print("结论：", "全部可用" if ok else "存在缺失项，见上方 MISSING/FAIL（--rag 与 Web 界面会受影响）")
+    return EXIT_OK if ok else EXIT_FAIL
+
+
 def main(argv=None):
     from .console import force_utf8_output
     force_utf8_output()   # Windows 默认代码页下中文帮助文本会抛 UnicodeEncodeError
@@ -243,6 +309,7 @@ def main(argv=None):
         "compliance": _cmd_compliance,
         "check": _cmd_check,
         "run": _cmd_run,
+        "selftest": _cmd_selftest,
     }
     handler = handlers.get(args.cmd)
     if handler is None:  # argparse 的 required=True 已挡住，这里只是兜底

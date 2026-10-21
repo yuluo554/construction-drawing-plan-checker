@@ -12,6 +12,8 @@ build/
 dist/
 *.egg-info/
 .eggs/
+# 构建钩子（setup.py build_py）生成的包内资产副本，不入库
+code/backend/app/_data/
 
 # ===== 交接/诊断产物（本地，不入公开仓库） =====
 update/

@@ -46,12 +46,19 @@ jobs:
       - name: Show resolved app path and version
         run: python -c "import app, importlib.metadata as m; print('app at', app.__file__); print('version', m.version('construction-drawing-plan-checker'))"
 
-      - name: pytest
-        run: python -m pytest -q
+      # 慢测试（真构建 wheel + 建 venv + 真装）只在 package job 跑一次，见该 job 的
+      # "Assert wheel carries runtime assets"；这里跑其余全部测试。
+      - name: pytest (excluding slow packaging tests)
+        run: python -m pytest -q -m "not packaging"
 
       - name: CLI --help
         working-directory: code/backend
         run: python -m app.cli --help
+
+      # 源码态自检：资产应可从仓库布局解析（包内 _data 若存在则优先，两者都算通过）
+      - name: CLI selftest (source tree)
+        working-directory: code/backend
+        run: python -m app.cli selftest
 
       # CLI 退出码门（D1）：输入不存在必须非 0（2）。Actions 的 bash 在非零时
       # 直接失败，所以这里显式取码再断言。
@@ -109,9 +116,12 @@ jobs:
           print("OK: both artifact kinds present")
 
   package:
-    name: package (build wheel/sdist)
+    name: package (build wheel/sdist + install-state check)
     # 与 test 矩阵保持同一基础镜像（`ubuntu-latest` 会挂迁移注解且随时漂移）
     runs-on: ubuntu-24.04
+    env:
+      # 让本 job 的 python 进程默认 UTF-8（与工作流级一致；显式写一遍便于单看本 job）
+      PYTHONUTF8: "1"
     steps:
       - uses: actions/checkout@v7
 
@@ -128,11 +138,37 @@ jobs:
       - name: Report artifacts
         run: ls -l dist/
 
+      # 装态验收（v0.1.0 的缺陷：wheel 不含 data/knowledge/static，装完不能用）
+      - name: Assert wheel carries runtime assets
+        run: python -m pytest code/backend/tests/test_packaging.py -q -m packaging
+
+      - name: Install wheel into a clean venv and selftest OUTSIDE the repo
+        run: |
+          python -m venv /tmp/instcheck
+          /tmp/instcheck/bin/python -m pip install -q --disable-pip-version-check dist/*.whl
+          mkdir -p /tmp/outside && cd /tmp/outside
+          # 关键：在仓库外执行，确保命中的是包内资产而不是仓库回退
+          /tmp/instcheck/bin/python -m app.cli selftest
+
+      - name: Asset-dependent command from installed wheel
+        run: |
+          cd /tmp/outside
+          /tmp/instcheck/bin/python -m app.cli compliance \
+            "$GITHUB_WORKSPACE/data/施工方案/自制样例/参数卡_plan_13.json" > /tmp/compliance.json
+          head -c 200 /tmp/compliance.json
+          /tmp/instcheck/bin/python -c "
+          import json
+          d = json.load(open('/tmp/compliance.json', encoding='utf-8'))
+          assert d['危大判定'], 'compliance produced no findings'
+          print('OK: compliance findings =', len(d['危大判定']))
+          "
+
       - name: Install from wheel and smoke-test the console script
         run: |
           python -m pip install --force-reinstall --no-deps dist/*.whl
           python -c "import importlib.metadata as m; print('installed', m.version('construction-drawing-plan-checker'))"
           construction-check --help
+          construction-check selftest
 
       - uses: actions/upload-artifact@v7
         with:

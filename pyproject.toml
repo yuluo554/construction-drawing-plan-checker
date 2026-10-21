@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "construction-drawing-plan-checker"
-version = "0.1.0"
+version = "0.1.1"
 description = "施工图 × 施工方案 协同智能校核：参数卡解析、一致性比对、危大合规判定、规范条文 RAG 与 DOCX 报告"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -44,15 +44,24 @@ Homepage = "https://github.com/yuluo554/construction-drawing-plan-checker"
 Repository = "https://github.com/yuluo554/construction-drawing-plan-checker"
 
 [tool.setuptools]
-# 源码布局：Python 包在 code/backend/app，仓库根的 data/ 与 code/knowledge/、code/rules/
-# 是随仓库分发的资产（不是 Python 包）。本版按「源码仓」形态分发，因此这些资产
-# 由仓库提供、不打进 wheel；`pip install .`（非 editable）只装 Python 包。
+# 源码布局：Python 包在 code/backend/app。
+# 运行期资产（知识库 / 危大阈值清单 / Web 静态文件 / 规则元数据）由 setup.py 的
+# build_py 钩子复制到 app/_data/，再经下面的 package-data 打进 wheel 与 sdist——
+# 保证 `pip install`（非 editable）之后 compliance / --rag / Web 都能真跑。
 package-dir = { "" = "code/backend" }
 
 [tool.setuptools.packages.find]
 where = ["code/backend"]
 include = ["app*"]
 
+[tool.setuptools.package-data]
+# app/_data 是构建产物（不入库）；这里只声明"要收进包"的模式。
+app = ["_data/**/*", "_data/**/**/*"]
+
 [tool.pytest.ini_options]
 testpaths = ["code/backend/tests"]
 addopts = "-ra"
+markers = [
+    # 慢测试：真构建 wheel + 建临时 venv + 真装。默认也跑；CI 的 packaging job 必须显式跑。
+    "packaging: 安装态/打包相关（构建 wheel、临时 venv、仓库外执行）",
+]

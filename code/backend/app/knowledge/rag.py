@@ -8,12 +8,20 @@ embedding：阿里云百炼 qwen3.7-text-embedding-flash（1024 维）。
 import json
 import math
 import os
-from pathlib import Path
 
-KB_PATH = Path(__file__).resolve().parents[3] / "knowledge" / "kb_weida.json"
 EMBED_MODEL = "qwen3.7-text-embedding-flash"
 BATCH = 8
 DEFAULT_MIN_SCORE = 0.55   # 相关性门槛（v0.1.0 起；原为 0.3，见 kb_search 说明）
+
+
+def default_kb_path():
+    """知识库路径：包内 app/_data 优先，回退仓库布局；都没有则抛 AssetMissing。
+
+    v0.1.0 的 `KB()` 在文件缺失时静默 chunks=[] → search() 恒返回 []，于是
+    `--rag` 挂不上任何条文却不报错。现在改成显式失败（见 app/resources.py）。
+    """
+    from ..resources import asset_path
+    return asset_path("kb")
 
 
 def embed_texts(texts, model=EMBED_MODEL):
@@ -61,11 +69,15 @@ def _cos(a, b):
 
 
 class KB:
-    def __init__(self, path=KB_PATH):
-        self.path = path
+    def __init__(self, path=None):
+        # path=None 时按"包内 _data 优先、仓库布局回退"解析；找不到就抛 AssetMissing。
+        # 显式传 path 时仍要求文件存在（否则就是调用方写错了路径，不该静默变空索引）。
+        self.path = path or default_kb_path()
         self.chunks, self.vectors, self.model = [], [], EMBED_MODEL
-        if path and os.path.exists(path):
-            self.load(path)
+        if not os.path.exists(self.path):
+            from ..resources import AssetMissing
+            raise AssetMissing("知识库文件不存在: %s" % self.path)
+        self.load(self.path)
 
     def load(self, path):
         with open(path, "r", encoding="utf-8") as f:

@@ -48,6 +48,9 @@ git clone https://github.com/yuluo554/construction-drawing-plan-checker.git
 cd construction-drawing-plan-checker
 pip install -e ".[dev]"          # 也可 cd code/backend && pip install -r ../requirements.txt
 
+# 装完先自检：确认知识库/阈值清单/Web 静态文件都就位
+construction-check selftest      # 或 cd code/backend && py -m app.cli selftest
+
 # 方式一：Web 界面（推荐）—— 在 code/backend 下启动
 cd code/backend
 uvicorn app.server:app --port 8000        # 打开 http://127.0.0.1:8000
@@ -57,11 +60,18 @@ py -m app.cli run ../../data/施工图纸/自制样例/sample_beam_plan.dxf \
                   ../../data/施工方案/自制样例/sample_formwork_plan_13.docx \
                   -o ../../输出 --rag
 
-# 运行测试（55 项，零 API 依赖；README 数字由 test_self_reported_numbers.py 守门）
-pytest -q
+# 运行测试（67 项，零 API 依赖；README 数字由 test_self_reported_numbers.py 守门）
+pytest -q -m "not packaging"     # 含打包实测的完整跑法见下方「安装形态」
 ```
 
-**退出码约定**（v0.1.0 起）：`0` = 成功、`1` = 运行失败（解析异常 / 流水线节点失败 / 未产出结果）、`2` = 用法或输入不可用（文件不存在 / `--rag` 缺 embedding 配置）。注意 `--rag` 需要 embedding 服务配置，缺配置时**提前失败并给出指引**，不会静默产出空结果。
+**安装形态（v0.1.1 起）**：`wheel` 与 `sdist` **都自带运行期资产**（知识库、危大阈值清单、Web 静态文件、规则元数据），因此 `pip install <wheel>` 之后 `compliance` / `--rag` / Web 界面都能直接用——不再需要仓库里的 `data/` 目录。
+
+```bash
+# 打包实测（真构建 + 装进临时 venv + 在仓库外验证资产来自包内）
+pytest code/backend/tests/test_packaging.py -q -m packaging
+```
+
+**退出码约定**（v0.1.0 起）：`0` = 成功、`1` = 运行失败（解析异常 / 流水线节点失败 / 未产出结果 / 资产缺失）、`2` = 用法或输入不可用（文件不存在 / `--rag` 缺 embedding 配置）。`--rag` 需要 embedding 服务配置，缺配置或知识库缺失时**提前失败并给出指引**，不会静默产出空结果。
 
 可选 LLM：复制 `code/.env.example` 为 `code/.env`，填入 API Key 后加 `--llm` 开关启用 LLM 抽取与兜底（规则命中不耗 API）。
 
@@ -100,7 +110,7 @@ py tools/build_rag_probes.py           # 重建检索探针夹具（需 API Key�
 ├── code/
 │   ├── backend/     解析器 / 参数卡 / 规则引擎 / RAG / Agent 编排 / 报告导出 / Web 服务
 │   │   ├── app/     应用代码
-│   │   ├── tests/   55 项单元/集成测试
+│   │   ├── tests/   67 项单元/集成测试
 │   │   ├── tools/   基准与生成器（bench_*.py / gen_sample_*.py / build_*.py）
 │   │   └── static/  Web 前端（index.html + app.js + vendor）
 │   ├── rules/       校核规则库元数据

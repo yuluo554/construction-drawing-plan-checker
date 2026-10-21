@@ -3,7 +3,9 @@
 # 资产（data/、code/knowledge/、code/rules/）随源码分发。
 include LICENSE
 include README.md
+include CHANGELOG.md
 include pyproject.toml
+include setup.py
 recursive-include code/backend/app *.py
 recursive-include code/backend/static *
 recursive-include code/backend/tests *.py

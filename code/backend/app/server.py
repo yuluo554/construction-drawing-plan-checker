@@ -22,9 +22,26 @@ BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # code/backe
 DATA_DIR = os.path.join(BASE, "webdata")
 UPLOAD_DIR = os.path.join(DATA_DIR, "uploads")
 REPORT_DIR = os.path.join(DATA_DIR, "reports")
-STATIC_DIR = os.path.join(BASE, "static")
-for d in (UPLOAD_DIR, REPORT_DIR, STATIC_DIR):
+
+
+def _resolve_static_dir():
+    """静态目录：包内 app/_data/static 优先，回退 code/backend/static。
+
+    v0.1.0 的 wheel 不含 static，装完后服务能起但首页 404、/static/* 全挂（v0.1.1 修）。
+    这里不抛异常：让 API 仍可用，但首页请求会返回明确的 503 说明而不是空 404。
+    """
+    from .resources import AssetMissing, asset_path
+    try:
+        return asset_path("static")
+    except AssetMissing:
+        return ""
+
+
+STATIC_DIR = _resolve_static_dir()
+for d in (UPLOAD_DIR, REPORT_DIR):
     os.makedirs(d, exist_ok=True)
+if STATIC_DIR:
+    os.makedirs(STATIC_DIR, exist_ok=True)
 
 app = FastAPI(title="施工图×施工方案 协同校核系统")
 STORE = {}  # id -> {"kind","path","card"}
@@ -114,7 +131,15 @@ def card_json(fid: str):
 
 @app.get("/")
 def index():
-    return FileResponse(os.path.join(STATIC_DIR, "index.html"))
+    idx = os.path.join(STATIC_DIR, "index.html") if STATIC_DIR else ""
+    if not idx or not os.path.isfile(idx):
+        # 明确报"静态资源缺失"而不是让浏览器拿到空白 404（v0.1.0 装态缺陷）
+        raise HTTPException(
+            503,
+            "Web 静态资源缺失（static/index.html 未随安装包分发）。"
+            "API 端点仍可用；请改用 `pip install -e .`（源码态）或 Release 的 source zip。")
+    return FileResponse(idx)
 
 
-app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
+if STATIC_DIR:
+    app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")

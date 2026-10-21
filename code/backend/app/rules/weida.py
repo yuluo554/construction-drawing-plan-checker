@@ -28,12 +28,18 @@ REQUIRED_CHAPTER_KEYWORDS = [
     ("施工管理", "管理及作业人员"),
 ]
 
-DEFAULT_LIST_PATH = os.path.join(os.path.dirname(__file__), "..", "..", "..", "..", "data",
-                                 "法规标准", "危大工程范围清单.json")
+def default_list_path():
+    """阈值清单路径：包内 app/_data 优先，回退仓库布局；都没有则抛 AssetMissing。
+
+    v0.1.0 的 wheel 不含该文件，`pip install` 后 `compliance` 直接 FileNotFoundError。
+    """
+    from ..resources import asset_path
+    return asset_path("weida_list")
 
 
 def load_list(path=None):
-    p = os.path.normpath(path or DEFAULT_LIST_PATH)
+    # 显式传 path 时保持原语义（调用方可指向自定义清单）；不传则走资源解析。
+    p = os.path.normpath(path) if path else default_list_path()
     with open(p, "r", encoding="utf-8") as f:
         return json.load(f)
 
