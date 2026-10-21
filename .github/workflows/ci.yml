@@ -69,12 +69,10 @@ jobs:
         working-directory: code/backend
         run: python tools/bench_rag.py
 
+      # 单行书写：Windows 默认 shell 是 pwsh，反斜杠续行会被当成独立命令
       - name: End-to-end run (rule channel, no API key)
         working-directory: code/backend
-        run: |
-          python -m app.cli run ../../data/施工图纸/自制样例/sample_beam_plan.dxf \
-                               ../../data/施工方案/自制样例/sample_formwork_plan_13.docx \
-                               -o "${{ runner.temp }}/e2e-out"
+        run: python -m app.cli run "../../data/施工图纸/自制样例/sample_beam_plan.dxf" "../../data/施工方案/自制样例/sample_formwork_plan_13.docx" -o "${{ runner.temp }}/e2e-out"
 
       - name: Assert e2e artifacts exist
         shell: python
