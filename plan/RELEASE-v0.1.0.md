@@ -40,10 +40,18 @@
 
 ### tag 时点的提交
 
-- tag 指向的提交：**`8b92e647ffcf1d3afd310f018b82acca17733021`**（= CI 绿的那个提交，run `39629831085`，5/5 job success，注解 0 条）
-- tag 对象（annotated）：`4d23f43e85d7866088a9704d26f9be637e52c534`；剥离后 `^{}` → `8b92e64`
-  验证：`git cat-file -t v0.1.0` → `tag`；`git rev-list -n1 v0.1.0` → `8b92e64…`
-- tag 消息要点：首次发布；DEC1–DEC4 见本文件 §一；起点 `1d8dd37`；CI run id。
+**本节不写具体 sha**（避免"文档内容 → 改变 sha → 文档失效"的循环依赖）。权威来源：
+
+- tag 指向哪个提交：`git rev-list -n1 v0.1.0`（**tag 自身就是答案，不需要文档复述**）
+- tag 对象的 sha（annotated 对象 vs 剥离后的 commit）：`git cat-file -p v0.1.0`
+- 该提交对应的 CI run：**tag 消息里写了 run id**；或用
+  `gh api "repos/yuluo554/construction-drawing-plan-checker/commits/$(git rev-list -n1 v0.1.0)/check-runs" --jq '.check_runs[]|"\(.name) \(.conclusion)"'`
+- tag 验收标准（打 tag 时必须成立，可随时复核）：
+  1. `git cat-file -t v0.1.0` → `tag`（annotated，不是 lightweight）
+  2. 该提交在 GitHub 上的 check-runs **全部 success**
+  3. 该提交的 CI 注解为 **0**
+
+- tag 消息要点：首次发布；DEC1–DEC4 见本文件 §一；起点 `1d8dd37`；CI run id；测试数 55。
 
 ---
 
@@ -54,7 +62,7 @@
 | 项 | 值 |
 |---|---|
 | Release URL | https://github.com/yuluo554/construction-drawing-plan-checker/releases/tag/v0.1.0 |
-| tag | `v0.1.0`（annotated `4d23f43`，剥离 → `8b92e64`） |
+| tag | `v0.1.0`（annotated） |
 | Release 标题 | `v0.1.0 — 首次发布：CLI 退出码 / RAG 相关性 / CI / 打包元数据` |
 | draft / prerelease | false / false（Latest） |
 | 附件 1（DEC4=B） | `construction-drawing-plan-checker-v0.1.0-source.zip` — **2,529,787 B**，sha256 `de250a979af712b5175cc3e4c12242a4a3912217ac63c0c38f9bff0d94827611`；GitHub 记录的 digest 与本地**逐字符相同** |
@@ -62,6 +70,11 @@
 | 附件来源 | `git archive --format=zip --prefix=construction-drawing-plan-checker-v0.1.0/ -o <zip> v0.1.0` |
 | 可复算性（实测） | 独立重建两次 → `cmp` **BYTE-IDENTICAL**，两次 sha256 同为 `de250a97…` |
 | 下载复验（实测） | `gh release download` 匿名取回两附件 → `sha256sum -c SHA256SUMS` → **OK** |
+
+> **附件的 sha256 是在打完 tag 后算的，因此不写进 tag 树里的任何文件**（写了就会改变
+> 该文件、进而改变 tag 树；这是本仓已有纪律「tag↔台账循环依赖」的具体应用）。
+> 上述数值的权威来源：**Release 页面附件 digest** + `SHA256SUMS` 附件 + tag 消息。
+> 若日后移动 tag，**必须重算附件并 `gh release edit` 更新说明**（否则说明与附件不一致）。
 
 ### 3.2 发布物自证（无 `.git` 的源码包，实测）
 
@@ -183,7 +196,7 @@ py tools/bench_rag.py --min-top1 0.9                       ; echo $?   # 期望 
 | **NC2** | 无 `.env` + `--rag` → 非 0，且**产物目录为空这一事实被明确报出** | `rc=**2**`；stderr 打印缺 `LLM_BASE_URL`/`LLM_API_KEY` + 两条可执行指引；`ls cd-nc2out` → **目录不存在**（起点是"exit 0 且目录为空"） | ✅ |
 | **NC3** | bench 门槛提到 1.01 → 非 0；改回 → 0 | `bench_drawings.py 30 1`=**0**（PASS 6/6）；`--min-f1 1.01`=**1**（FAIL 6/6，逐字段列名）；`bench_consistency.py 15 1`=**0**（PASS 7/7、15/15、误报 0）；`bench_rag.py --min-top1 0.9`=**1** | ✅ |
 | **NC4** | 参数冲突类不得挂危大条文；条文 score ≥ 阈值 | `R-C-001`（参数冲突）→ `条文=None`、`条文检索.状态=不适用`；`R-W-000`（危大合规）→ score **0.8294 ≥ 0.55**；"参数冲突类挂条文数 = 0"；"score<0.55 的致命项数 = 0" | ✅ |
-| **NC5** | CI 存在且推送后 run `conclusion=success` | **tag 提交**：run `39629831085`（headSha `8b92e64…`）5/5 success、注解 **0**；**当前 main 头**：run `39633361382`（headSha `337e790…`）5/5 success、注解 **0**（见 §6.1） | ✅ |
+| **NC5** | CI 存在且推送后 run `conclusion=success` | tag 提交与当前 main 头均为 **5/5 job success、注解 0 条**；复核方式见 §6.1 的三条命令（不写死 sha，避免文档与 tag 互相牵制） | ✅ |
 | **NC6** | `pip install -e .` 成功；`python -m app.cli --help` = 0 | 全新 venv `INSTALL_RC=0`；`--help`=**0**；`version`→`0.1.0`；console script `construction-check --help`=**0** | ✅ |
 | **NC7** | 恒定回归：端到端仍产两份文件、结论与汇总不变 | `rc=0`；`结论: 存在致命问题，须整改后实施 | 汇总: {致命2, 一般0, 提示2}`；5 节点全 OK；`校核结果.json` + `校核报告.docx` 齐备 | ✅ |
 | **NC8** | 敏感文件不入仓 | 4.3 MB 敏感 docx：`--error-unmatch` → **NOT tracked**；`git check-ignore` → `.gitignore:29` 命中；磁盘 4,338,255 B（磁盘有、仓库无，与声明一致）。`.env` 入仓数=0；`.env.example` 入仓=1；`你需要做的操作/赛题`=**0** | ✅（**判据见更正 2**：不要按子串 `高支模` 计数） |
@@ -202,34 +215,28 @@ py tools/bench_rag.py --min-top1 0.9                       ; echo $?   # 期望 
 
 ## 六、CI 与发布（实测）
 
-### 6.1 最终绿的 run
+### 6.1 tag 提交的 CI 验收（命令 + 期望）
 
-**三个 run 需要区分**：tag 冻结在 `8b92e64`；之后还有两个收尾提交（只改文档与 `runs-on`），其 run 同样全绿。
-
-| 用途 | run id | headSha | conclusion | job | annotations |
-|---|---|---|---|---|---|
-| **tag 指向的提交**（被 v0.1.0 冻结） | `39629831085` | `8b92e64…` | success | 5/5 | **0** |
-| 文档留档提交（本文件 §三/§六 后补） | `39632537707` | `a32f959…` | success | 5/5 | 1（`package` 仍用 `ubuntu-latest`） |
-| **最终收尾提交**（package 也钉 24.04） | **`39633361382`** | **`337e790…`** | **success** | **5/5** | **0** |
-
-> `v0.1.0` 仍指向 `8b92e64`；后两个提交只改 `plan/RELEASE-v0.1.0.md` 与
-> `.github/workflows/ci.yml` 的 `runs-on`/注释，**不改任何产品代码、测试或数据**。
-> 因此"tag 树自带的门全过"与"当前 main 头 CI 零注解"两个事实分别由上面第 1、3 行成立。
-
-命令（可复现）：
+**不在文档里写死"tag 指向哪个 sha / 哪个 run id"**——那样每次文档变更都会让记录失效
+（tag 移动后文档即自相矛盾）。改为给出可随时执行的验收命令与期望值：
 
 ```bash
-# A. tag 指向的提交（v0.1.0 冻结在这里）
-gh api "repos/yuluo554/construction-drawing-plan-checker/actions/runs/39629831085/jobs" \
-  --jq '.jobs[]|"\(.name) \(.conclusion)"'
-for j in $(gh api "repos/yuluo554/construction-drawing-plan-checker/actions/runs/39629831085/jobs" --jq '.jobs[].id'); do
-  gh api "repos/yuluo554/construction-drawing-plan-checker/check-runs/$j/annotations" --jq 'length'
-done   # → 0 0 0 0 0
+# 1) tag 指向的提交
+TAG_SHA=$(git rev-list -n1 v0.1.0); echo "$TAG_SHA"
 
-# B. 当前 main 头（最终收尾提交）
-gh run list --repo yuluo554/construction-drawing-plan-checker --limit 1 \
-  --json databaseId,headSha,conclusion,status
+# 2) 该提交的 check-runs（期望：全部 success）
+gh api "repos/yuluo554/construction-drawing-plan-checker/commits/$TAG_SHA/check-runs" \
+  --jq '.check_runs[]|"\(.name) \(.conclusion)"'
+
+# 3) 该提交的注解（期望：空 / 0 条）
+gh api "repos/yuluo554/construction-drawing-plan-checker/commits/$TAG_SHA/check-runs" \
+  --jq '.check_runs[].id' | while read id; do
+    gh api "repos/yuluo554/construction-drawing-plan-checker/check-runs/$id/annotations" --jq '.[].message'
+  done
 ```
+
+**本轮实际达成**：tag 提交的 5 个 job 全部 `success`，注解 **0** 条。
+（CI 结构：`test` 四腿 `{ubuntu-24.04, windows-latest} × {3.10, 3.12}` + `package` 一腿。）
 
 ### 6.2 CI 的失败史与收尾（诚实登记：连红四轮，第 6 轮起绿，第 8 轮注解归零）
 
@@ -240,9 +247,13 @@ gh run list --repo yuluo554/construction-drawing-plan-checker --limit 1 \
 | 3 | `39627319665` | windows 两腿：`Assert e2e artifacts exist` | **产物其实齐备**，是断言步骤自己 print 中文崩了 | 断言改纯 ASCII |
 | 4 | `39628143755` | windows 两腿：同上 | 仍打印了中文**文件名** | 只打印"计数 + ASCII 转义名"；工作流加 `PYTHONUTF8=1` |
 | 5 | `39628959162` | — | — | ✅ 5/5 success，但残留 **3 条** `ubuntu-latest` 迁移注解 |
-| 6 | `39629831085` | — | — | ✅ ubuntu 腿钉 `ubuntu-24.04` → 5/5 + 注解 0（**tag 指向此提交 `8b92e64`**） |
+| 6 | `39629831085` | — | — | ✅ ubuntu 腿钉 `ubuntu-24.04` → 5/5 + 注解 0 |
 | 7 | `39632537707` | — | — | ✅ 5/5 success；但 `package` job 仍 `runs-on: ubuntu-latest` → 残留 **1 条**注解 |
-| 8 | `39633361382` | — | — | ✅ `package` 也钉 `ubuntu-24.04` → **5/5 + 注解 0（当前 main 头）** |
+| 8 | `39633361382` | — | — | ✅ `package` 也钉 `ubuntu-24.04` → 5/5 + 注解 0 |
+| 9 | `39634385453` | — | — | ✅ 文档收尾提交 → 5/5 + 注解 0 |
+
+> 上表的 run id 只用于**回溯这段历史**（都是过去发生的固定事实，不会再变）。
+> **tag 当前指向哪个提交**请看 `git rev-list -n1 v0.1.0`，不要从上表推断。
 
 ### 6.3 发布
 
@@ -268,11 +279,12 @@ gh run list --repo yuluo554/construction-drawing-plan-checker --limit 1 \
 4. **`code/requirements.txt` 保留**：README 快速开始给出两条安装路径（`pip install -e ".[dev]"` 与 `-r ../requirements.txt`）。`requirements.txt` 里 pytest 仍在运行清单中（未动它，避免破坏既有用法）。
 5. **Web UI 无自动化测试**：`test_server.py` 2 条只测 API 端点，前端 `static/` 无端到端测试（本轮范围外）。
 6. **修复发现了诊断未列的一条**：坏文件静默成功（更正 5）——只修了 CLI 边界，未动解析器。
-7. **tag 之后仍有 2 个收尾提交**（`a32f959` 文档留档、`337e790` 把 `package` job 也钉 24.04）。
-   它们**不改产品代码/测试/数据**，但意味着 `v0.1.0..HEAD` 有 2 个提交。
-   若复验要求"tag 树 = 当前 HEAD"，需要**移动 tag**（并同步 `gh release edit` 的说明文字）——
-   **本批没有移动 tag**：`v0.1.0` 仍指向被 CI 验证过的 `8b92e64`，这是更保守的选择。
-   "tag 树自带的门全过"已由**从 Release 真下载解压后复跑**证明（§3.2），不依赖 HEAD。
+7. **tag 与 main 头的关系**：本文件在打 tag 之后还补写过若干次（Release 实测、CI 失败史、
+   发布物自证）。为避免"文档内容 → 改变 sha → 文档失效"的循环依赖，本文件**不写死自己的
+   tag sha 与附件 sha256 在 tag 树内**，而是给出可执行命令与权威来源（§二、§3.1、§6.1）。
+   复验时：`git rev-list --count v0.1.0..HEAD` 的值为准（本轮为 3，且 3 个提交都只改
+   `plan/` 与 `.github/workflows/ci.yml` 的 `runs-on`/注释，**不改产品代码/测试/数据**）。
+   "tag 树自带的门全过"由**从 Release 真下载解压后复跑**证明（§3.2），不依赖 HEAD。
 
 ---
 
