@@ -129,8 +129,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install build backend
-        run: python -m pip install build
+      - name: Install build backend and test runner
+        run: python -m pip install build pytest
 
       - name: Build
         run: python -m build

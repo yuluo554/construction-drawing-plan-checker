@@ -52,7 +52,11 @@ package-dir = { "" = "code/backend" }
 
 [tool.setuptools.packages.find]
 where = ["code/backend"]
-include = ["app*"]
+include = ["app", "app.*"]
+# app/_data 是构建钩子铺进去的**数据**目录（无 __init__.py）。若让 find 扫到它，
+# setuptools 会报 "app._data.static.vendor is neither a Python module nor a package"
+# 之类的警告，并可能把它当命名空间包处理。这里显式排除（数据仍由 package-data 收）。
+exclude = ["app._data", "app._data.*"]
 
 [tool.setuptools.package-data]
 # app/_data 是构建产物（不入库）；这里只声明"要收进包"的模式。
