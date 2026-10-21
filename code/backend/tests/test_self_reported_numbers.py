@@ -29,7 +29,12 @@ def read(path):
 
 
 def count_tests():
-    """统计 tests/ 下的测试函数数（与 pytest 的收集口径一致：test_ 前缀的函数）。"""
+    """统计 tests/ 下的测试用例数。
+
+    口径：`def test_*` 函数数。**测试文件里不要用 parametrize**——它会让"函数数"
+    与实际收集数不等，本门就会失真。需要多组输入时写成独立函数（见
+    test_cli_exit_codes.py 的两条 legacy-codepage 用例）。
+    """
     total = 0
     tdir = os.path.join(BACKEND, "tests")
     for name in sorted(os.listdir(tdir)):
@@ -37,6 +42,9 @@ def count_tests():
             continue
         src = read(os.path.join(tdir, name))
         total += len(re.findall(r"^def (test_\w+)", src, re.M))
+        # 只查"用作装饰器"的情况（本文件只提到这个词、并未使用，不算）
+        assert not re.search(r"^\s*@\S*parametrize", src, re.M), \
+            "%s 使用了 parametrize 装饰器，会让测试计数口径失真；请拆成独立函数" % name
     return total
 
 

@@ -234,6 +234,8 @@ def _cmd_run(args):
 
 
 def main(argv=None):
+    from .console import force_utf8_output
+    force_utf8_output()   # Windows 默认代码页下中文帮助文本会抛 UnicodeEncodeError
     args = parse_args(argv if argv is not None else sys.argv[1:])
     handlers = {
         "drawing": _cmd_drawing,

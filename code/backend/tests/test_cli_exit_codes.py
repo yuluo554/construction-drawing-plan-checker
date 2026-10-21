@@ -122,6 +122,57 @@ def test_bench_consistency_pass():
     assert "PASS" in out, out
 
 
+# ---------- 非 UTF-8 控制台（Windows 默认代码页）下的中文输出 ----------
+
+LEGACY_CODEC = "cp1252"
+
+
+def _run_under_legacy_codepage(cmd):
+    """用 PYTHONIOENCODING 强制非 UTF-8 控制台跑一条命令，返回 (rc, 输出)。"""
+    env = dict(os.environ)
+    env["PYTHONIOENCODING"] = LEGACY_CODEC     # 覆盖入口处 reconfigure 之前的状态
+    env["PYTHONUTF8"] = "0"                    # 关闭 UTF-8 模式，逼近 Windows 默认
+    env.pop("PYTHONPATH", None)
+    proc = subprocess.run([sys.executable] + cmd, cwd=BACKEND, env=env,
+                          stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=300)
+    return proc.returncode, proc.stdout.decode("utf-8", "replace")
+
+
+def test_cli_help_survives_legacy_codepage():
+    """CI 曾在 windows-latest 上因 cp1252 输出中文而红（UnicodeEncodeError）。
+
+    这里用 PYTHONIOENCODING 强制非 UTF-8 控制台，断言入口处已把编码切成 UTF-8。
+    负控：移除 app/cli.py 里的 force_utf8_output() 调用后本测试变红。
+    """
+    rc, out = _run_under_legacy_codepage(["-m", "app.cli", "--help"])
+    assert "UnicodeEncodeError" not in out, out
+    assert "charmap" not in out, out
+    assert rc == 0, out
+
+
+def test_bench_rag_survives_legacy_codepage():
+    """bench_rag 输出含中文，同样必须在非 UTF-8 控制台下可跑（CI windows 腿覆盖）。"""
+    rc, out = _run_under_legacy_codepage(["tools/bench_rag.py"])
+    assert "UnicodeEncodeError" not in out, out
+    assert "charmap" not in out, out
+    assert rc == 0, out
+
+
+def test_console_helper_reconfigures_streams():
+    """直接单测 helper：断言它把流切成 UTF-8（不依赖子进程行为）。"""
+    import io
+    import sys as _sys
+    from app.console import force_utf8_output
+    buf = io.TextIOWrapper(io.BytesIO(), encoding=LEGACY_CODEC, errors="strict")
+    saved = _sys.stdout
+    _sys.stdout = buf
+    try:
+        force_utf8_output()
+        assert buf.encoding.lower().replace("-", "") == "utf8", buf.encoding
+    finally:
+        _sys.stdout = saved
+
+
 def run_cli_script(script, *args):
     env = dict(os.environ)
     env.setdefault("PYTHONUTF8", "1")

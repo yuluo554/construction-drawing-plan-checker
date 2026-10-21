@@ -16,8 +16,11 @@ MIN_F1 = 0.95
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
+from app.console import force_utf8_output  # noqa: E402
 from app.parsers.dxf_parser import parse_dxf  # noqa: E402
 from tools.gen_sample_drawing import build  # noqa: E402
+
+force_utf8_output()   # Windows 默认代码页下含中文的输出会抛 UnicodeEncodeError
 
 
 def extract_fields(card):

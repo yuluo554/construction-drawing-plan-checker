@@ -14,10 +14,13 @@ import tempfile
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
+from app.console import force_utf8_output  # noqa: E402
 from app.parsers.docx_parser import parse_docx  # noqa: E402
 from app.parsers.dxf_parser import parse_dxf  # noqa: E402
 from app.rules.engine import run_checks  # noqa: E402
 from tools import gen_sample_drawing, gen_sample_plan  # noqa: E402
+
+force_utf8_output()   # Windows 默认代码页下含中文的输出会抛 UnicodeEncodeError
 
 MIN_WEIDA_RATE = 1.0   # 危大判定准确率下限（README：15/15）
 MAX_FALSE_FATAL = 0    # 非预期致命项（误报）上限（README：0）

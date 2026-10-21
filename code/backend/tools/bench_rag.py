@@ -18,7 +18,10 @@ from pathlib import Path
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
+from app.console import force_utf8_output  # noqa: E402
 from app.knowledge.rag import KB, _cos  # noqa: E402
+
+force_utf8_output()   # Windows 默认代码页下含中文的输出会抛 UnicodeEncodeError
 
 PROBES_PATH = Path(__file__).resolve().parents[2] / "knowledge" / "rag_probes.json"
 MIN_TOP1 = 0.55
