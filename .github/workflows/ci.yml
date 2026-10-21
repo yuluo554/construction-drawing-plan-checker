@@ -13,6 +13,13 @@ concurrency:
   group: ci-${{ github.ref }}
   cancel-in-progress: true
 
+# 让 CI 内所有 python 进程默认 UTF-8（CI 的 windows 腿曾三次因代码页非 UTF-8 而红）。
+# 注意：这只覆盖 CI；产品侧仍必须自己处理编码（app/console.py），
+# 因为真实用户在自己机器的 cmd 里不会设这个变量。
+env:
+  PYTHONUTF8: "1"
+  PYTHONIOENCODING: "utf-8"
+
 jobs:
   test:
     name: test (${{ matrix.os }} / py${{ matrix.python }})
@@ -75,21 +82,29 @@ jobs:
         run: python -m app.cli run "../../data/施工图纸/自制样例/sample_beam_plan.dxf" "../../data/施工方案/自制样例/sample_formwork_plan_13.docx" -o "${{ runner.temp }}/e2e-out"
 
       # 产物断言：输出保持纯 ASCII —— 该步骤是独立 python 进程，Windows 默认代码页
-# 不是 UTF-8，打印中文会在"失败路径"里二次抛 UnicodeEncodeError（CI 实际发生过）。
+# 不是 UTF-8；产物文件名本身是中文，直接 print 文件名会在成功路径上抛
+# UnicodeEncodeError（CI 实际发生过两次）。这里只打印"计数 + ASCII 转义名"。
       - name: Assert e2e artifacts exist
         shell: python
         env:
           OUT_DIR: ${{ runner.temp }}/e2e-out
         run: |
           import os, sys
+
+          def ascii(s):
+              return s.encode("ascii", "backslashreplace").decode("ascii")
+
           out = os.environ["OUT_DIR"]
           names = sorted(os.listdir(out)) if os.path.isdir(out) else []
           got_json = [n for n in names if n.endswith(".json")]
           got_docx = [n for n in names if n.endswith(".docx")]
+          print("json=%d docx=%d total=%d" % (len(got_json), len(got_docx), len(names)))
+          for n in names:
+              print("  " + ascii(n))
           if not (got_json and got_docx):
-              print("FAIL: missing artifacts; dir listing =", names)
+              print("FAIL: missing artifacts")
               sys.exit(1)
-          print("OK: json=%s docx=%s" % (got_json, got_docx))
+          print("OK: both artifact kinds present")
 
   package:
     name: package (build wheel/sdist)
