@@ -110,7 +110,8 @@ jobs:
 
   package:
     name: package (build wheel/sdist)
-    runs-on: ubuntu-latest
+    # 与 test 矩阵保持同一基础镜像（`ubuntu-latest` 会挂迁移注解且随时漂移）
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v7
 
