@@ -183,7 +183,7 @@ py tools/bench_rag.py --min-top1 0.9                       ; echo $?   # 期望 
 | **NC2** | 无 `.env` + `--rag` → 非 0，且**产物目录为空这一事实被明确报出** | `rc=**2**`；stderr 打印缺 `LLM_BASE_URL`/`LLM_API_KEY` + 两条可执行指引；`ls cd-nc2out` → **目录不存在**（起点是"exit 0 且目录为空"） | ✅ |
 | **NC3** | bench 门槛提到 1.01 → 非 0；改回 → 0 | `bench_drawings.py 30 1`=**0**（PASS 6/6）；`--min-f1 1.01`=**1**（FAIL 6/6，逐字段列名）；`bench_consistency.py 15 1`=**0**（PASS 7/7、15/15、误报 0）；`bench_rag.py --min-top1 0.9`=**1** | ✅ |
 | **NC4** | 参数冲突类不得挂危大条文；条文 score ≥ 阈值 | `R-C-001`（参数冲突）→ `条文=None`、`条文检索.状态=不适用`；`R-W-000`（危大合规）→ score **0.8294 ≥ 0.55**；"参数冲突类挂条文数 = 0"；"score<0.55 的致命项数 = 0" | ✅ |
-| **NC5** | CI 存在且推送后 run `conclusion=success` | **run `39629831085`，headSha `8b92e64…`，conclusion=`success`，5/5 job success**（`package` + 四腿 `test`）；**注解 0 条**（见 §六） | ✅ |
+| **NC5** | CI 存在且推送后 run `conclusion=success` | **tag 提交**：run `39629831085`（headSha `8b92e64…`）5/5 success、注解 **0**；**当前 main 头**：run `39633361382`（headSha `337e790…`）5/5 success、注解 **0**（见 §6.1） | ✅ |
 | **NC6** | `pip install -e .` 成功；`python -m app.cli --help` = 0 | 全新 venv `INSTALL_RC=0`；`--help`=**0**；`version`→`0.1.0`；console script `construction-check --help`=**0** | ✅ |
 | **NC7** | 恒定回归：端到端仍产两份文件、结论与汇总不变 | `rc=0`；`结论: 存在致命问题，须整改后实施 | 汇总: {致命2, 一般0, 提示2}`；5 节点全 OK；`校核结果.json` + `校核报告.docx` 齐备 | ✅ |
 | **NC8** | 敏感文件不入仓 | 4.3 MB 敏感 docx：`--error-unmatch` → **NOT tracked**；`git check-ignore` → `.gitignore:29` 命中；磁盘 4,338,255 B（磁盘有、仓库无，与声明一致）。`.env` 入仓数=0；`.env.example` 入仓=1；`你需要做的操作/赛题`=**0** | ✅（**判据见更正 2**：不要按子串 `高支模` 计数） |
@@ -204,28 +204,34 @@ py tools/bench_rag.py --min-top1 0.9                       ; echo $?   # 期望 
 
 ### 6.1 最终绿的 run
 
-| 项 | 值 |
-|---|---|
-| run id | **`39629831085`** |
-| headSha | **`8b92e647ffcf1d3afd310f018b82acca17733021`** |
-| 时间 | 2026-10-21T15:53:51Z（UTC） |
-| conclusion | **`success`** |
-| job 明细 | `test (ubuntu-24.04 / py3.10)` success · `test (ubuntu-24.04 / py3.12)` success · `test (windows-latest / py3.10)` success · `test (windows-latest / py3.12)` success · `package (build wheel/sdist)` success |
-| ANNOTATIONS | **0 条**（5 个 job 全部 `annotations=[]`） |
+**三个 run 需要区分**：tag 冻结在 `8b92e64`；之后还有两个收尾提交（只改文档与 `runs-on`），其 run 同样全绿。
+
+| 用途 | run id | headSha | conclusion | job | annotations |
+|---|---|---|---|---|---|
+| **tag 指向的提交**（被 v0.1.0 冻结） | `39629831085` | `8b92e64…` | success | 5/5 | **0** |
+| 文档留档提交（本文件 §三/§六 后补） | `39632537707` | `a32f959…` | success | 5/5 | 1（`package` 仍用 `ubuntu-latest`） |
+| **最终收尾提交**（package 也钉 24.04） | **`39633361382`** | **`337e790…`** | **success** | **5/5** | **0** |
+
+> `v0.1.0` 仍指向 `8b92e64`；后两个提交只改 `plan/RELEASE-v0.1.0.md` 与
+> `.github/workflows/ci.yml` 的 `runs-on`/注释，**不改任何产品代码、测试或数据**。
+> 因此"tag 树自带的门全过"与"当前 main 头 CI 零注解"两个事实分别由上面第 1、3 行成立。
 
 命令（可复现）：
 
 ```bash
-gh run list --repo yuluo554/construction-drawing-plan-checker --limit 1 \
-  --json databaseId,headSha,conclusion,status
+# A. tag 指向的提交（v0.1.0 冻结在这里）
 gh api "repos/yuluo554/construction-drawing-plan-checker/actions/runs/39629831085/jobs" \
   --jq '.jobs[]|"\(.name) \(.conclusion)"'
 for j in $(gh api "repos/yuluo554/construction-drawing-plan-checker/actions/runs/39629831085/jobs" --jq '.jobs[].id'); do
   gh api "repos/yuluo554/construction-drawing-plan-checker/check-runs/$j/annotations" --jq 'length'
 done   # → 0 0 0 0 0
+
+# B. 当前 main 头（最终收尾提交）
+gh run list --repo yuluo554/construction-drawing-plan-checker --limit 1 \
+  --json databaseId,headSha,conclusion,status
 ```
 
-### 6.2 CI 的失败史（诚实登记：连红四轮，第 5 轮绿）
+### 6.2 CI 的失败史与收尾（诚实登记：连红四轮，第 6 轮起绿，第 8 轮注解归零）
 
 | 轮 | run id | 红在哪 | 根因 | 修法 |
 |---|---|---|---|---|
@@ -234,7 +240,9 @@ done   # → 0 0 0 0 0
 | 3 | `39627319665` | windows 两腿：`Assert e2e artifacts exist` | **产物其实齐备**，是断言步骤自己 print 中文崩了 | 断言改纯 ASCII |
 | 4 | `39628143755` | windows 两腿：同上 | 仍打印了中文**文件名** | 只打印"计数 + ASCII 转义名"；工作流加 `PYTHONUTF8=1` |
 | 5 | `39628959162` | — | — | ✅ 5/5 success，但残留 **3 条** `ubuntu-latest` 迁移注解 |
-| 6 | `39629831085` | — | — | ✅ 把 ubuntu 腿钉 `ubuntu-24.04` → **5/5 success + 注解 0 条**（**最终绿，tag 指向此提交 `8b92e64`**） |
+| 6 | `39629831085` | — | — | ✅ ubuntu 腿钉 `ubuntu-24.04` → 5/5 + 注解 0（**tag 指向此提交 `8b92e64`**） |
+| 7 | `39632537707` | — | — | ✅ 5/5 success；但 `package` job 仍 `runs-on: ubuntu-latest` → 残留 **1 条**注解 |
+| 8 | `39633361382` | — | — | ✅ `package` 也钉 `ubuntu-24.04` → **5/5 + 注解 0（当前 main 头）** |
 
 ### 6.3 发布
 
@@ -260,6 +268,11 @@ done   # → 0 0 0 0 0
 4. **`code/requirements.txt` 保留**：README 快速开始给出两条安装路径（`pip install -e ".[dev]"` 与 `-r ../requirements.txt`）。`requirements.txt` 里 pytest 仍在运行清单中（未动它，避免破坏既有用法）。
 5. **Web UI 无自动化测试**：`test_server.py` 2 条只测 API 端点，前端 `static/` 无端到端测试（本轮范围外）。
 6. **修复发现了诊断未列的一条**：坏文件静默成功（更正 5）——只修了 CLI 边界，未动解析器。
+7. **tag 之后仍有 2 个收尾提交**（`a32f959` 文档留档、`337e790` 把 `package` job 也钉 24.04）。
+   它们**不改产品代码/测试/数据**，但意味着 `v0.1.0..HEAD` 有 2 个提交。
+   若复验要求"tag 树 = 当前 HEAD"，需要**移动 tag**（并同步 `gh release edit` 的说明文字）——
+   **本批没有移动 tag**：`v0.1.0` 仍指向被 CI 验证过的 `8b92e64`，这是更保守的选择。
+   "tag 树自带的门全过"已由**从 Release 真下载解压后复跑**证明（§3.2），不依赖 HEAD。
 
 ---
 
