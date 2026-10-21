@@ -13,6 +13,7 @@ from pathlib import Path
 KB_PATH = Path(__file__).resolve().parents[3] / "knowledge" / "kb_weida.json"
 EMBED_MODEL = "qwen3.7-text-embedding-flash"
 BATCH = 8
+DEFAULT_MIN_SCORE = 0.55   # 相关性门槛（v0.1.0 起；原为 0.3，见 kb_search 说明）
 
 
 def embed_texts(texts, model=EMBED_MODEL):
@@ -84,8 +85,11 @@ class KB:
         self.chunks.extend(chunks)
         self.vectors.extend(vectors)
 
-    def search(self, query, top_k=5, min_score=0.3):
-        """返回 [{score, source, path, text}]。索引为空时返回 []（不报错，规则通道兜底）。"""
+    def search(self, query, top_k=5, min_score=DEFAULT_MIN_SCORE):
+        """返回 [{score, source, path, text}]。索引为空时返回 []（不报错，规则通道兜底）。
+
+        低于 min_score 的命中不返回——宁可为空也不要挂不相干条文。
+        """
         if not self.chunks:
             return []
         qv = embed_texts([query], model=self.model)[0]
@@ -95,7 +99,12 @@ class KB:
                 for s, c in scored[:top_k] if s >= min_score]
 
 
-def kb_search(query, top_k=5, kb=None):
-    """供 Agent 调用的检索工具入口。"""
+def kb_search(query, top_k=5, kb=None, min_score=DEFAULT_MIN_SCORE):
+    """供 Agent 调用的检索工具入口。
+
+    min_score 默认 0.55（v0.1.0 起，原为 0.3）：0.3 对"中文短查询 vs 条文长文本"
+    的余弦相似度太松，会把不相干条文挂到结论上（实测 0.3745 被判为命中）。
+    调用方（app/rules/engine.py）显式传同一门槛，保证报告口径一致。
+    """
     kb = kb or KB()
-    return kb.search(query, top_k=top_k)
+    return kb.search(query, top_k=top_k, min_score=min_score)

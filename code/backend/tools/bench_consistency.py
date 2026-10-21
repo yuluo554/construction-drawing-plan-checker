@@ -3,6 +3,10 @@
 
 运行：cd code/backend && py tools/bench_consistency.py [N] [起始种子]
 （纯规则通路，零 LLM 成本；每组自动生成 配对图纸+方案 并执行 run_checks）
+
+退出码：0 = 三项指标全部达标；1 = 有指标未达标（基准是真门，不是打印）。
+门槛与 README「配对一致性校核」表一致：
+    植入差异检出 = 全部植入（漏检 0）、危大判定 = 全部（不低于 MIN_WEIDA_RATE）、误报 = 0
 """
 import os
 import sys
@@ -14,6 +18,9 @@ from app.parsers.docx_parser import parse_docx  # noqa: E402
 from app.parsers.dxf_parser import parse_dxf  # noqa: E402
 from app.rules.engine import run_checks  # noqa: E402
 from tools import gen_sample_drawing, gen_sample_plan  # noqa: E402
+
+MIN_WEIDA_RATE = 1.0   # 危大判定准确率下限（README：15/15）
+MAX_FALSE_FATAL = 0    # 非预期致命项（误报）上限（README：0）
 
 
 def one_pair(seed):
@@ -34,6 +41,7 @@ def one_pair(seed):
 
 
 def main(n=10, seed0=1):
+    """跑基准并打印指标；返回退出码（0=三项达标、1=有指标未达标）。"""
     diff_total = diff_hit = weida_total = weida_hit = 0
     false_fatal = 0
     examples = []
@@ -76,8 +84,31 @@ def main(n=10, seed0=1):
     for e in examples:
         print(" -", e)
 
+    failures = []
+    if diff_total == 0:
+        failures.append("没有任何植入差异样本（无法判定检出率）")
+    elif diff_hit != diff_total:
+        failures.append("植入差异漏检 %d 组（要求 %d/%d）" % (
+            diff_total - diff_hit, diff_total, diff_total))
+    weida_rate = weida_hit / max(weida_total, 1)
+    if weida_total == 0:
+        failures.append("没有任何危大判定样本")
+    elif weida_rate < MIN_WEIDA_RATE:
+        failures.append("危大判定准确率 %.2f < %.2f（%d/%d）" % (
+            weida_rate, MIN_WEIDA_RATE, weida_hit, weida_total))
+    if false_fatal > MAX_FALSE_FATAL:
+        failures.append("非预期致命项(误报) %d > %d" % (false_fatal, MAX_FALSE_FATAL))
+
+    if failures:
+        for msg in failures:
+            print("FAIL:", msg)
+        return 1
+    print("PASS: 植入差异 %d/%d、危大 %d/%d、误报 %d" % (
+        diff_hit, diff_total, weida_hit, weida_total, false_fatal))
+    return 0
+
 
 if __name__ == "__main__":
     n = int(sys.argv[1]) if len(sys.argv) > 1 else 10
     s0 = int(sys.argv[2]) if len(sys.argv) > 2 else 1
-    main(n, s0)
+    sys.exit(main(n, s0))

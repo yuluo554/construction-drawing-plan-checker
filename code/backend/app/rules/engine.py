@@ -15,6 +15,15 @@ from .weida import full_compliance_check
 _SIGN_RE = re.compile(r"编制[：:]|审核[：:]|批准[：:]|审批")
 _CALC_RE = re.compile(r"计算书|验算")
 
+# --- RAG 依据挂载策略（v0.1.0 起）-----------------------------------------
+# 知识库只覆盖"危大管理文件族"（37号令/31号文附件/48号指南），因此只有危大合规类
+# 问题能挂条文；参数冲突、章节缺失、签署栏等没有对应条文，挂上去就是张冠李戴。
+RAG_ELIGIBLE_TYPES = ("危大合规",)
+# 相关性门槛：中文短查询 vs 条文长文本的余弦相似度普遍偏低，0.3 几乎什么都放进来
+# （实测 R-C-001 曾以 0.3745 被挂上"超规模危大须专家论证"）。0.55 取自本仓
+# 实测的匹配区间下沿，见 tools/bench_rag.py。
+RAG_MIN_SCORE = 0.55
+
 
 def _existence_findings(pc):
     findings = []
@@ -66,16 +75,28 @@ def run_checks(drawing_card, plan_card, rag_on=False, kb=None):
                         else "编制专项施工方案并组织专家论证"})
         findings += _existence_findings(plan_card)
 
-    # RAG 依据检索
+    # RAG 依据检索：只给"危大合规"类挂条文，且必须过相关性门槛
     if rag_on and kb is not None:
         from ..knowledge.rag import kb_search
         for f in findings:
-            if f["级别"] == "致命" and not f.get("条文"):
-                hits = kb_search(f.get("问题", ""), top_k=1)
-                if hits:
-                    f["条文"] = {"source": hits[0]["source"], "path": hits[0]["path"],
-                                 "score": hits[0]["score"],
-                                 "text": hits[0]["text"][:120]}
+            if f["级别"] != "致命" or f.get("条文"):
+                continue
+            if f.get("类型") not in RAG_ELIGIBLE_TYPES:
+                # 明确记录"不适用"，而不是留空 dict 让人以为检索过但没结果
+                f["条文"] = None
+                f["条文检索"] = {"状态": "不适用", "原因": "知识库仅覆盖危大管理文件族，"
+                                                     "%s类问题无对应条文" % f.get("类型", "该")}
+                continue
+            hits = kb_search(f.get("问题", ""), top_k=1, kb=kb, min_score=RAG_MIN_SCORE)
+            if hits:
+                f["条文"] = {"source": hits[0]["source"], "path": hits[0]["path"],
+                             "score": hits[0]["score"],
+                             "text": hits[0]["text"][:120]}
+                f["条文检索"] = {"状态": "命中", "门槛": RAG_MIN_SCORE}
+            else:
+                f["条文"] = None
+                f["条文检索"] = {"状态": "未检索到匹配条文", "门槛": RAG_MIN_SCORE,
+                                "原因": "top1 相似度低于 %.2f" % RAG_MIN_SCORE}
 
     # 汇总
     summary = {"致命": 0, "一般": 0, "提示": 0}

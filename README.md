@@ -2,7 +2,7 @@
 
 > 面向土建施工场景的 AI 校核工具：把施工图（PDF/DXF）与施工方案（DOCX）各自解析为**可溯源的"工程参数卡"**，自动执行 **一致性比对 / 危大工程识别 / 方案合规检查**，输出每条带证据定位的校核报告（DOCX）。
 
-[![tests](https://img.shields.io/badge/tests-26%2F26-brightgreen)]() [![python](https://img.shields.io/badge/python-3.8%2B-blue)]() [![license](https://img.shields.io/badge/license-MIT-green)]() [![Built with ZCode](https://img.shields.io/badge/Built%20with-ZCode-7c3aed)](https://github.com/yuluo554/construction-drawing-plan-checker#开发方式)
+[![CI](https://github.com/yuluo554/construction-drawing-plan-checker/actions/workflows/ci.yml/badge.svg)](https://github.com/yuluo554/construction-drawing-plan-checker/actions/workflows/ci.yml) [![python](https://img.shields.io/badge/python-3.10%2B-blue)]() [![license](https://img.shields.io/badge/license-MIT-green)]() [![Built with ZCode](https://img.shields.io/badge/Built%20with-ZCode-7c3aed)](https://github.com/yuluo554/construction-drawing-plan-checker#开发方式)
 
 ## 为什么做这个
 
@@ -41,24 +41,27 @@ flowchart LR
 
 ## 快速开始
 
-环境要求：Python 3.8+（推荐 3.10），可选大模型 API（阿里云百炼等 OpenAI 兼容接口）。
+环境要求：Python **3.10+**（CI 覆盖 3.10 / 3.12 × Ubuntu / Windows），可选大模型 API（阿里云百炼等 OpenAI 兼容接口）。
 
 ```bash
 git clone https://github.com/yuluo554/construction-drawing-plan-checker.git
-cd construction-drawing-plan-checker/code/backend
-pip install -r ../requirements.txt
+cd construction-drawing-plan-checker
+pip install -e ".[dev]"          # 也可 cd code/backend && pip install -r ../requirements.txt
 
-# 方式一：Web 界面（推荐）
+# 方式一：Web 界面（推荐）—— 在 code/backend 下启动
+cd code/backend
 uvicorn app.server:app --port 8000        # 打开 http://127.0.0.1:8000
 
-# 方式二：CLI 端到端
+# 方式二：CLI 端到端（规则通道，不需要 API Key）
 py -m app.cli run ../../data/施工图纸/自制样例/sample_beam_plan.dxf \
                   ../../data/施工方案/自制样例/sample_formwork_plan_13.docx \
                   -o ../../输出 --rag
 
-# 运行测试（26 项，零 API 依赖）
-pytest tests/ -q
+# 运行测试（52 项，零 API 依赖；README 数字由 test_self_reported_numbers.py 守门）
+pytest -q
 ```
+
+**退出码约定**（v0.1.0 起）：`0` = 成功、`1` = 运行失败（解析异常 / 流水线节点失败 / 未产出结果）、`2` = 用法或输入不可用（文件不存在 / `--rag` 缺 embedding 配置）。注意 `--rag` 需要 embedding 服务配置，缺配置时**提前失败并给出指引**，不会静默产出空结果。
 
 可选 LLM：复制 `code/.env.example` 为 `code/.env`，填入 API Key 后加 `--llm` 开关启用 LLM 抽取与兜底（规则命中不耗 API）。
 
@@ -66,18 +69,24 @@ pytest tests/ -q
 
 ```bash
 cd code/backend
-py tools/bench_drawings.py 30 1        # 图纸解析：30 张随机图纸 vs 真值
+py tools/bench_drawings.py 30 1        # 图纸解析：30 张随机图纸 vs 真值（seed 1）
 py tools/bench_consistency.py 15 1     # 配对校核：15 组植入已知差异的图纸+方案
+py tools/bench_rag.py                  # 规范检索：离线复算 5 个查询的 top1（零 API）
 py tools/build_kb.py                   # 重建规范知识库（需 API Key）
+py tools/build_rag_probes.py           # 重建检索探针夹具（需 API Key，KB 变更后跑）
 ```
 
-| 评测项 | 结果 |
-|--------|------|
-| 图纸解析（30 张随机图 / 876 字段） | **P = R = F1 = 1.00**（0 误报 0 漏报） |
-| 方案 LLM 抽取（8 万字真实方案 / 1341 候选行） | 202 条抽取，**5 条幻觉拦截**，0 失败 |
-| 配对一致性校核（15 组植入差异） | **植入差异检出 7/7，危大判定 15/15，误报 0** |
-| 危大阈值判定（基坑/模板/脚手架边界用例） | 分级全对 |
-| 规范检索（5 类问题 × 55 条文块） | top1 全命中（0.55–0.80） |
+**三个基准都是真门**：指标未达标时脚本 `exit 1`（不是只打印）。负控方式示例：`py tools/bench_drawings.py 30 1 --min-f1 1.01` 必然失败。
+
+| 评测项 | 结果 | 复现方式 |
+|--------|------|----------|
+| 图纸解析（30 张随机图 / seed 1 / **873 字段**） | **P = R = F1 = 1.00**（0 误报 0 漏报） | `bench_drawings.py 30 1` |
+| 方案 LLM 抽取（8 万字真实方案 / 1341 候选行） | 202 条抽取，**5 条幻觉拦截**，0 失败 | 需 API Key，**本轮未复核** |
+| 配对一致性校核（15 组植入差异） | **植入差异检出 7/7，危大判定 15/15，误报 0** | `bench_consistency.py 15 1` |
+| 危大阈值判定（基坑/模板/脚手架边界用例） | 分级全对 | `pytest -q` |
+| 规范检索（5 类问题 × 55 条文块） | top1 全命中，相似度 **0.6514–0.8021** | `bench_rag.py`（离线） |
+
+> 图纸解析的样本量随种子变化（`bench_drawings.py` 是逐张递增种子）：seed 1 为 873 字段、seed 2 为 867——引用该数字时必须写明种子。
 
 ## 目录结构
 
@@ -90,9 +99,15 @@ py tools/build_kb.py                   # 重建规范知识库（需 API Key）
 │   └── 施工方案/    高支模真实方案样例 + 程序化自制方案（可植入已知差异）
 ├── code/
 │   ├── backend/     解析器 / 参数卡 / 规则引擎 / RAG / Agent 编排 / 报告导出 / Web 服务
+│   │   ├── app/     应用代码
+│   │   ├── tests/   52 项单元/集成测试
+│   │   ├── tools/   基准与生成器（bench_*.py / gen_sample_*.py / build_*.py）
+│   │   └── static/  Web 前端（index.html + app.js + vendor）
 │   ├── rules/       校核规则库元数据
-│   └── knowledge/   规范条文向量索引
-└── tests            → code/backend/tests（26 项单元/集成测试）
+│   └── knowledge/   规范条文向量索引 + 检索探针夹具
+├── .github/workflows/ci.yml  CI：3.10/3.12 × Ubuntu/Windows
+├── pyproject.toml   版本与安装元数据（version 0.1.0）
+└── MANIFEST.in      源码包（sdist）自足性清单
 ```
 
 ## 数据说明

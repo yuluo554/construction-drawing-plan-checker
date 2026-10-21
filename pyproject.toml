@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "construction-drawing-plan-checker"
+version = "0.1.0"
+description = "施工图 × 施工方案 协同智能校核：参数卡解析、一致性比对、危大合规判定、规范条文 RAG 与 DOCX 报告"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "yuluo554" }]
+keywords = ["construction", "drawing-review", "rule-engine", "compliance", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Construction",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "ezdxf>=1.1",
+    "PyMuPDF>=1.24",
+    "python-docx>=1.0",
+    "requests>=2.31",
+    "fastapi>=0.110",
+    "uvicorn>=0.29",
+    "python-multipart>=0.0.9",
+]
+
+[project.optional-dependencies]
+# 测试与基准脚本所需（原 code/requirements.txt 把 pytest 混在运行依赖里，已拆出）
+dev = ["pytest>=7.4"]
+
+[project.scripts]
+construction-check = "app.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/yuluo554/construction-drawing-plan-checker"
+Repository = "https://github.com/yuluo554/construction-drawing-plan-checker"
+
+[tool.setuptools]
+# 源码布局：Python 包在 code/backend/app，仓库根的 data/ 与 code/knowledge/、code/rules/
+# 是随仓库分发的资产（不是 Python 包）。本版按「源码仓」形态分发，因此这些资产
+# 由仓库提供、不打进 wheel；`pip install .`（非 editable）只装 Python 包。
+package-dir = { "" = "code/backend" }
+
+[tool.setuptools.packages.find]
+where = ["code/backend"]
+include = ["app*"]
+
+[tool.pytest.ini_options]
+testpaths = ["code/backend/tests"]
+addopts = "-ra"

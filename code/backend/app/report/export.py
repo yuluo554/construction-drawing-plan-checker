@@ -55,6 +55,14 @@ def build_report_docx(report, drawing_card=None, plan_card=None, out_path="校�
                 row[0].paragraphs[0].runs[0].bold = True
             if f.get("条文"):
                 row[1].text += "\n依据：%s" % f["条文"].get("path", "")[:30]
+            else:
+                # 不要留空：明确写"未检索到匹配条文"，避免读者以为漏导出
+                info = f.get("条文检索") or {}
+                status = info.get("状态", "")
+                if status == "不适用":
+                    row[1].text += "\n依据：不适用（%s）" % info.get("原因", "")[:40]
+                elif status:
+                    row[1].text += "\n依据：未检索到匹配条文（%s）" % info.get("原因", "")[:30]
     else:
         doc.add_paragraph("未发现问题线索。")
 

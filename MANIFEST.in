@@ -1,0 +1,18 @@
+# 源码包（sdist）自足性：让 sdist 能跑测试与基准，而不只是一个空的 Python 包。
+# wheel 只装 Python 包（见 pyproject.toml 的 [tool.setuptools] 说明）；
+# 资产（data/、code/knowledge/、code/rules/）随源码分发。
+include LICENSE
+include README.md
+include pyproject.toml
+recursive-include code/backend/app *.py
+recursive-include code/backend/static *
+recursive-include code/backend/tests *.py
+recursive-include code/backend/tools *.py
+recursive-include code/knowledge *.json
+recursive-include code/rules *.json
+recursive-include data *
+# 运行产物与本地密钥不入源码包
+prune code/backend/webdata
+prune data/施工方案/自制样例/演示输出
+global-exclude *.pyc
+global-exclude .env
